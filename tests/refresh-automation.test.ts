@@ -190,4 +190,48 @@ describe("scheduled workflow contract", () => {
   it("contains no PR, PAT, force-push, merge, or Pages deployment implementation", () => {
     expect(workflow).not.toMatch(/create-pull-request|pull request|\bPAT\b|force-with-lease|force-push|git push --force|auto-merge|deploy-pages@|upload-pages-artifact@/i);
   });
+
+  it("enforces correct refresh lifecycle ordering", () => {
+    expect(workflow.match(/build:data -- --refresh/g)).toHaveLength(1);
+    expect(workflow).toContain("npm run build:data\n          npm run build:pool");
+
+    const steps = workflow.split(/^      - name: /m).slice(1);
+    const stepNames = steps.map((step) => step.split("\n")[0]);
+
+    const refreshIndex = stepNames.findIndex((name) => name.includes("Refresh all approved external sources once"));
+    const finalizeIndex = stepNames.findIndex((name) => name.includes("Verify determinism and finalize refresh status"));
+    const publicationIndex = stepNames.findIndex((name) => name.includes("Run publication gate"));
+    const buildWebIndex = stepNames.findIndex((name) => name.includes("Build and verify production site"));
+    const deterministicRebuildIndex = stepNames.findIndex((name) => name.includes("Rebuild from refreshed caches only"));
+    const commitIndex = stepNames.findIndex((name) => name.includes("Commit and push verified refresh"));
+
+    expect(refreshIndex).toBeGreaterThanOrEqual(0);
+    expect(finalizeIndex).toBeGreaterThanOrEqual(0);
+    expect(publicationIndex).toBeGreaterThanOrEqual(0);
+    expect(buildWebIndex).toBeGreaterThanOrEqual(0);
+    expect(deterministicRebuildIndex).toBeGreaterThanOrEqual(0);
+    expect(commitIndex).toBeGreaterThanOrEqual(0);
+
+    expect(deterministicRebuildIndex).toBeLessThan(finalizeIndex);
+    expect(finalizeIndex).toBeLessThan(publicationIndex);
+    expect(finalizeIndex).toBeLessThan(buildWebIndex);
+    expect(publicationIndex).toBeLessThan(commitIndex);
+    expect(buildWebIndex).toBeLessThan(commitIndex);
+
+    expect(workflow).toContain("npm run check:publication");
+    expect(workflow).toContain("npm run build:web");
+  });
+
+  it("prevents pre-finalization refresh-status validation", () => {
+    const workflow = readFileSync(new URL("../.github/workflows/refresh-data.yml", import.meta.url), "utf8");
+    const steps = workflow.split(/^      - name: /m).slice(1);
+    const finalizeIndex = steps.findIndex((step) => step.includes("Verify determinism and finalize refresh status"));
+
+    const preFinalizeSteps = steps.slice(0, finalizeIndex);
+    const preFinalizeContent = preFinalizeSteps.join("\n");
+
+    expect(preFinalizeContent).not.toContain("check:publication");
+    expect(preFinalizeContent).not.toContain("build:web");
+    expect(preFinalizeContent).not.toContain("validate:refresh-status");
+  });
 });

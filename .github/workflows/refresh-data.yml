@@ -95,17 +95,9 @@ jobs:
         id: tests
         run: npm test -- --reporter=json --outputFile="$RUNNER_TEMP/vitest-results.json"
 
-      - name: Run publication gate
-        id: publication
-        run: npm run check:publication
-
       - name: Type-check application
         id: typecheck
         run: npm run build
-
-      - name: Build and verify production site
-        id: build_web
-        run: npm run build:web
 
       - name: Rebuild from refreshed caches only
         id: deterministic_rebuild
@@ -129,6 +121,14 @@ jobs:
             --result "$RUNNER_TEMP/refresh-result.json" \
             --summary "$GITHUB_STEP_SUMMARY" \
             --github-output "$GITHUB_OUTPUT"
+
+      - name: Run publication gate
+        id: publication
+        run: npm run check:publication
+
+      - name: Build and verify production site
+        id: build_web
+        run: npm run build:web
 
       - name: Enforce tracked-file allowlist
         run: npm run refresh:data -- check-allowlist
