@@ -35,7 +35,7 @@ export function formatDataFreshnessNotice(metadata: DataFreshnessMetadata): stri
     rosterDate ? `Roster snapshot: ${rosterDate}.` : "Roster snapshot date unavailable.",
     rosterReleaseDate ? `Roster release file date: ${rosterReleaseDate}.` : "Roster release date unavailable.",
     salaryDate ? `Salary release: ${salaryDate}${currency ? ` (${currency})` : ""}.` : "Salary release date unavailable.",
-    "Statistics and roster metadata do not update automatically.",
+    "Data remains static between successful scheduled refreshes.",
   ].join(" ");
 }
 

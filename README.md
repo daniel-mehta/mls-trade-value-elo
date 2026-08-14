@@ -42,7 +42,11 @@ Scheduling determines which two players appear next. It does not alter the Elo c
 
 American Soccer Analysis (ASA) is the primary data source. Player, team, statistical, salary, and goalkeeper data are normalized into committed static artifacts; dated roster metadata comes from ASA's [mls-roster-profiles](https://github.com/American-Soccer-Analysis/mls-roster-profiles) repository. The browser loads the committed comparison pool rather than calling those sources at runtime.
 
-The data is static and does not update automatically. Artifact build time is not the same as verified statistical coverage, and `statisticsThrough` is currently `null` because no consumed source metadata provides a defensible through-date. Source dates also differ across statistics, roster metadata, and salaries.
+Approved source data is refreshed automatically each Monday at 00:23 UTC and can also be refreshed manually. A preflight reads official ASA MLS game-season identifiers, keeps the current pair when it is still authoritative, and automatically advances an unambiguous numeric season plus its preceding available ASA season through the complete publication gate. It does not use the wall clock as the season source. A successful run validates and publishes without a PR or owner approval; structural failures such as duplicate stable IDs stop publication and leave the existing snapshot untouched. New players, transfers, and departures flow through the existing deterministic source and eligibility rules. Data remains static between successful refreshes.
+
+If ASA exposes a newer season label or ordering that the numeric artifact schema cannot safely represent, the refresh fails closed instead of guessing or continuing to report the old season as current. The Actions summary identifies the configured pair, candidate, ASA evidence, and failed check. This is the explicit exceptional-rollover maintenance boundary for the 2027 calendar transition; no representation for a future ASA season label is assumed in advance.
+
+`data/refresh-status.json` records the most recent successful source check and resolved current/previous publication seasons. A status-only maintenance commit does not redeploy Pages; substantive publication-artifact changes, including a validated season rollover, explicitly dispatch the existing Pages workflow. Artifact build time is not the same as verified statistical coverage, and `statisticsThrough` remains `null` unless consumed source metadata proves a defensible through-date.
 
 For artifact details, provenance, and refresh safeguards, see [data/README.md](data/README.md) and [data_notice.md](data_notice.md).
 
@@ -95,7 +99,7 @@ npm run build:web
 
 ## Testing and publication integrity
 
-The current suite contains 254 automated tests. `npm run check:publication` validates committed artifacts without refreshing sources or rewriting data, including schema, semantic-version, provenance, roster, and pool consistency checks. The production web build runs that gate before Vite builds the site.
+The current suite contains 287 automated tests. `npm run check:publication` validates committed artifacts without refreshing sources or rewriting data, including schema, semantic-version, provenance, roster, pool, and refresh-automation consistency checks. The production web build runs that gate before Vite builds the site.
 
 ## Limitations
 

@@ -12,7 +12,7 @@ describe("static player dataset validation", () => {
       ["dataVersion", "dataVersion must be a SHA-256 semantic version", (dataset: any) => { dataset.dataVersion = ""; }],
       ["generatedAt", "generatedAt must be a canonical ISO timestamp", (dataset: any) => { dataset.generatedAt = "yesterday"; }],
       ["competition", "competition must be MLS", (dataset: any) => { dataset.competition = "WRONG"; }],
-      ["season", "previousSeason must immediately precede season", (dataset: any) => { dataset.previousSeason = 2020; }],
+      ["season", "previousSeason must be an earlier valid season", (dataset: any) => { dataset.previousSeason = 2026; }],
       ["sources", "sources must be non-empty", (dataset: any) => { dataset.sources = []; }],
     ] as const;
     for (const [, message, mutate] of cases) {

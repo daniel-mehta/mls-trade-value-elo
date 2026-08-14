@@ -190,7 +190,9 @@ export function validateDataset(dataset: PlayerDataset): string[] {
   if (!isSemanticVersion(dataset.dataVersion)) errors.push("dataVersion must be a SHA-256 semantic version");
   if (dataset.competition !== "MLS") errors.push("competition must be MLS");
   if (!Number.isInteger(dataset.season) || dataset.season < 1996) errors.push("invalid dataset season");
-  if (!Number.isInteger(dataset.previousSeason) || dataset.previousSeason !== dataset.season - 1) errors.push("previousSeason must immediately precede season");
+  if (!Number.isInteger(dataset.previousSeason) || dataset.previousSeason < 1996 || dataset.previousSeason >= dataset.season) {
+    errors.push("previousSeason must be an earlier valid season");
+  }
   if (!isoTimestamp(dataset.generatedAt)) errors.push("generatedAt must be a canonical ISO timestamp");
   if (dataset.statisticsThrough !== null && !realDate(dataset.statisticsThrough)) errors.push("statisticsThrough must be a real date or null");
 
@@ -216,7 +218,11 @@ export function validateDataset(dataset: PlayerDataset): string[] {
         errors.push(`${label}: invalid status`);
       }
     }
-    for (const sourceId of requiredSourceIds(dataset)) if (!sourceIds.has(sourceId)) errors.push(`missing required source snapshot: ${sourceId}`);
+    for (const sourceId of requiredSourceIds(dataset)) {
+      if (!sourceIds.has(sourceId)) errors.push(`missing required source snapshot: ${sourceId}`);
+      const source = dataset.sources.find((entry) => entry.sourceId === sourceId);
+      if (source && !sourceId.startsWith("asa-salaries-") && source.rowCount === 0) errors.push(`required source contains no rows: ${sourceId}`);
+    }
     for (const season of [dataset.season, dataset.previousSeason]) {
       for (const family of ["xgoals", "goals-added"] as const) {
         const sourceId = `asa-goalkeeper-${family}-${season}`;
@@ -305,6 +311,8 @@ export function validateDataset(dataset: PlayerDataset): string[] {
         const source = dataset.sources.find((entry) => entry.sourceId === sourceId);
         if (!source || sourceAudit.rawRowCount !== source.rowCount) errors.push(`goalkeeper audit ${sourceId}: raw row count does not match provenance`);
         if (sourceAudit.malformedRows !== 0) errors.push(`goalkeeper audit ${sourceId}: malformed rows cannot be publication-ready`);
+        if (sourceAudit.duplicateRows !== 0) errors.push(`goalkeeper audit ${sourceId}: duplicate player/team/season rows cannot be publication-ready`);
+        if (sourceAudit.nonGoalkeeperJoinConflicts !== 0) errors.push(`goalkeeper audit ${sourceId}: non-goalkeeper join conflicts cannot be publication-ready`);
       }
       const goalkeepers = dataset.players.filter((player) => player.positionGroup === "GK");
       const currentCount = goalkeepers.filter((player) => player.goalkeeperMetrics?.currentSeason).length;

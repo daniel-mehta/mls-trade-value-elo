@@ -28,6 +28,9 @@ describe("balanced matchup selection documentation", () => {
     expect(publicDocumentation).toMatch(/not affiliated with or endorsed/i);
     expect(publicDocumentation).toMatch(/official ASA goalkeeper xGoals/i);
     expect(publicDocumentation).toMatch(/missing goalkeeper fields are omitted/i);
+    expect(publicDocumentation).toMatch(/official ASA MLS game-season identifiers/i);
+    expect(publicDocumentation).toMatch(/fails closed instead of guessing/i);
+    expect(publicDocumentation).toMatch(/previous-season salary release remains the explicit fallback/i);
   });
 
   it("contains no internal goalkeeper work label or hard-coded source metric values", () => {

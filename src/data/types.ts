@@ -183,8 +183,23 @@ export interface PlayerDataset {
   players: StaticPlayer[];
 }
 
-export const CURRENT_SEASON = Number(process.env.MLS_CURRENT_SEASON ?? 2026);
-export const PREVIOUS_SEASON = Number(process.env.MLS_PREVIOUS_SEASON ?? CURRENT_SEASON - 1);
+function configuredPublicationSeasons(): { current: number; previous: number } {
+  const currentValue = process.env.MLS_CURRENT_SEASON;
+  const previousValue = process.env.MLS_PREVIOUS_SEASON;
+  if ((currentValue === undefined) !== (previousValue === undefined)) {
+    throw new Error("MLS_CURRENT_SEASON and MLS_PREVIOUS_SEASON must be configured together");
+  }
+  const current = Number(currentValue ?? 2026);
+  const previous = Number(previousValue ?? 2025);
+  if (!Number.isInteger(current) || !Number.isInteger(previous) || previous >= current) {
+    throw new Error(`Invalid MLS publication season pair: ${String(currentValue ?? 2026)}/${String(previousValue ?? 2025)}`);
+  }
+  return { current, previous };
+}
+
+const CONFIGURED_PUBLICATION_SEASONS = configuredPublicationSeasons();
+export const CURRENT_SEASON = CONFIGURED_PUBLICATION_SEASONS.current;
+export const PREVIOUS_SEASON = CONFIGURED_PUBLICATION_SEASONS.previous;
 export const COMPETITION = "mls" as const;
 
 export const PLAYER_NORMALIZATION_RULES: PlayerNormalizationRules = {

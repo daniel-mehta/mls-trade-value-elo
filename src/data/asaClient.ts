@@ -8,6 +8,7 @@ export type AsaRow = Record<string, unknown>;
 export type AsaDatasetName =
   | "players"
   | "teams"
+  | "games"
   | "xgoals"
   | "xpass"
   | "goals-added"
@@ -22,6 +23,8 @@ export interface AsaFetchResult {
   retrievedAt: string | null;
   contentSha256: string;
 }
+
+const ASA_PAGE_SIZE = 1000;
 
 interface CacheMetadata { retrievedAt: string; contentSha256: string; }
 
@@ -45,7 +48,7 @@ function unwrapResponse(value: unknown): AsaRow[] {
 /** Fetch directly from ASA rather than at browser runtime. Cache is intentionally
  * raw and ignored by git so a failed live service never masquerades as fresh data. */
 export function asaEndpointUrl(name: AsaDatasetName, season?: number): string {
-  const endpoint = name === "players" || name === "teams"
+  const endpoint = name === "players" || name === "teams" || name === "games"
     ? name
     : name === "goalkeeper-xgoals"
       ? "goalkeepers/xgoals"
@@ -59,6 +62,30 @@ export function asaEndpointUrl(name: AsaDatasetName, season?: number): string {
     if (name !== "players" && name !== "teams" && name !== "salaries") { url.searchParams.set("split_by_seasons", "true"); url.searchParams.set("split_by_teams", "true"); }
   }
   return url.toString();
+}
+
+async function fetchNetworkRows(name: AsaDatasetName, url: string): Promise<AsaRow[]> {
+  if (name !== "games") {
+    const response = await fetch(url, { headers: { Accept: "application/json" } });
+    if (!response.ok) throw new Error(`ASA ${name} request failed (${response.status} ${response.statusText}): ${url}`);
+    return unwrapResponse(await response.json() as unknown);
+  }
+
+  const rows: AsaRow[] = [];
+  const pageHashes = new Set<string>();
+  for (let offset = 0; ; offset += ASA_PAGE_SIZE) {
+    const pageUrl = new URL(url);
+    pageUrl.searchParams.set("limit", String(ASA_PAGE_SIZE));
+    pageUrl.searchParams.set("offset", String(offset));
+    const response = await fetch(pageUrl, { headers: { Accept: "application/json" } });
+    if (!response.ok) throw new Error(`ASA ${name} request failed (${response.status} ${response.statusText}): ${pageUrl}`);
+    const page = unwrapResponse(await response.json() as unknown);
+    const pageHash = sha256CanonicalRows(page);
+    if (page.length && pageHashes.has(pageHash)) throw new Error(`ASA ${name} pagination did not advance at offset ${offset}`);
+    pageHashes.add(pageHash);
+    rows.push(...page);
+    if (page.length < ASA_PAGE_SIZE) return rows;
+  }
 }
 
 /** Fetches or observes a source snapshot. Old caches intentionally report a
@@ -84,14 +111,11 @@ export async function fetchAsa(name: AsaDatasetName, season?: number, forceRefre
     }
     catch (error) { if ((error as NodeJS.ErrnoException).code !== "ENOENT") throw error; }
   }
-  const response = await fetch(url, { headers: { Accept: "application/json" } });
-  if (!response.ok) throw new Error(`ASA ${name} request failed (${response.status} ${response.statusText}): ${url}`);
-  const body: unknown = await response.json();
-  const rows = unwrapResponse(body);
+  const rows = await fetchNetworkRows(name, url);
   const retrievedAt = new Date().toISOString();
   const contentSha256 = sha256CanonicalRows(rows);
   await mkdir(join(process.cwd(), ".cache", "asa"), { recursive: true });
-  await writeFile(path, JSON.stringify(body, null, 2));
+  await writeFile(path, JSON.stringify(rows, null, 2));
   await writeFile(metadataPath, `${JSON.stringify({ retrievedAt, contentSha256 }, null, 2)}\n`);
   return { rows, fromCache: false, url, retrievedAt, contentSha256 };
 }

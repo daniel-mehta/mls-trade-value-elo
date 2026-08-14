@@ -19,6 +19,7 @@ npm run validate:data
 npm run audit:rosters
 npm run build:pool
 npm run validate:pool
+npm run validate:refresh-status
 npm run audit:pool
 npm run check:publication
 ```
@@ -30,11 +31,100 @@ statistical build succeeds, but the source and salary metadata must explicitly
 record the unavailable state. Required identity, team, statistical, or roster
 acquisition failures remain fatal.
 
-Seasons default to 2026 and 2025 and can be configured for a build with
-`MLS_CURRENT_SEASON` and `MLS_PREVIOUS_SEASON`. Roster candidate filenames are
-selected for the configured current season. Parsed embedded snapshot dates,
-not filename ordering, determine the latest release. Distinct candidates with
-the same latest embedded date and different content fail as ambiguous.
+## Automated weekly refresh
+
+`.github/workflows/refresh-data.yml` runs every Monday at 00:23 UTC and supports
+manual `workflow_dispatch`. Before the synchronized publication-source refresh,
+it reads the official ASA MLS games family once, using the same pagination as
+ASA's maintained client, solely to enumerate ASA's available `season_name`
+values. It then performs exactly one publication-source refresh with
+`npm run build:data -- --refresh`, builds the pool, runs the existing validators,
+roster/pool audits, complete test suite, publication gate, type check, and web
+build, then repeats both artifact builds from the refreshed local caches. The
+two builds must have identical semantic versions, membership, selection reasons,
+ordering, and canonical substantive content after excluding only documented
+observation timestamps.
+
+The workflow fails closed on source, identity, duplicate, join, validation,
+test, publication, determinism, allowlist, or default-branch race failures. A
+stable-ID continuity guard requires at least half of the smaller old/new player
+set to retain the same ASA IDs; this catches a broad identity-namespace
+replacement while allowing ordinary roster turnover. Existing normalized and
+pool uniqueness rules remain stricter record-level gates. An available baseline
+with salary coverage cannot silently become a salary-free publication. A
+required non-salary source also cannot fall below half its prior row count under
+the same source ID during a same-season refresh; this catches a near-empty
+response while allowing ordinary weekly movement. A confirmed rollover does not
+compare a newly accumulating season to the mature prior current season. It
+instead relies on the existing non-empty required-source, source-grain,
+stable-ID, team-join, roster, normalized-artifact, pool, publication, and
+determinism invariants. The stable-ID continuity guard still applies. These are
+fixture-tested structural checks, not player-eligibility or pool-size rules.
+
+Only `public/data/players.json`, `public/data/comparison-pool.json`, and
+`data/refresh-status.json` may be committed. Every successful check updates the
+status file and creates a direct default-branch maintenance commit. When only
+the status changes, Pages is not dispatched. When either publication artifact
+changes substantively, the workflow explicitly dispatches `deploy-pages.yml`
+after the push because a `GITHUB_TOKEN` push does not reliably start a second
+workflow. The refresh workflow itself contains no Pages deployment logic.
+
+The workflow re-fetches the remote default branch immediately before committing
+and aborts if its starting SHA changed; a concurrent update also makes the
+non-force push fail safely. Normal successful changes need no approval. Failed
+refreshes require owner investigation and leave production unchanged unless the
+verified commit was already pushed and only the Pages dispatch failed. In that
+special case, the job summary provides the manual deployment-dispatch command.
+
+`data/refresh-status.json` uses schema version 1. Its additive `currentSeason`
+and `previousSeason` fields record the actual resolved publication pair.
+`lastSuccessfulRefresh` is
+`null` only before the first automated run; afterward it is the actual UTC
+completion timestamp. Versions and counts are parsed from the validated
+artifacts, and `substantiveDataChanged` excludes the status file itself. The
+browser and ranking persistence do not read this maintenance record.
+
+GitHub may disable scheduled workflows after extended inactivity in a public
+repository. The status update is a real weekly maintenance record and recurring
+history, not a keepalive guarantee. `workflow_dispatch` remains the recovery
+path if the schedule is disabled. If the project is otherwise ignored for
+months, successful runs continue updating the status and changed data while
+failures remain visible in Actions for owner investigation.
+
+Local builds default to the known 2026/2025 publication pair. If environment
+configuration is used, `MLS_CURRENT_SEASON` and `MLS_PREVIOUS_SEASON` must be
+provided together; the code no longer derives one by subtracting from the
+other. Weekly automation uses the ordered season identifiers actually present
+in official ASA MLS games. It stays on the same pair when that pair is current,
+or selects the latest identifier and its immediately preceding available ASA
+identifier when both are canonical numeric values compatible with the current
+publication schema. The wall clock does not select the season.
+
+An unknown label, missing configured season, ambiguous ordering, malformed game
+season field, incomplete required source, incompatible identity/team join,
+missing target-season roster, or any later publication check stops the job
+before commit and deployment. The Actions summary reports the configured pair,
+candidate label, ASA games evidence, and failed compatibility check. The old
+season is not silently treated as current and no successful status is written.
+
+The numeric artifact schema is intentionally unchanged because ASA currently
+exposes canonical four-digit `season_name` values and provides no evidence yet
+for a later summer-to-spring label. A future range or other non-numeric ASA
+identifier is detected but not interpreted. That exceptional transition
+requires maintenance rather than a guessed schema mapping.
+
+Roster candidate filenames are selected only for the resolved current season;
+a prior-season file cannot be substituted. Parsed embedded snapshot dates, not
+filename ordering, determine the latest release. Distinct candidates with the
+same latest embedded date and different content fail as ambiguous. Roster file
+date, embedded snapshot date, and statistical team assignment remain separate.
+
+Salary remains optional under the existing publication policy. At rollover,
+current-season salary is selected if ASA has published non-empty rows; otherwise
+the resolved previous-season salary release remains the explicit fallback. A
+later non-empty current-season release replaces that fallback on the next valid
+refresh. Salaries are never invented, summed across releases, or silently
+erased; total loss of previously available salary coverage still fails.
 
 ## Semantic artifact identity
 
@@ -251,7 +341,8 @@ any ASA performance metric.
 refreshing any source. The production web build runs this command before Vite.
 `.github/workflows/deploy-pages.yml` runs the full test suite and publication
 check, builds `dist`, uploads that directory as the Pages artifact, and deploys
-it only after the build job succeeds. The workflow never refreshes source data.
+it only after the build job succeeds. That deployment workflow never refreshes
+source data; the separate refresh workflow conditionally dispatches it.
 
 This project is independent and is not affiliated with or endorsed by MLS,
 MLSPA, ASA, any club, or any player. Repository code licences do not establish a

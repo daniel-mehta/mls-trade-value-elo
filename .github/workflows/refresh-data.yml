@@ -1,0 +1,227 @@
+name: Refresh MLS data
+
+on:
+  schedule:
+    - cron: "23 0 * * 1"
+  workflow_dispatch:
+
+concurrency:
+  group: mls-data-refresh
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+  actions: write
+
+jobs:
+  refresh:
+    name: Refresh, verify, and publish data
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+
+    steps:
+      - name: Checkout default branch
+        uses: actions/checkout@v6
+        with:
+          ref: ${{ github.event.repository.default_branch }}
+          fetch-depth: 0
+
+      - name: Setup Node
+        uses: actions/setup-node@v6
+        with:
+          node-version: 22
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Capture committed baseline
+        id: baseline
+        env:
+          DEFAULT_BRANCH: ${{ github.event.repository.default_branch }}
+        run: |
+          set -euo pipefail
+          starting_sha="$(git rev-parse HEAD)"
+          npm run refresh:data -- capture \
+            --starting-sha "$starting_sha" \
+            --output "$RUNNER_TEMP/refresh-baseline.json" \
+            --players-copy "$RUNNER_TEMP/baseline-players.json" \
+            --pool-copy "$RUNNER_TEMP/baseline-pool.json"
+          {
+            printf 'starting_sha=%s\n' "$starting_sha"
+            printf 'default_branch=%s\n' "$DEFAULT_BRANCH"
+          } >> "$GITHUB_OUTPUT"
+
+      - name: Resolve authoritative ASA publication seasons
+        id: season
+        run: |
+          npm run refresh:data -- resolve-season \
+            --baseline "$RUNNER_TEMP/refresh-baseline.json" \
+            --output "$RUNNER_TEMP/season-resolution.json" \
+            --summary "$GITHUB_STEP_SUMMARY" \
+            --github-output "$GITHUB_OUTPUT" \
+            --github-env "$GITHUB_ENV"
+
+      - name: Refresh all approved external sources once
+        id: refresh_sources
+        run: npm run build:data -- --refresh
+
+      - name: Build comparison pool
+        id: build_pool
+        run: npm run build:pool
+
+      - name: Preserve first refreshed build
+        run: |
+          cp public/data/players.json "$RUNNER_TEMP/first-players.json"
+          cp public/data/comparison-pool.json "$RUNNER_TEMP/first-pool.json"
+
+      - name: Validate player data
+        id: validate_data
+        run: npm run validate:data
+
+      - name: Audit roster data
+        id: audit_rosters
+        run: npm run audit:rosters
+
+      - name: Validate comparison pool
+        id: validate_pool
+        run: npm run validate:pool
+
+      - name: Audit comparison pool
+        id: audit_pool
+        run: npm run audit:pool
+
+      - name: Run complete automated test suite
+        id: tests
+        run: npm test -- --reporter=json --outputFile="$RUNNER_TEMP/vitest-results.json"
+
+      - name: Run publication gate
+        id: publication
+        run: npm run check:publication
+
+      - name: Type-check application
+        id: typecheck
+        run: npm run build
+
+      - name: Build and verify production site
+        id: build_web
+        run: npm run build:web
+
+      - name: Rebuild from refreshed caches only
+        id: deterministic_rebuild
+        run: |
+          npm run build:data
+          npm run build:pool
+
+      - name: Verify determinism and finalize refresh status
+        id: refreshed
+        run: |
+          refresh_timestamp="$(date -u +'%Y-%m-%dT%H:%M:%S.000Z')"
+          npm run refresh:data -- finalize \
+            --baseline "$RUNNER_TEMP/refresh-baseline.json" \
+            --season-resolution "$RUNNER_TEMP/season-resolution.json" \
+            --baseline-players "$RUNNER_TEMP/baseline-players.json" \
+            --baseline-pool "$RUNNER_TEMP/baseline-pool.json" \
+            --first-players "$RUNNER_TEMP/first-players.json" \
+            --first-pool "$RUNNER_TEMP/first-pool.json" \
+            --timestamp "$refresh_timestamp" \
+            --test-results "$RUNNER_TEMP/vitest-results.json" \
+            --result "$RUNNER_TEMP/refresh-result.json" \
+            --summary "$GITHUB_STEP_SUMMARY" \
+            --github-output "$GITHUB_OUTPUT"
+
+      - name: Enforce tracked-file allowlist
+        run: npm run refresh:data -- check-allowlist
+
+      - name: Abort if default branch changed
+        env:
+          DEFAULT_BRANCH: ${{ steps.baseline.outputs.default_branch }}
+          STARTING_SHA: ${{ steps.baseline.outputs.starting_sha }}
+        run: |
+          set -euo pipefail
+          git fetch --no-tags origin "$DEFAULT_BRANCH"
+          remote_sha="$(git rev-parse "refs/remotes/origin/$DEFAULT_BRANCH")"
+          npm run refresh:data -- race-check --starting-sha "$STARTING_SHA" --remote-sha "$remote_sha"
+
+      - name: Commit and push verified refresh
+        id: commit
+        env:
+          COMMIT_MESSAGE: ${{ steps.refreshed.outputs.commit_message }}
+          DEFAULT_BRANCH: ${{ steps.baseline.outputs.default_branch }}
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -- public/data/players.json public/data/comparison-pool.json data/refresh-status.json
+          if git diff --cached --quiet; then
+            echo "Verified refresh produced no maintenance change; refusing an empty commit." >&2
+            exit 1
+          fi
+          git commit -m "$COMMIT_MESSAGE"
+          git push origin "HEAD:$DEFAULT_BRANCH"
+          commit_sha="$(git rev-parse HEAD)"
+          printf 'commit_sha=%s\n' "$commit_sha" >> "$GITHUB_OUTPUT"
+          printf '\n- Maintenance commit SHA: %s\n' "$commit_sha" >> "$GITHUB_STEP_SUMMARY"
+
+      - name: Dispatch Pages deployment
+        if: steps.refreshed.outputs.dispatch_pages == 'true'
+        env:
+          GH_TOKEN: ${{ github.token }}
+          DEFAULT_BRANCH: ${{ steps.baseline.outputs.default_branch }}
+        run: |
+          set -euo pipefail
+          if gh workflow run deploy-pages.yml --ref "$DEFAULT_BRANCH" --repo "$GITHUB_REPOSITORY"; then
+            printf '%s\n' '- Pages deployment dispatched: yes' >> "$GITHUB_STEP_SUMMARY"
+          else
+            {
+              printf '%s\n' '- Pages deployment dispatched: no (dispatch failed after the data commit was pushed)'
+              printf '%s\n' '- Manual recovery: run `gh workflow run deploy-pages.yml --ref '"$DEFAULT_BRANCH"' --repo '"$GITHUB_REPOSITORY"'` or use the Deploy GitHub Pages workflow Run workflow button.'
+            } >> "$GITHUB_STEP_SUMMARY"
+            exit 1
+          fi
+
+      - name: Record status-only deployment decision
+        if: steps.refreshed.outputs.dispatch_pages == 'false'
+        run: |
+          printf '%s\n' '- Pages deployment dispatched: no (publication artifacts were unchanged)' >> "$GITHUB_STEP_SUMMARY"
+
+      - name: Record final workflow outcome
+        if: always()
+        env:
+          JOB_STATUS: ${{ job.status }}
+          SEASON_MODE: ${{ steps.season.outputs.mode }}
+          REFRESH_SOURCES_OUTCOME: ${{ steps.refresh_sources.outcome }}
+          BUILD_POOL_OUTCOME: ${{ steps.build_pool.outcome }}
+          VALIDATE_DATA_OUTCOME: ${{ steps.validate_data.outcome }}
+          AUDIT_ROSTERS_OUTCOME: ${{ steps.audit_rosters.outcome }}
+          VALIDATE_POOL_OUTCOME: ${{ steps.validate_pool.outcome }}
+          AUDIT_POOL_OUTCOME: ${{ steps.audit_pool.outcome }}
+          TESTS_OUTCOME: ${{ steps.tests.outcome }}
+          PUBLICATION_OUTCOME: ${{ steps.publication.outcome }}
+          TYPECHECK_OUTCOME: ${{ steps.typecheck.outcome }}
+          BUILD_WEB_OUTCOME: ${{ steps.build_web.outcome }}
+          DETERMINISTIC_REBUILD_OUTCOME: ${{ steps.deterministic_rebuild.outcome }}
+        run: |
+          if [ "$SEASON_MODE" = "rollover" ] && [ ! -f "$RUNNER_TEMP/refresh-result.json" ]; then
+            failed_check="Season rollover did not reach verified finalization"
+            if [ "$REFRESH_SOURCES_OUTCOME" = "failure" ]; then failed_check="Required ASA statistical, identity, salary, or roster source compatibility failed"; fi
+            if [ "$BUILD_POOL_OUTCOME" = "failure" ]; then failed_check="Comparison-pool generation failed for the resolved season pair"; fi
+            if [ "$VALIDATE_DATA_OUTCOME" = "failure" ]; then failed_check="Normalized player-data validation failed for the resolved season pair"; fi
+            if [ "$AUDIT_ROSTERS_OUTCOME" = "failure" ]; then failed_check="Roster publication/file-date, embedded snapshot, or join validation failed"; fi
+            if [ "$VALIDATE_POOL_OUTCOME" = "failure" ] || [ "$AUDIT_POOL_OUTCOME" = "failure" ]; then failed_check="Comparison-pool integrity validation failed for the resolved season pair"; fi
+            if [ "$TESTS_OUTCOME" = "failure" ]; then failed_check="Complete automated tests failed for the resolved season pair"; fi
+            if [ "$PUBLICATION_OUTCOME" = "failure" ]; then failed_check="Publication validation failed for the resolved season pair"; fi
+            if [ "$TYPECHECK_OUTCOME" = "failure" ] || [ "$BUILD_WEB_OUTCOME" = "failure" ]; then failed_check="Application or production-site validation failed for the resolved season pair"; fi
+            if [ "$DETERMINISTIC_REBUILD_OUTCOME" = "failure" ]; then failed_check="Deterministic cache-only rebuild failed for the resolved season pair"; fi
+            npm run refresh:data -- failure-summary \
+              --season-resolution "$RUNNER_TEMP/season-resolution.json" \
+              --failed-check "$failed_check" \
+              --summary "$GITHUB_STEP_SUMMARY"
+          fi
+          {
+            printf '\n### Workflow outcome\n'
+            printf -- '- Refresh job status: %s\n' "$JOB_STATUS"
+            if [ ! -f "$RUNNER_TEMP/refresh-result.json" ]; then
+              printf '%s\n' '- Publication did not reach verified artifact finalization; no automated commit or deployment was attempted by later steps.'
+            fi
+          } >> "$GITHUB_STEP_SUMMARY"

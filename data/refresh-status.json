@@ -1,0 +1,11 @@
+{
+  "schemaVersion": 1,
+  "lastSuccessfulRefresh": null,
+  "currentSeason": 2026,
+  "previousSeason": 2025,
+  "substantiveDataChanged": false,
+  "playerVersion": "sha256:1f913e31499a996cf68317f07be509412dea4f275497b16360215c79d9966524",
+  "poolVersion": "sha256:2ae224df96a31970b62e8049eb332f8df679ac7d0f4ddcb70bb0399dc03a5361",
+  "playerCount": 1049,
+  "poolCount": 302
+}

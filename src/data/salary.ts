@@ -1,5 +1,18 @@
-import { textField, type AsaRow } from "./asaClient.js";
+import { textField, type AsaFetchResult, type AsaRow } from "./asaClient.js";
 import { canonicalStringify } from "./semanticVersion.js";
+
+/** Current-season salary is preferred when present. A delayed salary release
+ * falls back to the resolved previous season without inventing or erasing pay. */
+export function selectSalarySource(
+  currentSeason: number,
+  current: AsaFetchResult | null,
+  previousSeason: number,
+  previous: AsaFetchResult | null,
+): { season: number; result: AsaFetchResult } | null {
+  if (current?.rows.length) return { season: currentSeason, result: current };
+  if (previous?.rows.length) return { season: previousSeason, result: previous };
+  return null;
+}
 
 /**
  * ASA can return multiple MLSPA releases for one player-season. Salaries are

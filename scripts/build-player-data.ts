@@ -7,8 +7,9 @@ import { attachGoalkeeperMetrics, goalkeeperSourceAudit, normalizeGoalkeeperSeas
 import { normalizePosition } from "../src/data/position.js";
 import { ROSTER_REPOSITORY, attachRoster, fetchLatestRoster } from "../src/data/roster.js";
 import { applyOverrides, loadOverrides } from "../src/data/rosterOverrides.js";
-import { latestSalaryByPlayer } from "../src/data/salary.js";
+import { latestSalaryByPlayer, selectSalarySource } from "../src/data/salary.js";
 import { canonicalStringify, computePlayerDataVersion, sha256Canonical } from "../src/data/semanticVersion.js";
+import { assertUniquePlayerTeamSeasonRows } from "../src/data/sourceIdentity.js";
 import {
   COMPETITION,
   CURRENT_SEASON,
@@ -164,6 +165,9 @@ async function loadSeason(season: number): Promise<SeasonSources> {
   let salaries: AsaFetchResult | null = null;
   try { salaries = await loadSource("salaries", season); }
   catch (error) { console.warn(`Salary data unavailable for ${season}: ${(error as Error).message}`); }
+  assertUniquePlayerTeamSeasonRows(xg.rows, season, `ASA xGoals ${season}`);
+  assertUniquePlayerTeamSeasonRows(xpass.rows, season, `ASA xPass ${season}`);
+  assertUniquePlayerTeamSeasonRows(gplus.rows, season, `ASA Goals Added ${season}`);
   return { xg, xpass, gplus, goalkeeperXg, goalkeeperGplus, salaries };
 }
 
@@ -224,8 +228,12 @@ async function main(): Promise<void> {
     previous.goalkeeperGplus.rows,
   );
 
-  const selectedSalarySource = current.salaries?.rows.length ? { season: CURRENT_SEASON, result: current.salaries } :
-    previous.salaries?.rows.length ? { season: PREVIOUS_SEASON, result: previous.salaries } : null;
+  const selectedSalarySource = selectSalarySource(
+    CURRENT_SEASON,
+    current.salaries,
+    PREVIOUS_SEASON,
+    previous.salaries,
+  );
   const salaryByPlayer = latestSalaryByPlayer(selectedSalarySource?.result.rows ?? []);
   const selectedReleases = new Set([...salaryByPlayer.values()].map((row) => textField(row, "mlspa_release")).filter((value): value is string => Boolean(value)));
   if (selectedReleases.size > 1) throw new Error(`Selected salary records contain multiple latest releases: ${[...selectedReleases].sort().join(", ")}`);
