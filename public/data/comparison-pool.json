@@ -1,14 +1,14 @@
 {
   "schemaVersion": 3,
   "humanReadableLabel": "Comparison pool | MLS 2026/2025 | roster snapshot 2026-02-26",
-  "dataVersion": "sha256:c86e3722d3020c650f636a437c1fde93a799a5ad9c26985bb482213dc59b1c67",
-  "sourceDataVersion": "sha256:0da30a6e4b980c3bb9030bd388eb94e34b93cabd40aaa1d80ce0ae0fb3c53832",
+  "dataVersion": "sha256:0510e6baa8f7bd2f5aa08a1ded5cf4d4ea28ecbbbd5d98c35aaf1334815ea8e4",
+  "sourceDataVersion": "sha256:b9b8520087863fc7ce9065e6e67169c2918397f270e46651ab07bc2fdb061e7e",
   "season": 2026,
   "previousSeason": 2025,
-  "generatedAt": "2026-09-07T04:54:20.490Z",
+  "generatedAt": "2026-09-14T05:07:05.405Z",
   "provenance": {
-    "sourcePlayerDataVersion": "sha256:0da30a6e4b980c3bb9030bd388eb94e34b93cabd40aaa1d80ce0ae0fb3c53832",
-    "sourcePlayerGeneratedAt": "2026-09-07T04:54:18.743Z",
+    "sourcePlayerDataVersion": "sha256:b9b8520087863fc7ce9065e6e67169c2918397f270e46651ab07bc2fdb061e7e",
+    "sourcePlayerGeneratedAt": "2026-09-14T05:07:03.546Z",
     "statisticsThrough": null,
     "rosterSnapshotDate": "2026-02-26",
     "rosterReleaseDate": "2026-02-27",
@@ -44,27 +44,27 @@
     "contentSha256": "7695f637813836072bb39645ed4bbe703123aa4aecede69a78f876a2b77e1fbc"
   },
   "audit": {
-    "eligiblePlayerCount": 888,
-    "finalPoolSize": 317,
+    "eligiblePlayerCount": 899,
+    "finalPoolSize": 324,
     "selectionReasonCounts": {
       "team-outfield-selection": 150,
       "team-goalkeeper-selection": 30,
       "designated-player": 70,
       "u22-initiative": 85,
-      "current-season-five-goal-contributions": 125,
+      "current-season-five-goal-contributions": 132,
       "manual-inclusion": 0
     },
     "positionDistribution": {
       "GK": 31,
-      "DEF": 87,
-      "MID": 68,
-      "FWD": 131
+      "DEF": 92,
+      "MID": 71,
+      "FWD": 130
     },
     "teamRepresentation": {
       "teamCount": 30,
       "minimum": 6,
       "maximum": 15,
-      "median": 10
+      "median": 10.5
     }
   },
   "players": [
@@ -80,13 +80,13 @@
       "guaranteedCompensation": 607833,
       "currentSeason": {
         "season": 2026,
-        "minutes": 2054,
+        "minutes": 2228,
         "goals": 5,
-        "assists": 6,
-        "xGoals": 3.9404,
-        "xAssists": 3.347,
-        "keyPasses": 30,
-        "goalsAdded": 4.853400000000001
+        "assists": 8,
+        "xGoals": 3.9761,
+        "xAssists": 3.6286,
+        "keyPasses": 32,
+        "goalsAdded": 5.0338
       },
       "previousSeason": {
         "season": 2025,
@@ -132,13 +132,13 @@
       "guaranteedCompensation": 650000,
       "currentSeason": {
         "season": 2026,
-        "minutes": 1082,
+        "minutes": 1114,
         "goals": 2,
         "assists": 1,
         "xGoals": 1.1979,
         "xAssists": 0.474,
         "keyPasses": 4,
-        "goalsAdded": 1.0189
+        "goalsAdded": 0.9655999999999999
       },
       "previousSeason": {
         "season": 2025,
@@ -182,13 +182,13 @@
       "guaranteedCompensation": 2685000,
       "currentSeason": {
         "season": 2026,
-        "minutes": 1754,
+        "minutes": 1856,
         "goals": 3,
         "assists": 7,
-        "xGoals": 5.0013,
-        "xAssists": 3.7634,
-        "keyPasses": 45,
-        "goalsAdded": 3.8205999999999998
+        "xGoals": 5.512,
+        "xAssists": 4.0608,
+        "keyPasses": 48,
+        "goalsAdded": 4.1597
       },
       "previousSeason": {
         "season": 2025,
@@ -235,13 +235,13 @@
       "guaranteedCompensation": 5085441,
       "currentSeason": {
         "season": 2026,
-        "minutes": 2037,
+        "minutes": 2216,
         "goals": 5,
         "assists": 6,
-        "xGoals": 5.3926,
-        "xAssists": 4.4287,
-        "keyPasses": 40,
-        "goalsAdded": 5.3843
+        "xGoals": 5.35,
+        "xAssists": 4.619,
+        "keyPasses": 41,
+        "goalsAdded": 5.9749
       },
       "previousSeason": {
         "season": 2025,
@@ -341,13 +341,13 @@
       "guaranteedCompensation": 995311,
       "currentSeason": {
         "season": 2026,
-        "minutes": 2030,
+        "minutes": 2049,
         "goals": 5,
         "assists": 2,
-        "xGoals": 2.6298,
+        "xGoals": 2.6247,
         "xAssists": 2.5755,
         "keyPasses": 17,
-        "goalsAdded": 4.3941
+        "goalsAdded": 4.4108
       },
       "previousSeason": {
         "season": 2025,
@@ -392,13 +392,13 @@
       "guaranteedCompensation": 335000,
       "currentSeason": {
         "season": 2026,
-        "minutes": 1856,
+        "minutes": 2008,
         "goals": 0,
         "assists": 3,
-        "xGoals": 0.5318,
-        "xAssists": 3.4571,
-        "keyPasses": 51,
-        "goalsAdded": 4.694800000000001
+        "xGoals": 0.6074,
+        "xAssists": 3.5938,
+        "keyPasses": 53,
+        "goalsAdded": 5.1784
       },
       "previousSeason": {
         "season": 2025,
@@ -482,13 +482,13 @@
       "guaranteedCompensation": 3561251,
       "currentSeason": {
         "season": 2026,
-        "minutes": 2165,
-        "goals": 8,
+        "minutes": 2376,
+        "goals": 9,
         "assists": 10,
-        "xGoals": 10.1287,
-        "xAssists": 6.2969,
-        "keyPasses": 54,
-        "goalsAdded": 7.8275
+        "xGoals": 10.4118,
+        "xAssists": 7.3385,
+        "keyPasses": 61,
+        "goalsAdded": 8.4341
       },
       "previousSeason": {
         "season": 2025,
@@ -535,7 +535,7 @@
       "guaranteedCompensation": 1181250,
       "currentSeason": {
         "season": 2026,
-        "minutes": 2260,
+        "minutes": 2469,
         "goals": 0,
         "assists": 0,
         "xGoals": 0,
@@ -554,20 +554,20 @@
       "goalkeeperMetrics": {
         "currentSeason": {
           "season": 2026,
-          "shotsFaced": 78,
+          "shotsFaced": 83,
           "goalsConceded": 34,
-          "saves": 43,
-          "xGoalsFaced": 29.9107,
-          "goalsMinusXGoalsFaced": 4.0893,
+          "saves": 48,
+          "xGoalsFaced": 30.3517,
+          "goalsMinusXGoalsFaced": 3.6483,
           "goalsAddedByAction": {
             "claiming": 0.0739,
-            "fielding": 0.0283,
-            "handling": -0.0831,
-            "passing": 1.3186,
-            "shotstopping": -4.0893,
-            "sweeping": 0.1983
+            "fielding": 0.0382,
+            "handling": -0.1611,
+            "passing": 1.4632,
+            "shotstopping": -3.6483,
+            "sweeping": 0.1779
           },
-          "goalsAdded": -2.5532999999999997
+          "goalsAdded": -2.0561999999999996
         },
         "previousSeason": {
           "season": 2025,
@@ -619,13 +619,13 @@
       "guaranteedCompensation": 625000,
       "currentSeason": {
         "season": 2026,
-        "minutes": 1467,
+        "minutes": 1617,
         "goals": 1,
-        "assists": 3,
-        "xGoals": 1.4427,
-        "xAssists": 2.8427,
-        "keyPasses": 16,
-        "goalsAdded": 1.9881
+        "assists": 4,
+        "xGoals": 1.5301,
+        "xAssists": 3.2182,
+        "keyPasses": 18,
+        "goalsAdded": 2.0681
       },
       "previousSeason": {
         "season": 2025,
@@ -653,7 +653,8 @@
         "rosterConstructionModel": "U22 Initiative Player Model"
       },
       "selectionReasons": [
-        "team-outfield-selection"
+        "team-outfield-selection",
+        "current-season-five-goal-contributions"
       ]
     },
     {
@@ -668,7 +669,7 @@
       "guaranteedCompensation": 252500,
       "currentSeason": {
         "season": 2026,
-        "minutes": 2217,
+        "minutes": 2319,
         "goals": 0,
         "assists": 0,
         "xGoals": 0,
@@ -687,20 +688,20 @@
       "goalkeeperMetrics": {
         "currentSeason": {
           "season": 2026,
-          "shotsFaced": 117,
-          "goalsConceded": 29,
-          "saves": 84,
-          "xGoalsFaced": 36.1952,
-          "goalsMinusXGoalsFaced": -7.1952,
+          "shotsFaced": 122,
+          "goalsConceded": 30,
+          "saves": 88,
+          "xGoalsFaced": 37.7123,
+          "goalsMinusXGoalsFaced": -7.7123,
           "goalsAddedByAction": {
-            "claiming": -0.1307,
-            "fielding": 0.0719,
-            "handling": -0.8587,
-            "passing": 1.2813,
-            "shotstopping": 7.1952,
-            "sweeping": 0.0616
+            "claiming": -0.1003,
+            "fielding": 0.0637,
+            "handling": -0.623,
+            "passing": 1.3427,
+            "shotstopping": 7.7123,
+            "sweeping": 0.0125
           },
-          "goalsAdded": 7.6206
+          "goalsAdded": 8.4079
         },
         "previousSeason": {
           "season": 2025,
@@ -752,13 +753,13 @@
       "guaranteedCompensation": 1153333,
       "currentSeason": {
         "season": 2026,
-        "minutes": 1704,
+        "minutes": 1893,
         "goals": 0,
         "assists": 2,
-        "xGoals": 0.375,
-        "xAssists": 0.5017,
-        "keyPasses": 11,
-        "goalsAdded": 1.6712
+        "xGoals": 0.4358,
+        "xAssists": 0.5322,
+        "keyPasses": 12,
+        "goalsAdded": 1.9753
       },
       "previousSeason": {
         "season": 2025,
@@ -800,13 +801,13 @@
       "guaranteedCompensation": 603333,
       "currentSeason": {
         "season": 2026,
-        "minutes": 1495,
+        "minutes": 1617,
         "goals": 2,
-        "assists": 3,
+        "assists": 4,
         "xGoals": 0.8933,
-        "xAssists": 2.5657,
-        "keyPasses": 20,
-        "goalsAdded": 3.13
+        "xAssists": 2.7367,
+        "keyPasses": 22,
+        "goalsAdded": 3.3025
       },
       "previousSeason": {
         "season": 2025,
@@ -850,13 +851,13 @@
       "guaranteedCompensation": 395700,
       "currentSeason": {
         "season": 2026,
-        "minutes": 2065,
+        "minutes": 2266,
         "goals": 7,
         "assists": 2,
-        "xGoals": 6.6472,
-        "xAssists": 2.8006,
-        "keyPasses": 21,
-        "goalsAdded": 5.0988
+        "xGoals": 6.8037,
+        "xAssists": 2.8346,
+        "keyPasses": 23,
+        "goalsAdded": 5.178599999999999
       },
       "previousSeason": {
         "season": 2025,
@@ -898,13 +899,13 @@
       "position": "ST",
       "currentSeason": {
         "season": 2026,
-        "minutes": 822,
-        "goals": 5,
+        "minutes": 1002,
+        "goals": 8,
         "assists": 2,
-        "xGoals": 4.1666,
-        "xAssists": 2.578,
-        "keyPasses": 16,
-        "goalsAdded": 3.5423999999999998
+        "xGoals": 6.3332,
+        "xAssists": 2.6966,
+        "keyPasses": 17,
+        "goalsAdded": 4.7636
       },
       "selectionReasons": [
         "current-season-five-goal-contributions"
@@ -922,13 +923,13 @@
       "guaranteedCompensation": 666042,
       "currentSeason": {
         "season": 2026,
-        "minutes": 1497,
+        "minutes": 1634,
         "goals": 3,
         "assists": 1,
-        "xGoals": 3.7959,
-        "xAssists": 1.8102,
+        "xGoals": 4.215,
+        "xAssists": 1.8138,
         "keyPasses": 19,
-        "goalsAdded": 2.315
+        "goalsAdded": 2.3262
       },
       "previousSeason": {
         "season": 2025,
@@ -1024,13 +1025,13 @@
       "guaranteedCompensation": 358000,
       "currentSeason": {
         "season": 2026,
-        "minutes": 864,
-        "goals": 3,
+        "minutes": 980,
+        "goals": 4,
         "assists": 3,
-        "xGoals": 2.0753,
-        "xAssists": 1.9633,
-        "keyPasses": 13,
-        "goalsAdded": 1.2885
+        "xGoals": 2.5349,
+        "xAssists": 2.166,
+        "keyPasses": 16,
+        "goalsAdded": 1.6723000000000001
       },
       "previousSeason": {
         "season": 2025,
@@ -1123,13 +1124,13 @@
       "guaranteedCompensation": 958379,
       "currentSeason": {
         "season": 2026,
-        "minutes": 1358,
+        "minutes": 1555,
         "goals": 0,
         "assists": 1,
-        "xGoals": 0.2719,
-        "xAssists": 0.4666,
-        "keyPasses": 7,
-        "goalsAdded": 1.5236999999999998
+        "xGoals": 0.3286,
+        "xAssists": 0.7233,
+        "keyPasses": 8,
+        "goalsAdded": 1.8718
       },
       "previousSeason": {
         "season": 2025,
@@ -1176,10 +1177,10 @@
         "minutes": 2099,
         "goals": 2,
         "assists": 3,
-        "xGoals": 1.0258,
-        "xAssists": 4.1362,
+        "xGoals": 1.023,
+        "xAssists": 4.134,
         "keyPasses": 34,
-        "goalsAdded": 4.4815
+        "goalsAdded": 4.478899999999999
       },
       "previousSeason": {
         "season": 2025,
@@ -1267,13 +1268,13 @@
       "guaranteedCompensation": 249996,
       "currentSeason": {
         "season": 2026,
-        "minutes": 1889,
+        "minutes": 2038,
         "goals": 4,
-        "assists": 2,
-        "xGoals": 3.8355,
-        "xAssists": 2.2469,
-        "keyPasses": 18,
-        "goalsAdded": 3.4565
+        "assists": 4,
+        "xGoals": 4.0233,
+        "xAssists": 3.1345,
+        "keyPasses": 21,
+        "goalsAdded": 3.9411
       },
       "previousSeason": {
         "season": 2025,
@@ -1317,7 +1318,7 @@
       "guaranteedCompensation": 631667,
       "currentSeason": {
         "season": 2026,
-        "minutes": 2251,
+        "minutes": 2452,
         "goals": 0,
         "assists": 0,
         "xGoals": 0,
@@ -1336,20 +1337,20 @@
       "goalkeeperMetrics": {
         "currentSeason": {
           "season": 2026,
-          "shotsFaced": 138,
-          "goalsConceded": 39,
-          "saves": 99,
-          "xGoalsFaced": 44.0445,
-          "goalsMinusXGoalsFaced": -5.0445,
+          "shotsFaced": 150,
+          "goalsConceded": 41,
+          "saves": 109,
+          "xGoalsFaced": 48.4423,
+          "goalsMinusXGoalsFaced": -7.4423,
           "goalsAddedByAction": {
-            "claiming": -0.101,
-            "fielding": 0.0487,
-            "handling": -0.8034,
-            "passing": 1.6597,
-            "shotstopping": 5.0445,
-            "sweeping": -0.0302
+            "claiming": -0.0871,
+            "fielding": 0.036,
+            "handling": -0.7011,
+            "passing": 1.8268,
+            "shotstopping": 7.4423,
+            "sweeping": -0.0517
           },
-          "goalsAdded": 5.8183
+          "goalsAdded": 8.465200000000001
         },
         "previousSeason": {
           "season": 2025,
@@ -1452,13 +1453,13 @@
       "guaranteedCompensation": 303722,
       "currentSeason": {
         "season": 2026,
-        "minutes": 1853,
+        "minutes": 1931,
         "goals": 0,
         "assists": 0,
-        "xGoals": 0.726,
+        "xGoals": 0.9001,
         "xAssists": 0.8304,
         "keyPasses": 13,
-        "goalsAdded": 1.5053999999999998
+        "goalsAdded": 1.7722000000000002
       },
       "previousSeason": {
         "season": 2025,
@@ -1501,13 +1502,13 @@
       "guaranteedCompensation": 3701778,
       "currentSeason": {
         "season": 2026,
-        "minutes": 726,
+        "minutes": 821,
         "goals": 0,
         "assists": 1,
-        "xGoals": 2.9004,
+        "xGoals": 3.2686,
         "xAssists": 0.3008,
         "keyPasses": 3,
-        "goalsAdded": 2.6405
+        "goalsAdded": 3.0219000000000005
       },
       "previousSeason": {
         "season": 2025,
@@ -1552,13 +1553,13 @@
       "guaranteedCompensation": 748000,
       "currentSeason": {
         "season": 2026,
-        "minutes": 2005,
+        "minutes": 2096,
         "goals": 1,
         "assists": 0,
         "xGoals": 0.7921,
         "xAssists": 0.2761,
         "keyPasses": 3,
-        "goalsAdded": 3.5619
+        "goalsAdded": 3.6205
       },
       "previousSeason": {
         "season": 2025,
@@ -1603,13 +1604,13 @@
       "guaranteedCompensation": 375000,
       "currentSeason": {
         "season": 2026,
-        "minutes": 1552,
+        "minutes": 1564,
         "goals": 2,
         "assists": 0,
         "xGoals": 1.0612,
         "xAssists": 0.0601,
         "keyPasses": 2,
-        "goalsAdded": 2.0537
+        "goalsAdded": 1.8098
       },
       "previousSeason": {
         "season": 2025,
@@ -1649,7 +1650,7 @@
       "guaranteedCompensation": 166800,
       "currentSeason": {
         "season": 2026,
-        "minutes": 2343,
+        "minutes": 2541,
         "goals": 0,
         "assists": 1,
         "xGoals": 0,
@@ -1659,20 +1660,20 @@
       "goalkeeperMetrics": {
         "currentSeason": {
           "season": 2026,
-          "shotsFaced": 81,
-          "goalsConceded": 17,
-          "saves": 62,
-          "xGoalsFaced": 25.8101,
-          "goalsMinusXGoalsFaced": -8.8101,
+          "shotsFaced": 93,
+          "goalsConceded": 20,
+          "saves": 70,
+          "xGoalsFaced": 29.3727,
+          "goalsMinusXGoalsFaced": -9.3727,
           "goalsAddedByAction": {
-            "claiming": -0.2864,
-            "fielding": 0.0196,
-            "handling": -0.1438,
-            "passing": 1.2737,
-            "shotstopping": 8.8101,
-            "sweeping": 0.1092
+            "claiming": -0.2807,
+            "fielding": 0.0283,
+            "handling": -0.118,
+            "passing": 1.3997,
+            "shotstopping": 9.3727,
+            "sweeping": 0.0249
           },
-          "goalsAdded": 9.7824
+          "goalsAdded": 10.4269
         }
       },
       "rosterProfile": {
@@ -1706,13 +1707,13 @@
       "guaranteedCompensation": 1065000,
       "currentSeason": {
         "season": 2026,
-        "minutes": 1826,
-        "goals": 13,
+        "minutes": 2020,
+        "goals": 15,
         "assists": 1,
-        "xGoals": 15.3289,
-        "xAssists": 1.3375,
-        "keyPasses": 17,
-        "goalsAdded": 5.5646
+        "xGoals": 16.1881,
+        "xAssists": 1.593,
+        "keyPasses": 19,
+        "goalsAdded": 6.1545000000000005
       },
       "previousSeason": {
         "season": 2025,
@@ -1754,13 +1755,13 @@
       "guaranteedCompensation": 443250,
       "currentSeason": {
         "season": 2026,
-        "minutes": 2079,
+        "minutes": 2281,
         "goals": 1,
         "assists": 0,
         "xGoals": 1.2019,
-        "xAssists": 0.6488,
+        "xAssists": 0.6482,
         "keyPasses": 14,
-        "goalsAdded": 2.9236999999999997
+        "goalsAdded": 3.221
       },
       "previousSeason": {
         "season": 2025,
@@ -1805,13 +1806,13 @@
       "guaranteedCompensation": 430150,
       "currentSeason": {
         "season": 2026,
-        "minutes": 626,
-        "goals": 3,
+        "minutes": 718,
+        "goals": 4,
         "assists": 3,
-        "xGoals": 3.4178,
-        "xAssists": 1.4812,
-        "keyPasses": 6,
-        "goalsAdded": 3.6092000000000004
+        "xGoals": 4.1939,
+        "xAssists": 1.602,
+        "keyPasses": 7,
+        "goalsAdded": 3.5991999999999997
       },
       "rosterProfile": {
         "snapshotDate": "2026-02-26",
@@ -1847,13 +1848,13 @@
       "guaranteedCompensation": 847600,
       "currentSeason": {
         "season": 2026,
-        "minutes": 1924,
-        "goals": 3,
+        "minutes": 2094,
+        "goals": 7,
         "assists": 0,
-        "xGoals": 7.1444,
-        "xAssists": 1.6165,
-        "keyPasses": 22,
-        "goalsAdded": 4.2664
+        "xGoals": 8.6461,
+        "xAssists": 2.088,
+        "keyPasses": 24,
+        "goalsAdded": 4.8347999999999995
       },
       "previousSeason": {
         "season": 2025,
@@ -1884,7 +1885,8 @@
       },
       "selectionReasons": [
         "team-outfield-selection",
-        "designated-player"
+        "designated-player",
+        "current-season-five-goal-contributions"
       ]
     },
     {
@@ -1899,7 +1901,7 @@
       "guaranteedCompensation": 390875,
       "currentSeason": {
         "season": 2026,
-        "minutes": 1010,
+        "minutes": 1100,
         "goals": 0,
         "assists": 0,
         "xGoals": 0,
@@ -1918,20 +1920,20 @@
       "goalkeeperMetrics": {
         "currentSeason": {
           "season": 2026,
-          "shotsFaced": 47,
-          "goalsConceded": 12,
-          "saves": 33,
-          "xGoalsFaced": 13.3686,
-          "goalsMinusXGoalsFaced": -1.3686,
+          "shotsFaced": 53,
+          "goalsConceded": 15,
+          "saves": 36,
+          "xGoalsFaced": 15.8784,
+          "goalsMinusXGoalsFaced": -0.8784,
           "goalsAddedByAction": {
-            "claiming": -0.1462,
-            "fielding": -0.3042,
-            "handling": -0.1415,
-            "passing": 0.3044,
-            "shotstopping": 1.3686,
-            "sweeping": -0.0425
+            "claiming": -0.146,
+            "fielding": -0.5773,
+            "handling": -0.1563,
+            "passing": 0.3463,
+            "shotstopping": 0.8784,
+            "sweeping": -0.1648
           },
-          "goalsAdded": 1.0386000000000002
+          "goalsAdded": 0.18030000000000002
         },
         "previousSeason": {
           "season": 2025,
@@ -1982,13 +1984,13 @@
       "guaranteedCompensation": 1182500,
       "currentSeason": {
         "season": 2026,
-        "minutes": 1537,
+        "minutes": 1630,
         "goals": 2,
         "assists": 5,
-        "xGoals": 3.1489,
-        "xAssists": 5.799,
-        "keyPasses": 28,
-        "goalsAdded": 4.2541
+        "xGoals": 3.4767,
+        "xAssists": 5.9974,
+        "keyPasses": 30,
+        "goalsAdded": 4.4508
       },
       "rosterProfile": {
         "snapshotDate": "2026-02-26",
@@ -2074,13 +2076,13 @@
       "guaranteedCompensation": 375000,
       "currentSeason": {
         "season": 2026,
-        "minutes": 1870,
+        "minutes": 1961,
         "goals": 3,
         "assists": 3,
-        "xGoals": 5.8584,
-        "xAssists": 2.3266,
-        "keyPasses": 13,
-        "goalsAdded": 5.9601
+        "xGoals": 5.9639,
+        "xAssists": 2.4561,
+        "keyPasses": 14,
+        "goalsAdded": 6.134499999999999
       },
       "previousSeason": {
         "season": 2025,
@@ -2124,13 +2126,13 @@
       "guaranteedCompensation": 4952083,
       "currentSeason": {
         "season": 2026,
-        "minutes": 2305,
-        "goals": 9,
+        "minutes": 2499,
+        "goals": 10,
         "assists": 4,
-        "xGoals": 8.6219,
-        "xAssists": 5.0821,
-        "keyPasses": 66,
-        "goalsAdded": 7.5264
+        "xGoals": 9.4985,
+        "xAssists": 5.1112,
+        "keyPasses": 67,
+        "goalsAdded": 7.908399999999999
       },
       "previousSeason": {
         "season": 2025,
@@ -2178,13 +2180,13 @@
       "guaranteedCompensation": 614000,
       "currentSeason": {
         "season": 2026,
-        "minutes": 1391,
-        "goals": 4,
-        "assists": 3,
-        "xGoals": 4.7519,
-        "xAssists": 4.203,
-        "keyPasses": 25,
-        "goalsAdded": 5.2683
+        "minutes": 1561,
+        "goals": 6,
+        "assists": 4,
+        "xGoals": 5.647,
+        "xAssists": 4.7724,
+        "keyPasses": 30,
+        "goalsAdded": 6.169499999999999
       },
       "previousSeason": {
         "season": 2025,
@@ -2225,7 +2227,7 @@
       "guaranteedCompensation": 348333,
       "currentSeason": {
         "season": 2026,
-        "minutes": 2242,
+        "minutes": 2440,
         "goals": 0,
         "assists": 0,
         "xGoals": 0,
@@ -2244,20 +2246,20 @@
       "goalkeeperMetrics": {
         "currentSeason": {
           "season": 2026,
-          "shotsFaced": 96,
-          "goalsConceded": 31,
-          "saves": 61,
-          "xGoalsFaced": 32.7301,
-          "goalsMinusXGoalsFaced": -1.7301,
+          "shotsFaced": 105,
+          "goalsConceded": 34,
+          "saves": 66,
+          "xGoalsFaced": 35.5315,
+          "goalsMinusXGoalsFaced": -1.5315,
           "goalsAddedByAction": {
-            "claiming": -0.2164,
-            "fielding": -0.1797,
-            "handling": 0.1588,
-            "passing": 1.2393,
-            "shotstopping": 1.7301,
-            "sweeping": 0.2603
+            "claiming": -0.2664,
+            "fielding": -0.1558,
+            "handling": 0.0489,
+            "passing": 1.3533,
+            "shotstopping": 1.5315,
+            "sweeping": 0.394
           },
-          "goalsAdded": 2.9924
+          "goalsAdded": 2.9055
         },
         "previousSeason": {
           "season": 2025,
@@ -2308,13 +2310,13 @@
       "guaranteedCompensation": 577500,
       "currentSeason": {
         "season": 2026,
-        "minutes": 976,
-        "goals": 5,
+        "minutes": 1102,
+        "goals": 7,
         "assists": 2,
-        "xGoals": 3.4459,
-        "xAssists": 0.6279,
+        "xGoals": 4.2445,
+        "xAssists": 0.7084,
         "keyPasses": 9,
-        "goalsAdded": 2.2065
+        "goalsAdded": 2.495
       },
       "previousSeason": {
         "season": 2025,
@@ -2342,13 +2344,13 @@
       "guaranteedCompensation": 576813,
       "currentSeason": {
         "season": 2026,
-        "minutes": 1578,
+        "minutes": 1686,
         "goals": 1,
         "assists": 0,
         "xGoals": 0.7618,
         "xAssists": 0.2453,
         "keyPasses": 4,
-        "goalsAdded": 3.4004
+        "goalsAdded": 3.6388999999999996
       },
       "previousSeason": {
         "season": 2025,
@@ -2391,13 +2393,13 @@
       "guaranteedCompensation": 850000,
       "currentSeason": {
         "season": 2026,
-        "minutes": 1662,
+        "minutes": 1871,
         "goals": 3,
-        "assists": 3,
-        "xGoals": 2.8218,
-        "xAssists": 1.4895,
-        "keyPasses": 19,
-        "goalsAdded": 2.9096
+        "assists": 4,
+        "xGoals": 3.8278,
+        "xAssists": 2.248,
+        "keyPasses": 24,
+        "goalsAdded": 3.3381
       },
       "previousSeason": {
         "season": 2025,
@@ -2440,13 +2442,13 @@
       "guaranteedCompensation": 657188,
       "currentSeason": {
         "season": 2026,
-        "minutes": 1888,
+        "minutes": 1990,
         "goals": 1,
-        "assists": 2,
-        "xGoals": 1.4815,
-        "xAssists": 2.1949,
-        "keyPasses": 23,
-        "goalsAdded": 1.4817
+        "assists": 3,
+        "xGoals": 1.6271,
+        "xAssists": 2.346,
+        "keyPasses": 26,
+        "goalsAdded": 1.7859000000000003
       },
       "previousSeason": {
         "season": 2025,
@@ -2487,13 +2489,13 @@
       "guaranteedCompensation": 2343567,
       "currentSeason": {
         "season": 2026,
-        "minutes": 1471,
+        "minutes": 1644,
         "goals": 3,
         "assists": 9,
-        "xGoals": 2.0825,
-        "xAssists": 5.2334,
-        "keyPasses": 44,
-        "goalsAdded": 3.2576
+        "xGoals": 2.3097,
+        "xAssists": 5.4927,
+        "keyPasses": 47,
+        "goalsAdded": 3.4698
       },
       "previousSeason": {
         "season": 2025,
@@ -2540,13 +2542,13 @@
       "guaranteedCompensation": 1766000,
       "currentSeason": {
         "season": 2026,
-        "minutes": 1201,
+        "minutes": 1283,
         "goals": 3,
         "assists": 0,
-        "xGoals": 1.094,
-        "xAssists": 0.729,
+        "xGoals": 1.1682,
+        "xAssists": 0.7404,
         "keyPasses": 7,
-        "goalsAdded": 1.9796999999999998
+        "goalsAdded": 2.0700000000000003
       },
       "previousSeason": {
         "season": 2025,
@@ -2587,7 +2589,7 @@
       "guaranteedCompensation": 792500,
       "currentSeason": {
         "season": 2026,
-        "minutes": 1629,
+        "minutes": 1734,
         "goals": 0,
         "assists": 0,
         "xGoals": 0,
@@ -2606,20 +2608,20 @@
       "goalkeeperMetrics": {
         "currentSeason": {
           "season": 2026,
-          "shotsFaced": 67,
-          "goalsConceded": 16,
-          "saves": 50,
-          "xGoalsFaced": 21.234099999999998,
-          "goalsMinusXGoalsFaced": -5.2341,
+          "shotsFaced": 71,
+          "goalsConceded": 17,
+          "saves": 53,
+          "xGoalsFaced": 22.352,
+          "goalsMinusXGoalsFaced": -5.352,
           "goalsAddedByAction": {
-            "claiming": 0.083,
-            "fielding": -0.0953,
-            "handling": -0.2993,
-            "passing": 1.0513000000000001,
-            "shotstopping": 5.2341,
-            "sweeping": -0.044199999999999996
+            "claiming": 0.1053,
+            "fielding": -0.0981,
+            "handling": -0.3217,
+            "passing": 1.1062,
+            "shotstopping": 5.352,
+            "sweeping": 0.1379
           },
-          "goalsAdded": 5.9296
+          "goalsAdded": 6.2816
         },
         "previousSeason": {
           "season": 2025,
@@ -2671,13 +2673,13 @@
       "guaranteedCompensation": 676350,
       "currentSeason": {
         "season": 2026,
-        "minutes": 2084,
-        "goals": 3,
+        "minutes": 2252,
+        "goals": 4,
         "assists": 3,
-        "xGoals": 1.3624,
-        "xAssists": 3.4135,
-        "keyPasses": 19,
-        "goalsAdded": 2.8825000000000003
+        "xGoals": 1.6739,
+        "xAssists": 3.4924,
+        "keyPasses": 20,
+        "goalsAdded": 3.4407
       },
       "previousSeason": {
         "season": 2025,
@@ -2721,13 +2723,13 @@
       "guaranteedCompensation": 427500,
       "currentSeason": {
         "season": 2026,
-        "minutes": 1715,
+        "minutes": 1814,
         "goals": 0,
         "assists": 1,
         "xGoals": 0.7796,
-        "xAssists": 0.9374,
-        "keyPasses": 9,
-        "goalsAdded": 1.6196000000000002
+        "xAssists": 0.9917,
+        "keyPasses": 10,
+        "goalsAdded": 1.6766999999999999
       },
       "previousSeason": {
         "season": 2025,
@@ -2767,13 +2769,13 @@
       "guaranteedCompensation": 574000,
       "currentSeason": {
         "season": 2026,
-        "minutes": 2140,
-        "goals": 4,
+        "minutes": 2345,
+        "goals": 5,
         "assists": 0,
-        "xGoals": 2.8245,
+        "xGoals": 3.5407,
         "xAssists": 0.9328,
         "keyPasses": 5,
-        "goalsAdded": 3.2329999999999997
+        "goalsAdded": 3.7008
       },
       "previousSeason": {
         "season": 2025,
@@ -2801,7 +2803,8 @@
         "rosterConstructionModel": "Designated Player Model"
       },
       "selectionReasons": [
-        "team-outfield-selection"
+        "team-outfield-selection",
+        "current-season-five-goal-contributions"
       ]
     },
     {
@@ -2816,13 +2819,13 @@
       "guaranteedCompensation": 702500,
       "currentSeason": {
         "season": 2026,
-        "minutes": 2112,
+        "minutes": 2321,
         "goals": 4,
         "assists": 1,
-        "xGoals": 4.0495,
-        "xAssists": 1.2839,
-        "keyPasses": 13,
-        "goalsAdded": 4.4189
+        "xGoals": 4.575,
+        "xAssists": 1.3615,
+        "keyPasses": 14,
+        "goalsAdded": 4.617
       },
       "previousSeason": {
         "season": 2025,
@@ -2868,13 +2871,13 @@
       "guaranteedCompensation": 168022,
       "currentSeason": {
         "season": 2026,
-        "minutes": 1243,
+        "minutes": 1409,
         "goals": 0,
         "assists": 2,
-        "xGoals": 2.4814,
-        "xAssists": 1.8019,
-        "keyPasses": 15,
-        "goalsAdded": 2.635
+        "xGoals": 2.6957999999999998,
+        "xAssists": 1.8824,
+        "keyPasses": 17,
+        "goalsAdded": 2.9371
       },
       "previousSeason": {
         "season": 2025,
@@ -2917,13 +2920,13 @@
       "guaranteedCompensation": 820000,
       "currentSeason": {
         "season": 2026,
-        "minutes": 1284,
+        "minutes": 1432,
         "goals": 3,
         "assists": 2,
-        "xGoals": 3.3684,
-        "xAssists": 1.8211,
-        "keyPasses": 12,
-        "goalsAdded": 2.1933
+        "xGoals": 4.6425,
+        "xAssists": 1.9636,
+        "keyPasses": 14,
+        "goalsAdded": 3.1672
       },
       "previousSeason": {
         "season": 2025,
@@ -3011,13 +3014,13 @@
       "guaranteedCompensation": 683000,
       "currentSeason": {
         "season": 2026,
-        "minutes": 1732,
+        "minutes": 1919,
         "goals": 2,
         "assists": 0,
         "xGoals": 1.0589,
         "xAssists": 0.035,
         "keyPasses": 1,
-        "goalsAdded": 3.1383
+        "goalsAdded": 3.1927000000000003
       },
       "previousSeason": {
         "season": 2025,
@@ -3061,13 +3064,13 @@
       "guaranteedCompensation": 3425000,
       "currentSeason": {
         "season": 2026,
-        "minutes": 1887,
+        "minutes": 1905,
         "goals": 3,
         "assists": 7,
-        "xGoals": 1.8768,
-        "xAssists": 3.8068,
+        "xGoals": 1.8699,
+        "xAssists": 3.8374,
         "keyPasses": 35,
-        "goalsAdded": 3.9461
+        "goalsAdded": 3.9283
       },
       "previousSeason": {
         "season": 2025,
@@ -3178,6 +3181,55 @@
       ]
     },
     {
+      "id": "kRQaopnY5K",
+      "name": "David Schnegg",
+      "teamId": "NPqxKXZ59d",
+      "teamName": "Charlotte FC",
+      "teamAbbreviation": "CLT",
+      "positionGroup": "DEF",
+      "position": "FB",
+      "baseSalary": 650000,
+      "guaranteedCompensation": 756250,
+      "currentSeason": {
+        "season": 2026,
+        "minutes": 1231,
+        "goals": 2,
+        "assists": 3,
+        "xGoals": 0.9886,
+        "xAssists": 1.4642,
+        "keyPasses": 12,
+        "goalsAdded": 1.4799
+      },
+      "previousSeason": {
+        "season": 2025,
+        "minutes": 2994,
+        "goals": 0,
+        "assists": 1,
+        "xGoals": 1.6199,
+        "xAssists": 3.524,
+        "keyPasses": 31,
+        "goalsAdded": 5.2445
+      },
+      "rosterProfile": {
+        "snapshotDate": "2026-02-26",
+        "listedInRosterSnapshot": true,
+        "activeAtRosterSnapshot": true,
+        "snapshotTeamId": "NPqxKXZ59d",
+        "snapshotTeamName": "Charlotte FC",
+        "rosterSlot": "Senior Roster",
+        "contractThrough": "2026",
+        "optionYears": [
+          "2027"
+        ],
+        "internationalSlot": false,
+        "unavailable": false,
+        "rosterConstructionModel": "Designated Player Model"
+      },
+      "selectionReasons": [
+        "current-season-five-goal-contributions"
+      ]
+    },
+    {
       "id": "kRQa2LebMK",
       "name": "Dayne St. Clair",
       "teamId": "zeQZkL1MKw",
@@ -3189,7 +3241,7 @@
       "guaranteedCompensation": 808730,
       "currentSeason": {
         "season": 2026,
-        "minutes": 1866,
+        "minutes": 2063,
         "goals": 0,
         "assists": 0,
         "xGoals": 0,
@@ -3208,20 +3260,20 @@
       "goalkeeperMetrics": {
         "currentSeason": {
           "season": 2026,
-          "shotsFaced": 89,
-          "goalsConceded": 35,
-          "saves": 51,
-          "xGoalsFaced": 29.7976,
-          "goalsMinusXGoalsFaced": 5.2024,
+          "shotsFaced": 95,
+          "goalsConceded": 38,
+          "saves": 54,
+          "xGoalsFaced": 32.0925,
+          "goalsMinusXGoalsFaced": 5.9075,
           "goalsAddedByAction": {
-            "claiming": 0.0715,
-            "fielding": -0.2552,
-            "handling": -0.575,
-            "passing": 1.3879,
-            "shotstopping": -5.2024,
-            "sweeping": -0.6074
+            "claiming": 0.0762,
+            "fielding": -0.2419,
+            "handling": -0.6716,
+            "passing": 1.5055,
+            "shotstopping": -5.9075,
+            "sweeping": -0.7108
           },
-          "goalsAdded": -5.1806
+          "goalsAdded": -5.950099999999999
         },
         "previousSeason": {
           "season": 2025,
@@ -3273,13 +3325,13 @@
       "guaranteedCompensation": 726667,
       "currentSeason": {
         "season": 2026,
-        "minutes": 1203,
+        "minutes": 1381,
         "goals": 0,
         "assists": 1,
         "xGoals": 0.2376,
-        "xAssists": 0.9452,
-        "keyPasses": 7,
-        "goalsAdded": 1.5230000000000001
+        "xAssists": 0.9898,
+        "keyPasses": 8,
+        "goalsAdded": 1.8307
       },
       "previousSeason": {
         "season": 2025,
@@ -3322,13 +3374,13 @@
       "guaranteedCompensation": 3306250,
       "currentSeason": {
         "season": 2026,
-        "minutes": 2151,
+        "minutes": 2233,
         "goals": 10,
         "assists": 1,
-        "xGoals": 7.2658,
-        "xAssists": 2.1937,
-        "keyPasses": 16,
-        "goalsAdded": 3.7743
+        "xGoals": 7.9738999999999995,
+        "xAssists": 2.5247,
+        "keyPasses": 18,
+        "goalsAdded": 4.3687000000000005
       },
       "previousSeason": {
         "season": 2025,
@@ -3419,13 +3471,13 @@
       "guaranteedCompensation": 375000,
       "currentSeason": {
         "season": 2026,
-        "minutes": 1082,
+        "minutes": 1253,
         "goals": 4,
         "assists": 1,
-        "xGoals": 2.5392,
-        "xAssists": 0.8924,
-        "keyPasses": 12,
-        "goalsAdded": 1.4166
+        "xGoals": 3.2485,
+        "xAssists": 1.4482,
+        "keyPasses": 15,
+        "goalsAdded": 2.024
       },
       "previousSeason": {
         "season": 2025,
@@ -3469,13 +3521,13 @@
       "guaranteedCompensation": 500833,
       "currentSeason": {
         "season": 2026,
-        "minutes": 1277,
+        "minutes": 1350,
         "goals": 5,
         "assists": 3,
-        "xGoals": 3.0935,
-        "xAssists": 4.6994,
+        "xGoals": 3.355,
+        "xAssists": 4.5154,
         "keyPasses": 42,
-        "goalsAdded": 3.8415999999999997
+        "goalsAdded": 4.0079
       },
       "previousSeason": {
         "season": 2025,
@@ -3557,7 +3609,6 @@
         "rosterConstructionModel": "Designated Player Model"
       },
       "selectionReasons": [
-        "team-outfield-selection",
         "designated-player",
         "current-season-five-goal-contributions"
       ]
@@ -3577,10 +3628,10 @@
         "minutes": 950,
         "goals": 2,
         "assists": 5,
-        "xGoals": 1.9916,
-        "xAssists": 2.043,
+        "xGoals": 1.9946,
+        "xAssists": 2.1852,
         "keyPasses": 23,
-        "goalsAdded": 1.9603
+        "goalsAdded": 2.0441
       },
       "previousSeason": {
         "season": 2025,
@@ -3611,7 +3662,6 @@
         "rosterConstructionModel": "U22 Initiative Player Model"
       },
       "selectionReasons": [
-        "team-outfield-selection",
         "designated-player",
         "current-season-five-goal-contributions"
       ]
@@ -3628,13 +3678,13 @@
       "guaranteedCompensation": 685486,
       "currentSeason": {
         "season": 2026,
-        "minutes": 1624,
+        "minutes": 1822,
         "goals": 1,
         "assists": 0,
-        "xGoals": 0.706,
-        "xAssists": 0.6022,
-        "keyPasses": 7,
-        "goalsAdded": 1.7227999999999999
+        "xGoals": 0.9664,
+        "xAssists": 0.8447,
+        "keyPasses": 8,
+        "goalsAdded": 2.0940000000000003
       },
       "previousSeason": {
         "season": 2025,
@@ -3728,13 +3778,13 @@
       "guaranteedCompensation": 800000,
       "currentSeason": {
         "season": 2026,
-        "minutes": 2049,
-        "goals": 6,
-        "assists": 3,
-        "xGoals": 9.0352,
-        "xAssists": 1.5236,
-        "keyPasses": 16,
-        "goalsAdded": 6.210000000000001
+        "minutes": 2211,
+        "goals": 7,
+        "assists": 4,
+        "xGoals": 9.7138,
+        "xAssists": 2.0712,
+        "keyPasses": 17,
+        "goalsAdded": 6.6328
       },
       "previousSeason": {
         "season": 2025,
@@ -3779,7 +3829,7 @@
       "guaranteedCompensation": 505917,
       "currentSeason": {
         "season": 2026,
-        "minutes": 2277,
+        "minutes": 2478,
         "goals": 0,
         "assists": 0,
         "xGoals": 0,
@@ -3798,20 +3848,20 @@
       "goalkeeperMetrics": {
         "currentSeason": {
           "season": 2026,
-          "shotsFaced": 103,
-          "goalsConceded": 34,
-          "saves": 68,
-          "xGoalsFaced": 36.9045,
-          "goalsMinusXGoalsFaced": -2.9045,
+          "shotsFaced": 117,
+          "goalsConceded": 40,
+          "saves": 75,
+          "xGoalsFaced": 42.2248,
+          "goalsMinusXGoalsFaced": -2.2248,
           "goalsAddedByAction": {
-            "claiming": 0.0483,
-            "fielding": -0.0348,
-            "handling": -1.3058,
-            "passing": 1.082,
-            "shotstopping": 2.9045,
-            "sweeping": -0.7324
+            "claiming": 0.0538,
+            "fielding": -0.0433,
+            "handling": -1.3824,
+            "passing": 1.1871,
+            "shotstopping": 2.2248,
+            "sweeping": -0.7385
           },
-          "goalsAdded": 1.9617999999999995
+          "goalsAdded": 1.3014999999999999
         },
         "previousSeason": {
           "season": 2025,
@@ -3859,13 +3909,13 @@
       "guaranteedCompensation": 695250,
       "currentSeason": {
         "season": 2026,
-        "minutes": 1262,
+        "minutes": 1349,
         "goals": 0,
         "assists": 2,
-        "xGoals": 0.6554,
-        "xAssists": 1.9899,
-        "keyPasses": 21,
-        "goalsAdded": 2.9276
+        "xGoals": 0.7455,
+        "xAssists": 2.0349,
+        "keyPasses": 23,
+        "goalsAdded": 3.2809
       },
       "previousSeason": {
         "season": 2025,
@@ -3908,13 +3958,13 @@
       "guaranteedCompensation": 412500,
       "currentSeason": {
         "season": 2026,
-        "minutes": 1783,
+        "minutes": 1986,
         "goals": 0,
         "assists": 0,
         "xGoals": 0.303,
-        "xAssists": 0.4865,
-        "keyPasses": 8,
-        "goalsAdded": 2.6128
+        "xAssists": 0.5598,
+        "keyPasses": 9,
+        "goalsAdded": 2.8727
       },
       "previousSeason": {
         "season": 2025,
@@ -3957,13 +4007,13 @@
       "guaranteedCompensation": 2647635,
       "currentSeason": {
         "season": 2026,
-        "minutes": 939,
-        "goals": 3,
+        "minutes": 1036,
+        "goals": 4,
         "assists": 0,
-        "xGoals": 3.2545,
+        "xGoals": 4.0106,
         "xAssists": 0.6149,
         "keyPasses": 7,
-        "goalsAdded": 1.4059000000000001
+        "goalsAdded": 2.0511
       },
       "previousSeason": {
         "season": 2025,
@@ -4008,13 +4058,13 @@
       "guaranteedCompensation": 1343333,
       "currentSeason": {
         "season": 2026,
-        "minutes": 2198,
-        "goals": 6,
-        "assists": 5,
-        "xGoals": 5.524,
-        "xAssists": 1.977,
-        "keyPasses": 22,
-        "goalsAdded": 5.074199999999999
+        "minutes": 2401,
+        "goals": 7,
+        "assists": 6,
+        "xGoals": 5.7661,
+        "xAssists": 3.3315,
+        "keyPasses": 27,
+        "goalsAdded": 5.8756
       },
       "previousSeason": {
         "season": 2025,
@@ -4057,13 +4107,13 @@
       "guaranteedCompensation": 4939217,
       "currentSeason": {
         "season": 2026,
-        "minutes": 2136,
-        "goals": 12,
+        "minutes": 2331,
+        "goals": 13,
         "assists": 5,
-        "xGoals": 10.4625,
-        "xAssists": 7.396,
-        "keyPasses": 48,
-        "goalsAdded": 7.7271
+        "xGoals": 11.4938,
+        "xAssists": 7.9133,
+        "keyPasses": 52,
+        "goalsAdded": 8.9388
       },
       "previousSeason": {
         "season": 2025,
@@ -4110,13 +4160,13 @@
       "guaranteedCompensation": 722500,
       "currentSeason": {
         "season": 2026,
-        "minutes": 1962,
+        "minutes": 2061,
         "goals": 0,
         "assists": 0,
-        "xGoals": 0.5353,
+        "xGoals": 0.6134,
         "xAssists": 1.1735,
         "keyPasses": 10,
-        "goalsAdded": 2.2141
+        "goalsAdded": 2.5378
       },
       "previousSeason": {
         "season": 2025,
@@ -4156,13 +4206,13 @@
       "guaranteedCompensation": 1444250,
       "currentSeason": {
         "season": 2026,
-        "minutes": 900,
+        "minutes": 1038,
         "goals": 3,
         "assists": 2,
-        "xGoals": 2.3699,
-        "xAssists": 1.2922,
-        "keyPasses": 14,
-        "goalsAdded": 1.4459
+        "xGoals": 2.6195,
+        "xAssists": 1.3045,
+        "keyPasses": 15,
+        "goalsAdded": 1.6421000000000001
       },
       "previousSeason": {
         "season": 2025,
@@ -4255,13 +4305,13 @@
       "guaranteedCompensation": 293706,
       "currentSeason": {
         "season": 2026,
-        "minutes": 1974,
+        "minutes": 2174,
         "goals": 1,
         "assists": 2,
-        "xGoals": 1.3189,
-        "xAssists": 1.0215,
-        "keyPasses": 15,
-        "goalsAdded": 1.9409
+        "xGoals": 1.4055,
+        "xAssists": 1.203,
+        "keyPasses": 18,
+        "goalsAdded": 2.1801
       },
       "rosterProfile": {
         "snapshotDate": "2026-02-26",
@@ -4296,13 +4346,13 @@
       "guaranteedCompensation": 6035625,
       "currentSeason": {
         "season": 2026,
-        "minutes": 1725,
+        "minutes": 1828,
         "goals": 3,
         "assists": 4,
-        "xGoals": 6.2568,
-        "xAssists": 4.6109,
-        "keyPasses": 31,
-        "goalsAdded": 4.9025
+        "xGoals": 6.3502,
+        "xAssists": 4.6596,
+        "keyPasses": 32,
+        "goalsAdded": 4.886900000000001
       },
       "previousSeason": {
         "season": 2025,
@@ -4349,13 +4399,13 @@
       "guaranteedCompensation": 344788,
       "currentSeason": {
         "season": 2026,
-        "minutes": 679,
-        "goals": 3,
+        "minutes": 728,
+        "goals": 4,
         "assists": 0,
-        "xGoals": 1.8957,
-        "xAssists": 0.9857,
-        "keyPasses": 5,
-        "goalsAdded": 1.7155
+        "xGoals": 2.7634,
+        "xAssists": 1.2427,
+        "keyPasses": 6,
+        "goalsAdded": 2.0238
       },
       "rosterProfile": {
         "snapshotDate": "2026-02-26",
@@ -4445,13 +4495,13 @@
       "guaranteedCompensation": 1167750,
       "currentSeason": {
         "season": 2026,
-        "minutes": 1041,
+        "minutes": 1150,
         "goals": 4,
         "assists": 3,
-        "xGoals": 4.3436,
-        "xAssists": 2.3262,
-        "keyPasses": 12,
-        "goalsAdded": 3.5174000000000003
+        "xGoals": 5.2663,
+        "xAssists": 2.5277,
+        "keyPasses": 14,
+        "goalsAdded": 4.2432
       },
       "previousSeason": {
         "season": 2025,
@@ -4496,13 +4546,13 @@
       "guaranteedCompensation": 446580,
       "currentSeason": {
         "season": 2026,
-        "minutes": 1461,
+        "minutes": 1624,
         "goals": 1,
         "assists": 5,
-        "xGoals": 1.4115,
-        "xAssists": 4.3599,
-        "keyPasses": 29,
-        "goalsAdded": 2.9374
+        "xGoals": 1.4592,
+        "xAssists": 4.5141,
+        "keyPasses": 31,
+        "goalsAdded": 3.3591
       },
       "previousSeason": {
         "season": 2025,
@@ -4591,13 +4641,13 @@
       "guaranteedCompensation": 3530667,
       "currentSeason": {
         "season": 2026,
-        "minutes": 373,
+        "minutes": 452,
         "goals": 3,
         "assists": 1,
-        "xGoals": 1.7536,
-        "xAssists": 0.5548,
-        "keyPasses": 3,
-        "goalsAdded": 0.7572000000000001
+        "xGoals": 2.3232,
+        "xAssists": 0.6504,
+        "keyPasses": 4,
+        "goalsAdded": 0.9235000000000001
       },
       "previousSeason": {
         "season": 2025,
@@ -4642,7 +4692,7 @@
       "guaranteedCompensation": 524909,
       "currentSeason": {
         "season": 2026,
-        "minutes": 2330,
+        "minutes": 2533,
         "goals": 0,
         "assists": 0,
         "xGoals": 0,
@@ -4652,20 +4702,20 @@
       "goalkeeperMetrics": {
         "currentSeason": {
           "season": 2026,
-          "shotsFaced": 128,
-          "goalsConceded": 46,
-          "saves": 75,
-          "xGoalsFaced": 43.4273,
-          "goalsMinusXGoalsFaced": 2.5727,
+          "shotsFaced": 140,
+          "goalsConceded": 48,
+          "saves": 84,
+          "xGoalsFaced": 47.1891,
+          "goalsMinusXGoalsFaced": 0.8109,
           "goalsAddedByAction": {
-            "claiming": -0.3781,
-            "fielding": 0.0722,
-            "handling": -0.8061,
-            "passing": 1.3535,
-            "shotstopping": -2.5726,
-            "sweeping": 0.8205
+            "claiming": -0.4171,
+            "fielding": 0.0614,
+            "handling": -0.3639,
+            "passing": 1.4416,
+            "shotstopping": -0.8109,
+            "sweeping": 0.6857
           },
-          "goalsAdded": -1.5106000000000002
+          "goalsAdded": 0.5968
         }
       },
       "rosterProfile": {
@@ -4700,13 +4750,13 @@
       "guaranteedCompensation": 4736411,
       "currentSeason": {
         "season": 2026,
-        "minutes": 1992,
+        "minutes": 2047,
         "goals": 13,
         "assists": 9,
         "xGoals": 9.1784,
         "xAssists": 8.8815,
         "keyPasses": 61,
-        "goalsAdded": 8.0476
+        "goalsAdded": 7.6223
       },
       "previousSeason": {
         "season": 2025,
@@ -4753,13 +4803,13 @@
       "guaranteedCompensation": 540000,
       "currentSeason": {
         "season": 2026,
-        "minutes": 786,
+        "minutes": 880,
         "goals": 1,
         "assists": 1,
-        "xGoals": 1.2847,
-        "xAssists": 0.7968,
-        "keyPasses": 10,
-        "goalsAdded": 0.6489999999999999
+        "xGoals": 1.6015,
+        "xAssists": 0.8778,
+        "keyPasses": 11,
+        "goalsAdded": 0.9479000000000001
       },
       "rosterProfile": {
         "snapshotDate": "2026-02-26",
@@ -4847,13 +4897,13 @@
       "guaranteedCompensation": 4405000,
       "currentSeason": {
         "season": 2026,
-        "minutes": 2016,
-        "goals": 3,
-        "assists": 4,
-        "xGoals": 3.9767,
-        "xAssists": 3.7642,
-        "keyPasses": 52,
-        "goalsAdded": 4.4762
+        "minutes": 2217,
+        "goals": 4,
+        "assists": 5,
+        "xGoals": 3.9514,
+        "xAssists": 4.2927,
+        "keyPasses": 55,
+        "goalsAdded": 4.7603
       },
       "rosterProfile": {
         "snapshotDate": "2026-02-26",
@@ -4889,13 +4939,13 @@
       "guaranteedCompensation": 743919,
       "currentSeason": {
         "season": 2026,
-        "minutes": 267,
+        "minutes": 379,
         "goals": 1,
         "assists": 0,
         "xGoals": 0.3828,
-        "xAssists": 0.0633,
-        "keyPasses": 1,
-        "goalsAdded": 0.919
+        "xAssists": 0.1115,
+        "keyPasses": 2,
+        "goalsAdded": 1.0368
       },
       "previousSeason": {
         "season": 2025,
@@ -4939,13 +4989,13 @@
       "guaranteedCompensation": 252500,
       "currentSeason": {
         "season": 2026,
-        "minutes": 1749,
+        "minutes": 1836,
         "goals": 1,
         "assists": 0,
-        "xGoals": 0.8874,
+        "xGoals": 1.136,
         "xAssists": 0.0957,
         "keyPasses": 2,
-        "goalsAdded": 1.7115
+        "goalsAdded": 1.5932
       },
       "previousSeason": {
         "season": 2025,
@@ -4989,13 +5039,13 @@
       "guaranteedCompensation": 303233,
       "currentSeason": {
         "season": 2026,
-        "minutes": 2313,
+        "minutes": 2522,
         "goals": 1,
         "assists": 1,
         "xGoals": 1.1102,
         "xAssists": 0.1823,
         "keyPasses": 4,
-        "goalsAdded": 6.0778
+        "goalsAdded": 6.2288
       },
       "previousSeason": {
         "season": 2025,
@@ -5038,13 +5088,13 @@
       "guaranteedCompensation": 125285,
       "currentSeason": {
         "season": 2026,
-        "minutes": 1828,
+        "minutes": 2037,
         "goals": 0,
-        "assists": 5,
-        "xGoals": 1.432,
-        "xAssists": 4.5983,
-        "keyPasses": 28,
-        "goalsAdded": 4.3132
+        "assists": 6,
+        "xGoals": 1.5707,
+        "xAssists": 5.0826,
+        "keyPasses": 33,
+        "goalsAdded": 4.4704
       },
       "previousSeason": {
         "season": 2025,
@@ -5122,7 +5172,6 @@
         "rosterConstructionModel": "Designated Player Model"
       },
       "selectionReasons": [
-        "team-outfield-selection",
         "designated-player",
         "current-season-five-goal-contributions"
       ]
@@ -5130,22 +5179,22 @@
     {
       "id": "wvq9Xp1B5W",
       "name": "Gabriel Pirani",
-      "teamId": "EKXMeX3Q64",
-      "teamName": "D.C. United",
-      "teamAbbreviation": "DCU",
-      "positionGroup": "FWD",
-      "position": "ST",
+      "teamId": "zeQZBOzQKw",
+      "teamName": "San Diego FC",
+      "teamAbbreviation": "SD",
+      "positionGroup": "MID",
+      "position": "CM",
       "baseSalary": 800000,
       "guaranteedCompensation": 866700,
       "currentSeason": {
         "season": 2026,
-        "minutes": 968,
+        "minutes": 1015,
         "goals": 2,
         "assists": 0,
-        "xGoals": 1.2845,
-        "xAssists": 0.649,
+        "xGoals": 1.2883,
+        "xAssists": 0.6523,
         "keyPasses": 10,
-        "goalsAdded": 1.1993
+        "goalsAdded": 1.2279
       },
       "previousSeason": {
         "season": 2025,
@@ -5189,13 +5238,13 @@
       "guaranteedCompensation": 3824200,
       "currentSeason": {
         "season": 2026,
-        "minutes": 1807,
+        "minutes": 2004,
         "goals": 7,
         "assists": 3,
-        "xGoals": 9.4654,
-        "xAssists": 3.0006,
-        "keyPasses": 17,
-        "goalsAdded": 4.579000000000001
+        "xGoals": 11.0284,
+        "xAssists": 3.3441,
+        "keyPasses": 20,
+        "goalsAdded": 5.0231
       },
       "rosterProfile": {
         "snapshotDate": "2026-02-26",
@@ -5282,13 +5331,13 @@
       "guaranteedCompensation": 767891,
       "currentSeason": {
         "season": 2026,
-        "minutes": 1849,
+        "minutes": 1899,
         "goals": 3,
         "assists": 1,
-        "xGoals": 2.8755,
-        "xAssists": 1.2511,
-        "keyPasses": 13,
-        "goalsAdded": 3.9642
+        "xGoals": 3.3919,
+        "xAssists": 1.3743,
+        "keyPasses": 14,
+        "goalsAdded": 4.4122
       },
       "previousSeason": {
         "season": 2025,
@@ -5331,13 +5380,13 @@
       "guaranteedCompensation": 1925230,
       "currentSeason": {
         "season": 2026,
-        "minutes": 2076,
-        "goals": 12,
-        "assists": 5,
-        "xGoals": 6.2154,
-        "xAssists": 4.0021,
-        "keyPasses": 45,
-        "goalsAdded": 7.261000000000001
+        "minutes": 2267,
+        "goals": 13,
+        "assists": 6,
+        "xGoals": 6.4055,
+        "xAssists": 4.8954,
+        "keyPasses": 51,
+        "goalsAdded": 8.0278
       },
       "rosterProfile": {
         "snapshotDate": "2026-02-26",
@@ -5373,13 +5422,13 @@
       "guaranteedCompensation": 325000,
       "currentSeason": {
         "season": 2026,
-        "minutes": 1688,
+        "minutes": 1882,
         "goals": 3,
         "assists": 1,
-        "xGoals": 1.2661,
-        "xAssists": 1.109,
-        "keyPasses": 6,
-        "goalsAdded": 3.2195
+        "xGoals": 1.2727,
+        "xAssists": 1.0315,
+        "keyPasses": 7,
+        "goalsAdded": 3.6664
       },
       "previousSeason": {
         "season": 2025,
@@ -5422,13 +5471,13 @@
       "guaranteedCompensation": 1510000,
       "currentSeason": {
         "season": 2026,
-        "minutes": 1209,
+        "minutes": 1336,
         "goals": 5,
         "assists": 1,
-        "xGoals": 3.2491,
-        "xAssists": 1.608,
-        "keyPasses": 12,
-        "goalsAdded": 2.1949
+        "xGoals": 3.2985,
+        "xAssists": 1.6336,
+        "keyPasses": 13,
+        "goalsAdded": 2.3249
       },
       "previousSeason": {
         "season": 2025,
@@ -5472,13 +5521,13 @@
       "guaranteedCompensation": 5411667,
       "currentSeason": {
         "season": 2026,
-        "minutes": 2110,
+        "minutes": 2308,
         "goals": 10,
         "assists": 5,
-        "xGoals": 8.1601,
-        "xAssists": 3.3858,
-        "keyPasses": 31,
-        "goalsAdded": 5.7622
+        "xGoals": 8.3286,
+        "xAssists": 3.9987,
+        "keyPasses": 33,
+        "goalsAdded": 6.2075
       },
       "previousSeason": {
         "season": 2025,
@@ -5525,13 +5574,13 @@
       "guaranteedCompensation": 606000,
       "currentSeason": {
         "season": 2026,
-        "minutes": 1115,
+        "minutes": 1145,
         "goals": 1,
         "assists": 1,
-        "xGoals": 5.0826,
-        "xAssists": 1.5616,
-        "keyPasses": 10,
-        "goalsAdded": 4.8331
+        "xGoals": 5.5678,
+        "xAssists": 1.7363,
+        "keyPasses": 12,
+        "goalsAdded": 4.98
       },
       "previousSeason": {
         "season": 2025,
@@ -5622,13 +5671,13 @@
       "guaranteedCompensation": 9333333,
       "currentSeason": {
         "season": 2026,
-        "minutes": 336,
+        "minutes": 537,
         "goals": 1,
         "assists": 1,
-        "xGoals": 0.6209,
-        "xAssists": 0.3537,
-        "keyPasses": 5,
-        "goalsAdded": 0.48140000000000005
+        "xGoals": 0.8054,
+        "xAssists": 0.5873,
+        "keyPasses": 7,
+        "goalsAdded": 1.416
       },
       "previousSeason": {
         "season": 2025,
@@ -5727,12 +5776,12 @@
       "guaranteedCompensation": 800000,
       "currentSeason": {
         "season": 2026,
-        "minutes": 2010,
+        "minutes": 2212,
         "goals": 0,
         "assists": 0,
         "xGoals": 0,
-        "xAssists": 0.04,
-        "keyPasses": 1
+        "xAssists": 0.1388,
+        "keyPasses": 2
       },
       "previousSeason": {
         "season": 2025,
@@ -5746,20 +5795,20 @@
       "goalkeeperMetrics": {
         "currentSeason": {
           "season": 2026,
-          "shotsFaced": 75,
-          "goalsConceded": 17,
-          "saves": 57,
-          "xGoalsFaced": 22.3129,
-          "goalsMinusXGoalsFaced": -5.3129,
+          "shotsFaced": 84,
+          "goalsConceded": 20,
+          "saves": 63,
+          "xGoalsFaced": 25.5849,
+          "goalsMinusXGoalsFaced": -5.5849,
           "goalsAddedByAction": {
-            "claiming": -0.4903,
-            "fielding": -0.0009,
-            "handling": -0.7734,
-            "passing": 0.766,
-            "shotstopping": 5.3129,
-            "sweeping": 0.1152
+            "claiming": -0.4875,
+            "fielding": -0.0019,
+            "handling": -0.6674,
+            "passing": 0.8471,
+            "shotstopping": 5.5849,
+            "sweeping": 0.1994
           },
-          "goalsAdded": 4.9295
+          "goalsAdded": 5.474600000000001
         },
         "previousSeason": {
           "season": 2025,
@@ -5860,13 +5909,13 @@
       "guaranteedCompensation": 551875,
       "currentSeason": {
         "season": 2026,
-        "minutes": 1181,
+        "minutes": 1304,
         "goals": 0,
         "assists": 0,
         "xGoals": 0.6457,
         "xAssists": 0.3628,
         "keyPasses": 2,
-        "goalsAdded": 2.235
+        "goalsAdded": 2.4711
       },
       "rosterProfile": {
         "snapshotDate": "2026-02-26",
@@ -5897,13 +5946,13 @@
       "guaranteedCompensation": 576379,
       "currentSeason": {
         "season": 2026,
-        "minutes": 474,
+        "minutes": 637,
         "goals": 2,
         "assists": 0,
-        "xGoals": 0.9868,
-        "xAssists": 0.3437,
-        "keyPasses": 4,
-        "goalsAdded": 0.6006
+        "xGoals": 1.2682,
+        "xAssists": 0.4426,
+        "keyPasses": 7,
+        "goalsAdded": 0.9434000000000001
       },
       "previousSeason": {
         "season": 2025,
@@ -5947,13 +5996,13 @@
       "guaranteedCompensation": 781500,
       "currentSeason": {
         "season": 2026,
-        "minutes": 1848,
-        "goals": 7,
+        "minutes": 2008,
+        "goals": 9,
         "assists": 1,
-        "xGoals": 8.7001,
-        "xAssists": 1.4955,
-        "keyPasses": 13,
-        "goalsAdded": 4.8239
+        "xGoals": 9.7169,
+        "xAssists": 1.5585,
+        "keyPasses": 15,
+        "goalsAdded": 5.1266
       },
       "previousSeason": {
         "season": 2025,
@@ -5998,7 +6047,14 @@
       "baseSalary": 625000,
       "guaranteedCompensation": 691684,
       "currentSeason": {
-        "season": 2026
+        "season": 2026,
+        "minutes": 85,
+        "goals": 0,
+        "assists": 0,
+        "xGoals": 0,
+        "xAssists": 0,
+        "keyPasses": 0,
+        "goalsAdded": -0.1062
       },
       "previousSeason": {
         "season": 2025,
@@ -6040,13 +6096,13 @@
       "guaranteedCompensation": 575000,
       "currentSeason": {
         "season": 2026,
-        "minutes": 779,
+        "minutes": 819,
         "goals": 1,
-        "assists": 0,
+        "assists": 1,
         "xGoals": 0.3581,
-        "xAssists": 0.7554,
-        "keyPasses": 7,
-        "goalsAdded": 0.8902000000000001
+        "xAssists": 0.9724,
+        "keyPasses": 10,
+        "goalsAdded": 0.963
       },
       "previousSeason": {
         "season": 2025,
@@ -6079,6 +6135,55 @@
       ]
     },
     {
+      "id": "0x5g2EKLM7",
+      "name": "Indiana Vassilev",
+      "teamId": "9z5k7Yg5A3",
+      "teamName": "Philadelphia Union",
+      "teamAbbreviation": "PHI",
+      "positionGroup": "FWD",
+      "position": "W",
+      "baseSalary": 600000,
+      "guaranteedCompensation": 665000,
+      "currentSeason": {
+        "season": 2026,
+        "minutes": 1711,
+        "goals": 3,
+        "assists": 2,
+        "xGoals": 2.1316,
+        "xAssists": 2.248,
+        "keyPasses": 17,
+        "goalsAdded": 1.5304
+      },
+      "previousSeason": {
+        "season": 2025,
+        "minutes": 2371,
+        "goals": 6,
+        "assists": 2,
+        "xGoals": 3.6073,
+        "xAssists": 1.9464,
+        "keyPasses": 22,
+        "goalsAdded": 4.659
+      },
+      "rosterProfile": {
+        "snapshotDate": "2026-02-26",
+        "listedInRosterSnapshot": true,
+        "activeAtRosterSnapshot": true,
+        "snapshotTeamId": "9z5k7Yg5A3",
+        "snapshotTeamName": "Philadelphia Union",
+        "rosterSlot": "Senior Roster",
+        "contractThrough": "2028",
+        "optionYears": [
+          "2029"
+        ],
+        "internationalSlot": false,
+        "unavailable": false,
+        "rosterConstructionModel": "U22 Initiative Player Model"
+      },
+      "selectionReasons": [
+        "current-season-five-goal-contributions"
+      ]
+    },
+    {
       "id": "vzqo7mXJqa",
       "name": "Iván Angulo",
       "teamId": "jYQJ8EW5GR",
@@ -6090,13 +6195,13 @@
       "guaranteedCompensation": 582656,
       "currentSeason": {
         "season": 2026,
-        "minutes": 2271,
-        "goals": 1,
+        "minutes": 2478,
+        "goals": 3,
         "assists": 4,
-        "xGoals": 2.7094,
-        "xAssists": 4.1661,
-        "keyPasses": 31,
-        "goalsAdded": 3.9295999999999998
+        "xGoals": 3.8967,
+        "xAssists": 4.4686,
+        "keyPasses": 34,
+        "goalsAdded": 4.1087
       },
       "previousSeason": {
         "season": 2025,
@@ -6193,7 +6298,7 @@
       "guaranteedCompensation": 302000,
       "currentSeason": {
         "season": 2026,
-        "minutes": 1808,
+        "minutes": 2009,
         "goals": 0,
         "assists": 0,
         "xGoals": 0,
@@ -6212,20 +6317,20 @@
       "goalkeeperMetrics": {
         "currentSeason": {
           "season": 2026,
-          "shotsFaced": 92,
-          "goalsConceded": 22,
-          "saves": 67,
-          "xGoalsFaced": 29.1953,
-          "goalsMinusXGoalsFaced": -7.1953,
+          "shotsFaced": 109,
+          "goalsConceded": 26,
+          "saves": 80,
+          "xGoalsFaced": 34.5272,
+          "goalsMinusXGoalsFaced": -8.5272,
           "goalsAddedByAction": {
-            "claiming": 0.024,
-            "fielding": 0.1025,
-            "handling": -0.5247,
-            "passing": 1.1491,
-            "shotstopping": 7.1953,
-            "sweeping": -0.0958
+            "claiming": 0.0331,
+            "fielding": 0.1168,
+            "handling": -0.7158,
+            "passing": 1.2852,
+            "shotstopping": 8.5272,
+            "sweeping": 0.0936
           },
-          "goalsAdded": 7.8504
+          "goalsAdded": 9.3401
         },
         "previousSeason": {
           "season": 2025,
@@ -6276,13 +6381,13 @@
       "guaranteedCompensation": 1054275,
       "currentSeason": {
         "season": 2026,
-        "minutes": 1867,
+        "minutes": 2065,
         "goals": 0,
         "assists": 1,
-        "xGoals": 0.7382,
+        "xGoals": 1.0435,
         "xAssists": 0.7514,
         "keyPasses": 5,
-        "goalsAdded": 2.5037000000000003
+        "goalsAdded": 3.0134
       },
       "previousSeason": {
         "season": 2025,
@@ -6424,13 +6529,13 @@
       "guaranteedCompensation": 473750,
       "currentSeason": {
         "season": 2026,
-        "minutes": 1594,
+        "minutes": 1604,
         "goals": 0,
         "assists": 0,
         "xGoals": 0.5509,
         "xAssists": 0.3184,
         "keyPasses": 8,
-        "goalsAdded": 2.6357
+        "goalsAdded": 2.5799
       },
       "previousSeason": {
         "season": 2025,
@@ -6564,13 +6669,13 @@
       "guaranteedCompensation": 1268503,
       "currentSeason": {
         "season": 2026,
-        "minutes": 1679,
+        "minutes": 1880,
         "goals": 0,
         "assists": 0,
-        "xGoals": 0.2918,
-        "xAssists": 0.1174,
-        "keyPasses": 1,
-        "goalsAdded": 3.0986000000000002
+        "xGoals": 0.3023,
+        "xAssists": 0.1864,
+        "keyPasses": 3,
+        "goalsAdded": 3.0321
       },
       "previousSeason": {
         "season": 2025,
@@ -6614,13 +6719,13 @@
       "guaranteedCompensation": 756250,
       "currentSeason": {
         "season": 2026,
-        "minutes": 1016,
+        "minutes": 1113,
         "goals": 0,
         "assists": 0,
         "xGoals": 0.0153,
         "xAssists": 0.2425,
         "keyPasses": 3,
-        "goalsAdded": 1.8771
+        "goalsAdded": 2.1852
       },
       "previousSeason": {
         "season": 2025,
@@ -6665,7 +6770,7 @@
       "guaranteedCompensation": 320833,
       "currentSeason": {
         "season": 2026,
-        "minutes": 2365,
+        "minutes": 2574,
         "goals": 0,
         "assists": 0,
         "xGoals": 0,
@@ -6684,20 +6789,20 @@
       "goalkeeperMetrics": {
         "currentSeason": {
           "season": 2026,
-          "shotsFaced": 145,
-          "goalsConceded": 43,
-          "saves": 100,
-          "xGoalsFaced": 48.1262,
-          "goalsMinusXGoalsFaced": -5.1262,
+          "shotsFaced": 154,
+          "goalsConceded": 47,
+          "saves": 105,
+          "xGoalsFaced": 51.4419,
+          "goalsMinusXGoalsFaced": -4.4419,
           "goalsAddedByAction": {
-            "claiming": 0.0433,
-            "fielding": 0.0027,
-            "handling": -0.242,
-            "passing": 1.077,
-            "shotstopping": 5.1262,
-            "sweeping": 0.4517
+            "claiming": 0.0712,
+            "fielding": -0.0001,
+            "handling": -0.2164,
+            "passing": 1.1648,
+            "shotstopping": 4.4419,
+            "sweeping": 0.4287
           },
-          "goalsAdded": 6.4589
+          "goalsAdded": 5.8901
         },
         "previousSeason": {
           "season": 2025,
@@ -6745,13 +6850,13 @@
       "guaranteedCompensation": 435000,
       "currentSeason": {
         "season": 2026,
-        "minutes": 1957,
+        "minutes": 2043,
         "goals": 0,
         "assists": 1,
-        "xGoals": 2.2343,
-        "xAssists": 1.4599,
-        "keyPasses": 12,
-        "goalsAdded": 3.5070999999999994
+        "xGoals": 2.2471,
+        "xAssists": 1.5588,
+        "keyPasses": 13,
+        "goalsAdded": 3.5791
       },
       "previousSeason": {
         "season": 2025,
@@ -6794,13 +6899,13 @@
       "guaranteedCompensation": 791833,
       "currentSeason": {
         "season": 2026,
-        "minutes": 926,
+        "minutes": 999,
         "goals": 2,
         "assists": 1,
-        "xGoals": 2.6919,
+        "xGoals": 3.2084,
         "xAssists": 1.1575,
         "keyPasses": 14,
-        "goalsAdded": 2.0357000000000003
+        "goalsAdded": 2.3315
       },
       "previousSeason": {
         "season": 2025,
@@ -6841,13 +6946,13 @@
       "guaranteedCompensation": 1096667,
       "currentSeason": {
         "season": 2026,
-        "minutes": 1529,
+        "minutes": 1740,
         "goals": 0,
         "assists": 1,
         "xGoals": 1.0359,
         "xAssists": 1.8149,
         "keyPasses": 18,
-        "goalsAdded": 4.2465
+        "goalsAdded": 4.5928
       },
       "previousSeason": {
         "season": 2025,
@@ -6942,13 +7047,13 @@
       "guaranteedCompensation": 470000,
       "currentSeason": {
         "season": 2026,
-        "minutes": 2075,
+        "minutes": 2179,
         "goals": 0,
         "assists": 2,
-        "xGoals": 0.4685,
+        "xGoals": 0.4502,
         "xAssists": 1.4438,
         "keyPasses": 9,
-        "goalsAdded": 3.3670999999999998
+        "goalsAdded": 3.5914
       },
       "previousSeason": {
         "season": 2025,
@@ -6992,13 +7097,13 @@
       "guaranteedCompensation": 1089000,
       "currentSeason": {
         "season": 2026,
-        "minutes": 2232,
+        "minutes": 2433,
         "goals": 3,
-        "assists": 8,
-        "xGoals": 3.3136,
-        "xAssists": 8.3306,
-        "keyPasses": 57,
-        "goalsAdded": 6.140499999999999
+        "assists": 9,
+        "xGoals": 3.377,
+        "xAssists": 9.148,
+        "keyPasses": 64,
+        "goalsAdded": 6.7189000000000005
       },
       "previousSeason": {
         "season": 2025,
@@ -7045,13 +7150,13 @@
       "guaranteedCompensation": 442022,
       "currentSeason": {
         "season": 2026,
-        "minutes": 1531,
-        "goals": 1,
-        "assists": 7,
-        "xGoals": 1.6435,
-        "xAssists": 3.3975,
-        "keyPasses": 28,
-        "goalsAdded": 1.5441
+        "minutes": 1735,
+        "goals": 2,
+        "assists": 8,
+        "xGoals": 1.8248,
+        "xAssists": 4.003,
+        "keyPasses": 32,
+        "goalsAdded": 1.9271
       },
       "rosterProfile": {
         "snapshotDate": "2026-02-26",
@@ -7166,13 +7271,13 @@
       "guaranteedCompensation": 400000,
       "currentSeason": {
         "season": 2026,
-        "minutes": 1906,
+        "minutes": 2071,
         "goals": 0,
         "assists": 1,
         "xGoals": 1.0127,
-        "xAssists": 2.6298,
-        "keyPasses": 16,
-        "goalsAdded": 2.0617
+        "xAssists": 2.6925,
+        "keyPasses": 17,
+        "goalsAdded": 1.9457
       },
       "previousSeason": {
         "season": 2025,
@@ -7215,13 +7320,13 @@
       "guaranteedCompensation": 5581806,
       "currentSeason": {
         "season": 2026,
-        "minutes": 1236,
+        "minutes": 1277,
         "goals": 2,
         "assists": 2,
-        "xGoals": 3.5154,
-        "xAssists": 3.0283,
-        "keyPasses": 18,
-        "goalsAdded": 4.2018
+        "xGoals": 3.7124,
+        "xAssists": 3.0716,
+        "keyPasses": 19,
+        "goalsAdded": 4.452
       },
       "previousSeason": {
         "season": 2025,
@@ -7266,7 +7371,7 @@
       "guaranteedCompensation": 809704,
       "currentSeason": {
         "season": 2026,
-        "minutes": 2321,
+        "minutes": 2518,
         "goals": 0,
         "assists": 0,
         "xGoals": 0,
@@ -7285,20 +7390,20 @@
       "goalkeeperMetrics": {
         "currentSeason": {
           "season": 2026,
-          "shotsFaced": 81,
-          "goalsConceded": 23,
-          "saves": 56,
-          "xGoalsFaced": 23.7196,
-          "goalsMinusXGoalsFaced": -0.7196,
+          "shotsFaced": 86,
+          "goalsConceded": 25,
+          "saves": 58,
+          "xGoalsFaced": 25.1772,
+          "goalsMinusXGoalsFaced": -0.1772,
           "goalsAddedByAction": {
-            "claiming": 0.0895,
-            "fielding": 0.0234,
-            "handling": -0.3196,
-            "passing": 1.3236,
-            "shotstopping": 0.7196,
-            "sweeping": 0.0307
+            "claiming": 0.0584,
+            "fielding": 0.0501,
+            "handling": -0.3417,
+            "passing": 1.3993,
+            "shotstopping": 0.1772,
+            "sweeping": 0.0226
           },
-          "goalsAdded": 1.8672
+          "goalsAdded": 1.3659
         },
         "previousSeason": {
           "season": 2025,
@@ -7397,7 +7502,7 @@
       "guaranteedCompensation": 267625,
       "currentSeason": {
         "season": 2026,
-        "minutes": 912,
+        "minutes": 1011,
         "goals": 0,
         "assists": 0,
         "xGoals": 0,
@@ -7416,20 +7521,20 @@
       "goalkeeperMetrics": {
         "currentSeason": {
           "season": 2026,
-          "shotsFaced": 62,
-          "goalsConceded": 19,
-          "saves": 43,
-          "xGoalsFaced": 19.6079,
-          "goalsMinusXGoalsFaced": -0.6079,
+          "shotsFaced": 64,
+          "goalsConceded": 20,
+          "saves": 44,
+          "xGoalsFaced": 20.1033,
+          "goalsMinusXGoalsFaced": -0.1033,
           "goalsAddedByAction": {
             "claiming": 0.1576,
-            "fielding": 0.0113,
-            "handling": -0.5499,
-            "passing": 0.611,
-            "shotstopping": 0.6079,
-            "sweeping": -0.0557
+            "fielding": 0.0143,
+            "handling": -0.5308,
+            "passing": 0.7046,
+            "shotstopping": 0.1033,
+            "sweeping": -0.1799
           },
-          "goalsAdded": 0.7821999999999999
+          "goalsAdded": 0.2690999999999998
         },
         "previousSeason": {
           "season": 2025,
@@ -7475,18 +7580,18 @@
       "teamName": "Seattle Sounders FC",
       "teamAbbreviation": "SEA",
       "positionGroup": "FWD",
-      "position": "ST",
+      "position": "W",
       "baseSalary": 2362500,
       "guaranteedCompensation": 2372500,
       "currentSeason": {
         "season": 2026,
-        "minutes": 725,
+        "minutes": 827,
         "goals": 1,
-        "assists": 1,
-        "xGoals": 2.8961,
-        "xAssists": 1.9164,
-        "keyPasses": 9,
-        "goalsAdded": 3.0425
+        "assists": 2,
+        "xGoals": 3.5323,
+        "xAssists": 3.0474,
+        "keyPasses": 13,
+        "goalsAdded": 3.6684
       },
       "previousSeason": {
         "season": 2025,
@@ -7528,13 +7633,13 @@
       "guaranteedCompensation": 788528,
       "currentSeason": {
         "season": 2026,
-        "minutes": 1744,
+        "minutes": 1854,
         "goals": 7,
         "assists": 0,
-        "xGoals": 5.605,
-        "xAssists": 1.3172,
-        "keyPasses": 17,
-        "goalsAdded": 3.9350000000000005
+        "xGoals": 5.6628,
+        "xAssists": 1.6194,
+        "keyPasses": 19,
+        "goalsAdded": 4.0038
       },
       "rosterProfile": {
         "snapshotDate": "2026-02-26",
@@ -7576,7 +7681,7 @@
         "xGoals": 7.6125,
         "xAssists": 2.5232,
         "keyPasses": 17,
-        "goalsAdded": 5.8873
+        "goalsAdded": 5.8972
       },
       "previousSeason": {
         "season": 2025,
@@ -7609,6 +7714,56 @@
       ]
     },
     {
+      "id": "jYQJa30DqG",
+      "name": "Joseph Rosales",
+      "teamId": "gpMOLwl5zy",
+      "teamName": "Austin FC",
+      "teamAbbreviation": "ATX",
+      "positionGroup": "DEF",
+      "position": "FB",
+      "baseSalary": 500000,
+      "guaranteedCompensation": 529875,
+      "currentSeason": {
+        "season": 2026,
+        "minutes": 2081,
+        "goals": 1,
+        "assists": 4,
+        "xGoals": 1.2178,
+        "xAssists": 2.3116,
+        "keyPasses": 21,
+        "goalsAdded": 2.7456
+      },
+      "previousSeason": {
+        "season": 2025,
+        "minutes": 1811,
+        "goals": 1,
+        "assists": 2,
+        "xGoals": 1.8021,
+        "xAssists": 2.4154,
+        "keyPasses": 26,
+        "goalsAdded": 3.0528
+      },
+      "rosterProfile": {
+        "snapshotDate": "2026-02-26",
+        "listedInRosterSnapshot": true,
+        "activeAtRosterSnapshot": true,
+        "snapshotTeamId": "gpMOLwl5zy",
+        "snapshotTeamName": "Austin FC",
+        "rosterSlot": "Senior Roster",
+        "rosterDesignation": "TAM Player",
+        "contractThrough": "2028-29",
+        "optionYears": [
+          "2029"
+        ],
+        "internationalSlot": false,
+        "unavailable": false,
+        "rosterConstructionModel": "Designated Player Model"
+      },
+      "selectionReasons": [
+        "current-season-five-goal-contributions"
+      ]
+    },
+    {
       "id": "XVqKeYLNM0",
       "name": "Josh Atencio",
       "teamId": "pzeQZ6xQKw",
@@ -7620,13 +7775,13 @@
       "guaranteedCompensation": 462500,
       "currentSeason": {
         "season": 2026,
-        "minutes": 1315,
+        "minutes": 1458,
         "goals": 1,
         "assists": 0,
-        "xGoals": 0.3768,
-        "xAssists": 0.6937,
-        "keyPasses": 12,
-        "goalsAdded": 0.43560000000000004
+        "xGoals": 0.4092,
+        "xAssists": 0.7453,
+        "keyPasses": 13,
+        "goalsAdded": 0.6345000000000001
       },
       "previousSeason": {
         "season": 2025,
@@ -7669,13 +7824,13 @@
       "guaranteedCompensation": 5265667,
       "currentSeason": {
         "season": 2026,
-        "minutes": 1352,
+        "minutes": 1532,
         "goals": 7,
         "assists": 2,
-        "xGoals": 5.9033,
-        "xAssists": 1.0035,
-        "keyPasses": 6,
-        "goalsAdded": 4.9925999999999995
+        "xGoals": 8.1391,
+        "xAssists": 1.2459,
+        "keyPasses": 9,
+        "goalsAdded": 6.0016
       },
       "selectionReasons": [
         "current-season-five-goal-contributions"
@@ -7693,13 +7848,13 @@
       "guaranteedCompensation": 441375,
       "currentSeason": {
         "season": 2026,
-        "minutes": 1718,
+        "minutes": 1896,
         "goals": 0,
         "assists": 1,
         "xGoals": 0.5,
-        "xAssists": 0.8521,
-        "keyPasses": 17,
-        "goalsAdded": 2.1377
+        "xAssists": 0.9129,
+        "keyPasses": 19,
+        "goalsAdded": 2.5186
       },
       "previousSeason": {
         "season": 2025,
@@ -7743,13 +7898,13 @@
       "guaranteedCompensation": 2915000,
       "currentSeason": {
         "season": 2026,
-        "minutes": 606,
+        "minutes": 638,
         "goals": 5,
         "assists": 0,
-        "xGoals": 4.3251,
+        "xGoals": 4.4754,
         "xAssists": 0.7877,
         "keyPasses": 6,
-        "goalsAdded": 2.3387000000000002
+        "goalsAdded": 2.4493
       },
       "previousSeason": {
         "season": 2025,
@@ -7792,13 +7947,13 @@
       "guaranteedCompensation": 565139,
       "currentSeason": {
         "season": 2026,
-        "minutes": 443,
+        "minutes": 605,
         "goals": 0,
         "assists": 0,
-        "xGoals": 0,
+        "xGoals": 0.2925,
         "xAssists": 0,
         "keyPasses": 0,
-        "goalsAdded": -0.028198220800000007
+        "goalsAdded": 0.1873
       },
       "rosterProfile": {
         "snapshotDate": "2026-02-26",
@@ -7833,13 +7988,13 @@
       "guaranteedCompensation": 500000,
       "currentSeason": {
         "season": 2026,
-        "minutes": 1663,
+        "minutes": 1868,
         "goals": 1,
         "assists": 4,
-        "xGoals": 0.8398,
-        "xAssists": 2.7604,
-        "keyPasses": 29,
-        "goalsAdded": 2.1805
+        "xGoals": 0.9058,
+        "xAssists": 3.191,
+        "keyPasses": 33,
+        "goalsAdded": 2.5143
       },
       "rosterProfile": {
         "snapshotDate": "2026-02-26",
@@ -7870,13 +8025,13 @@
       "guaranteedCompensation": 257241,
       "currentSeason": {
         "season": 2026,
-        "minutes": 2218,
+        "minutes": 2342,
         "goals": 9,
         "assists": 3,
-        "xGoals": 12.2629,
-        "xAssists": 2.8777,
+        "xGoals": 12.2424,
+        "xAssists": 2.8892,
         "keyPasses": 14,
-        "goalsAdded": 7.0878000000000005
+        "goalsAdded": 7.148899999999999
       },
       "previousSeason": {
         "season": 2025,
@@ -7921,13 +8076,13 @@
       "guaranteedCompensation": 385000,
       "currentSeason": {
         "season": 2026,
-        "minutes": 1014,
+        "minutes": 1087,
         "goals": 0,
         "assists": 0,
-        "xGoals": 0.0291,
+        "xGoals": 0.0326,
         "xAssists": 0.1239,
         "keyPasses": 4,
-        "goalsAdded": 1.3013
+        "goalsAdded": 1.2631
       },
       "previousSeason": {
         "season": 2025,
@@ -8064,13 +8219,13 @@
       "guaranteedCompensation": 112424,
       "currentSeason": {
         "season": 2026,
-        "minutes": 1200,
+        "minutes": 1331,
         "goals": 1,
-        "assists": 7,
-        "xGoals": 3.889,
-        "xAssists": 4.3976,
-        "keyPasses": 27,
-        "goalsAdded": 3.8379000000000003
+        "assists": 9,
+        "xGoals": 3.9978,
+        "xAssists": 5.9777,
+        "keyPasses": 32,
+        "goalsAdded": 4.8233999999999995
       },
       "previousSeason": {
         "season": 2025,
@@ -8115,13 +8270,13 @@
       "guaranteedCompensation": 810561,
       "currentSeason": {
         "season": 2026,
-        "minutes": 2141,
+        "minutes": 2342,
         "goals": 0,
         "assists": 1,
-        "xGoals": 0.8942,
+        "xGoals": 1.0983,
         "xAssists": 0.431,
         "keyPasses": 7,
-        "goalsAdded": 2.9272
+        "goalsAdded": 3.1586
       },
       "previousSeason": {
         "season": 2025,
@@ -8165,13 +8320,13 @@
       "guaranteedCompensation": 251900,
       "currentSeason": {
         "season": 2026,
-        "minutes": 1877,
-        "goals": 2,
+        "minutes": 2081,
+        "goals": 3,
         "assists": 1,
-        "xGoals": 1.9909,
-        "xAssists": 1.5228,
-        "keyPasses": 12,
-        "goalsAdded": 1.6018
+        "xGoals": 2.7029,
+        "xAssists": 1.5328,
+        "keyPasses": 13,
+        "goalsAdded": 1.9131000000000002
       },
       "previousSeason": {
         "season": 2025,
@@ -8216,13 +8371,13 @@
       "guaranteedCompensation": 1562700,
       "currentSeason": {
         "season": 2026,
-        "minutes": 1796,
-        "goals": 11,
+        "minutes": 1951,
+        "goals": 13,
         "assists": 1,
-        "xGoals": 13.6235,
-        "xAssists": 1.3163,
+        "xGoals": 15.5193,
+        "xAssists": 1.3167,
         "keyPasses": 13,
-        "goalsAdded": 5.4281
+        "goalsAdded": 5.9232
       },
       "previousSeason": {
         "season": 2025,
@@ -8319,13 +8474,13 @@
       "guaranteedCompensation": 88025,
       "currentSeason": {
         "season": 2026,
-        "minutes": 1176,
+        "minutes": 1271,
         "goals": 5,
         "assists": 1,
-        "xGoals": 4.4683,
-        "xAssists": 0.4857,
-        "keyPasses": 8,
-        "goalsAdded": 3.0406
+        "xGoals": 4.6372,
+        "xAssists": 0.7813,
+        "keyPasses": 11,
+        "goalsAdded": 3.3457
       },
       "previousSeason": {
         "season": 2025,
@@ -8533,7 +8688,7 @@
       "guaranteedCompensation": 813750,
       "currentSeason": {
         "season": 2026,
-        "minutes": 2348,
+        "minutes": 2556,
         "goals": 0,
         "assists": 0,
         "xGoals": 0,
@@ -8552,20 +8707,20 @@
       "goalkeeperMetrics": {
         "currentSeason": {
           "season": 2026,
-          "shotsFaced": 119,
-          "goalsConceded": 31,
-          "saves": 88,
-          "xGoalsFaced": 31.2658,
-          "goalsMinusXGoalsFaced": -0.2658,
+          "shotsFaced": 133,
+          "goalsConceded": 35,
+          "saves": 98,
+          "xGoalsFaced": 35.133,
+          "goalsMinusXGoalsFaced": -0.133,
           "goalsAddedByAction": {
-            "claiming": -0.1892,
-            "fielding": -0.2579,
-            "handling": -0.229,
-            "passing": 1.7639,
-            "shotstopping": 0.2658,
-            "sweeping": -0.1254
+            "claiming": -0.219,
+            "fielding": -0.2304,
+            "handling": -0.2281,
+            "passing": 1.8627,
+            "shotstopping": 0.133,
+            "sweeping": -0.1316
           },
-          "goalsAdded": 1.2282
+          "goalsAdded": 1.1866
         },
         "previousSeason": {
           "season": 2025,
@@ -8617,13 +8772,13 @@
       "guaranteedCompensation": 3027000,
       "currentSeason": {
         "season": 2026,
-        "minutes": 2100,
-        "goals": 6,
+        "minutes": 2309,
+        "goals": 8,
         "assists": 6,
-        "xGoals": 4.9866,
-        "xAssists": 4.7784,
-        "keyPasses": 40,
-        "goalsAdded": 5.6436
+        "xGoals": 5.6273,
+        "xAssists": 5.6059,
+        "keyPasses": 46,
+        "goalsAdded": 6.6936
       },
       "previousSeason": {
         "season": 2025,
@@ -8669,13 +8824,13 @@
       "guaranteedCompensation": 751667,
       "currentSeason": {
         "season": 2026,
-        "minutes": 1620,
+        "minutes": 1816,
         "goals": 1,
         "assists": 0,
-        "xGoals": 1.0811,
+        "xGoals": 1.5813,
         "xAssists": 1.2408,
         "keyPasses": 4,
-        "goalsAdded": 2.5252
+        "goalsAdded": 4.1855
       },
       "previousSeason": {
         "season": 2025,
@@ -8719,13 +8874,13 @@
       "guaranteedCompensation": 3810000,
       "currentSeason": {
         "season": 2026,
-        "minutes": 1907,
-        "goals": 11,
+        "minutes": 2070,
+        "goals": 13,
         "assists": 2,
-        "xGoals": 11.6551,
+        "xGoals": 12.5385,
         "xAssists": 1.7301,
         "keyPasses": 18,
-        "goalsAdded": 6.2256
+        "goalsAdded": 6.535400000000001
       },
       "previousSeason": {
         "season": 2025,
@@ -8772,13 +8927,13 @@
       "guaranteedCompensation": 574250,
       "currentSeason": {
         "season": 2026,
-        "minutes": 2110,
+        "minutes": 2301,
         "goals": 3,
-        "assists": 2,
-        "xGoals": 1.4081,
-        "xAssists": 1.5705,
-        "keyPasses": 25,
-        "goalsAdded": 1.8724999999999998
+        "assists": 3,
+        "xGoals": 1.4368,
+        "xAssists": 1.7342,
+        "keyPasses": 28,
+        "goalsAdded": 2.1254999999999997
       },
       "previousSeason": {
         "season": 2025,
@@ -8824,13 +8979,13 @@
       "guaranteedCompensation": 2648500,
       "currentSeason": {
         "season": 2026,
-        "minutes": 1016,
-        "goals": 3,
+        "minutes": 1133,
+        "goals": 5,
         "assists": 3,
-        "xGoals": 4.4372,
-        "xAssists": 2.4472,
+        "xGoals": 5.344,
+        "xAssists": 2.3922,
         "keyPasses": 12,
-        "goalsAdded": 3.0747
+        "goalsAdded": 3.5375
       },
       "previousSeason": {
         "season": 2025,
@@ -8876,13 +9031,13 @@
       "guaranteedCompensation": 28333332,
       "currentSeason": {
         "season": 2026,
-        "minutes": 1993,
-        "goals": 18,
-        "assists": 10,
-        "xGoals": 16.2663,
-        "xAssists": 9.0862,
-        "keyPasses": 47,
-        "goalsAdded": 14.8887
+        "minutes": 2190,
+        "goals": 19,
+        "assists": 11,
+        "xGoals": 17.8449,
+        "xAssists": 9.9318,
+        "keyPasses": 53,
+        "goalsAdded": 16.2636
       },
       "previousSeason": {
         "season": 2025,
@@ -8926,13 +9081,13 @@
       "guaranteedCompensation": 417000,
       "currentSeason": {
         "season": 2026,
-        "minutes": 1272,
-        "goals": 8,
+        "minutes": 1439,
+        "goals": 9,
         "assists": 3,
-        "xGoals": 6.305,
-        "xAssists": 2.9464,
+        "xGoals": 6.7907,
+        "xAssists": 2.9022,
         "keyPasses": 14,
-        "goalsAdded": 4.5053
+        "goalsAdded": 4.7921
       },
       "previousSeason": {
         "season": 2025,
@@ -8976,13 +9131,13 @@
       "guaranteedCompensation": 1634100,
       "currentSeason": {
         "season": 2026,
-        "minutes": 1355,
+        "minutes": 1519,
         "goals": 6,
-        "assists": 1,
-        "xGoals": 6.069,
-        "xAssists": 1.3846,
-        "keyPasses": 12,
-        "goalsAdded": 3.3714000000000004
+        "assists": 2,
+        "xGoals": 6.354,
+        "xAssists": 2.2947,
+        "keyPasses": 14,
+        "goalsAdded": 3.5571
       },
       "rosterProfile": {
         "snapshotDate": "2026-02-26",
@@ -9018,13 +9173,13 @@
       "guaranteedCompensation": 787283,
       "currentSeason": {
         "season": 2026,
-        "minutes": 992,
+        "minutes": 1009,
         "goals": 3,
         "assists": 6,
         "xGoals": 2.3719,
         "xAssists": 1.5833,
         "keyPasses": 14,
-        "goalsAdded": 2.4084
+        "goalsAdded": 2.4096
       },
       "previousSeason": {
         "season": 2025,
@@ -9069,13 +9224,13 @@
       "guaranteedCompensation": 134736,
       "currentSeason": {
         "season": 2026,
-        "minutes": 2125,
+        "minutes": 2261,
         "goals": 0,
-        "assists": 2,
-        "xGoals": 0.2344,
-        "xAssists": 3.2162,
-        "keyPasses": 32,
-        "goalsAdded": 2.6609999999999996
+        "assists": 3,
+        "xGoals": 0.2471,
+        "xAssists": 3.602,
+        "keyPasses": 36,
+        "goalsAdded": 2.8552
       },
       "previousSeason": {
         "season": 2025,
@@ -9119,13 +9274,13 @@
       "guaranteedCompensation": 585625,
       "currentSeason": {
         "season": 2026,
-        "minutes": 2137,
+        "minutes": 2333,
         "goals": 2,
         "assists": 0,
         "xGoals": 2.937,
         "xAssists": 0.581,
         "keyPasses": 5,
-        "goalsAdded": 4.9955
+        "goalsAdded": 4.7219
       },
       "previousSeason": {
         "season": 2025,
@@ -9168,7 +9323,7 @@
       "guaranteedCompensation": 342667,
       "currentSeason": {
         "season": 2026,
-        "minutes": 2358,
+        "minutes": 2558,
         "goals": 0,
         "assists": 0,
         "xGoals": 0,
@@ -9178,20 +9333,20 @@
       "goalkeeperMetrics": {
         "currentSeason": {
           "season": 2026,
-          "shotsFaced": 99,
-          "goalsConceded": 40,
-          "saves": 58,
-          "xGoalsFaced": 37.7337,
-          "goalsMinusXGoalsFaced": 2.2663,
+          "shotsFaced": 106,
+          "goalsConceded": 43,
+          "saves": 62,
+          "xGoalsFaced": 40.2869,
+          "goalsMinusXGoalsFaced": 2.7131,
           "goalsAddedByAction": {
-            "claiming": 0.158,
-            "fielding": 0.0706,
-            "handling": -0.2098,
-            "passing": 1.5331,
-            "shotstopping": -2.2663,
-            "sweeping": 0.3427
+            "claiming": 0.1112,
+            "fielding": 0.0854,
+            "handling": -0.1295,
+            "passing": 1.6467,
+            "shotstopping": -2.7131,
+            "sweeping": 0.4729
           },
-          "goalsAdded": -0.37170000000000014
+          "goalsAdded": -0.5263999999999998
         }
       },
       "rosterProfile": {
@@ -9225,13 +9380,13 @@
       "guaranteedCompensation": 742800,
       "currentSeason": {
         "season": 2026,
-        "minutes": 1540,
+        "minutes": 1619,
         "goals": 2,
         "assists": 1,
         "xGoals": 2.3753,
-        "xAssists": 1.9374,
-        "keyPasses": 11,
-        "goalsAdded": 1.349
+        "xAssists": 2.0956,
+        "keyPasses": 14,
+        "goalsAdded": 1.2765
       },
       "previousSeason": {
         "season": 2025,
@@ -9272,13 +9427,13 @@
       "guaranteedCompensation": 569000,
       "currentSeason": {
         "season": 2026,
-        "minutes": 953,
+        "minutes": 1056,
         "goals": 1,
         "assists": 0,
         "xGoals": 0.8636,
         "xAssists": 0.1259,
         "keyPasses": 3,
-        "goalsAdded": 0.7123
+        "goalsAdded": 0.7190000000000001
       },
       "rosterProfile": {
         "snapshotDate": "2026-02-26",
@@ -9312,13 +9467,13 @@
       "guaranteedCompensation": 803125,
       "currentSeason": {
         "season": 2026,
-        "minutes": 1511,
+        "minutes": 1708,
         "goals": 12,
         "assists": 3,
-        "xGoals": 8.9812,
-        "xAssists": 3.8573,
-        "keyPasses": 22,
-        "goalsAdded": 4.3699
+        "xGoals": 9.4573,
+        "xAssists": 4.213,
+        "keyPasses": 23,
+        "goalsAdded": 4.6899
       },
       "previousSeason": {
         "season": 2025,
@@ -9360,7 +9515,7 @@
       "guaranteedCompensation": 249475,
       "currentSeason": {
         "season": 2026,
-        "minutes": 2376,
+        "minutes": 2579,
         "goals": 1,
         "assists": 0,
         "xGoals": 0.3354,
@@ -9379,20 +9534,20 @@
       "goalkeeperMetrics": {
         "currentSeason": {
           "season": 2026,
-          "shotsFaced": 111,
-          "goalsConceded": 40,
-          "saves": 68,
-          "xGoalsFaced": 34.3972,
-          "goalsMinusXGoalsFaced": 5.6028,
+          "shotsFaced": 124,
+          "goalsConceded": 43,
+          "saves": 78,
+          "xGoalsFaced": 37.5229,
+          "goalsMinusXGoalsFaced": 5.4771,
           "goalsAddedByAction": {
-            "claiming": 0.0214,
-            "fielding": 0.4256,
-            "handling": -0.0463,
-            "passing": 1.3111,
-            "shotstopping": -5.6028,
-            "sweeping": 0.2136
+            "claiming": 0.025,
+            "fielding": 0.4205,
+            "handling": -0.0903,
+            "passing": 1.4265,
+            "shotstopping": -5.4771,
+            "sweeping": 0.2409
           },
-          "goalsAdded": -3.6773999999999996
+          "goalsAdded": -3.4545000000000003
         },
         "previousSeason": {
           "season": 2025,
@@ -9444,13 +9599,13 @@
       "guaranteedCompensation": 832135,
       "currentSeason": {
         "season": 2026,
-        "minutes": 1223,
+        "minutes": 1271,
         "goals": 1,
         "assists": 0,
-        "xGoals": 0.8755,
+        "xGoals": 0.702,
         "xAssists": 0.5173,
         "keyPasses": 7,
-        "goalsAdded": 2.6006
+        "goalsAdded": 2.6619
       },
       "previousSeason": {
         "season": 2025,
@@ -9483,6 +9638,52 @@
       ]
     },
     {
+      "id": "KAqBNnYXqb",
+      "name": "Malte Amundsen",
+      "teamId": "mvzqoLZQap",
+      "teamName": "Columbus Crew",
+      "teamAbbreviation": "CLB",
+      "positionGroup": "DEF",
+      "position": "FB",
+      "baseSalary": 675000,
+      "guaranteedCompensation": 747500,
+      "currentSeason": {
+        "season": 2026,
+        "minutes": 1853,
+        "goals": 0,
+        "assists": 1,
+        "xGoals": 0.8389,
+        "xAssists": 0.7888,
+        "keyPasses": 8,
+        "goalsAdded": 2.2359999999999998
+      },
+      "previousSeason": {
+        "season": 2025,
+        "minutes": 2271,
+        "goals": 1,
+        "assists": 1,
+        "xGoals": 1.0607,
+        "xAssists": 0.8885,
+        "keyPasses": 5,
+        "goalsAdded": 4.6388
+      },
+      "rosterProfile": {
+        "snapshotDate": "2026-02-26",
+        "listedInRosterSnapshot": true,
+        "activeAtRosterSnapshot": true,
+        "snapshotTeamId": "mvzqoLZQap",
+        "snapshotTeamName": "Columbus Crew",
+        "rosterSlot": "Senior Roster",
+        "contractThrough": "2027",
+        "internationalSlot": false,
+        "unavailable": false,
+        "rosterConstructionModel": "Designated Player Model"
+      },
+      "selectionReasons": [
+        "team-outfield-selection"
+      ]
+    },
+    {
       "id": "ljqE2EwAQx",
       "name": "Mamadou Fofana",
       "teamId": "19vQ2095K6",
@@ -9494,13 +9695,13 @@
       "guaranteedCompensation": 916250,
       "currentSeason": {
         "season": 2026,
-        "minutes": 2230,
+        "minutes": 2432,
         "goals": 1,
         "assists": 1,
-        "xGoals": 0.4815,
+        "xGoals": 0.5304,
         "xAssists": 0.8675,
         "keyPasses": 9,
-        "goalsAdded": 4.5776
+        "goalsAdded": 4.8293
       },
       "previousSeason": {
         "season": 2025,
@@ -9544,13 +9745,13 @@
       "guaranteedCompensation": 92025,
       "currentSeason": {
         "season": 2026,
-        "minutes": 2168,
+        "minutes": 2379,
         "goals": 0,
         "assists": 1,
         "xGoals": 0.3381,
         "xAssists": 0.4631,
         "keyPasses": 4,
-        "goalsAdded": 5.1746
+        "goalsAdded": 5.3183
       },
       "previousSeason": {
         "season": 2025,
@@ -9701,13 +9902,13 @@
       "guaranteedCompensation": 1650667,
       "currentSeason": {
         "season": 2026,
-        "minutes": 940,
+        "minutes": 1051,
         "goals": 2,
         "assists": 0,
-        "xGoals": 1.42,
-        "xAssists": 0.6458,
-        "keyPasses": 6,
-        "goalsAdded": 1.6146000000000003
+        "xGoals": 1.4963,
+        "xAssists": 0.9147,
+        "keyPasses": 8,
+        "goalsAdded": 1.7067999999999999
       },
       "previousSeason": {
         "season": 2025,
@@ -9752,13 +9953,13 @@
       "guaranteedCompensation": 902364,
       "currentSeason": {
         "season": 2026,
-        "minutes": 1807,
-        "goals": 5,
+        "minutes": 1929,
+        "goals": 6,
         "assists": 6,
-        "xGoals": 6.1636,
-        "xAssists": 6.6259,
-        "keyPasses": 49,
-        "goalsAdded": 4.2089
+        "xGoals": 7.463,
+        "xAssists": 6.9049,
+        "keyPasses": 51,
+        "goalsAdded": 4.504
       },
       "previousSeason": {
         "season": 2025,
@@ -9784,6 +9985,7 @@
         "rosterConstructionModel": "Designated Player Model"
       },
       "selectionReasons": [
+        "team-outfield-selection",
         "current-season-five-goal-contributions"
       ]
     },
@@ -9799,13 +10001,13 @@
       "guaranteedCompensation": 88025,
       "currentSeason": {
         "season": 2026,
-        "minutes": 334,
+        "minutes": 398,
         "goals": 4,
         "assists": 1,
-        "xGoals": 1.663,
-        "xAssists": 0.6459,
+        "xGoals": 2.1053,
+        "xAssists": 0.562,
         "keyPasses": 2,
-        "goalsAdded": 0.5677000000000001
+        "goalsAdded": 0.64
       },
       "rosterProfile": {
         "snapshotDate": "2026-02-26",
@@ -9890,13 +10092,13 @@
       "guaranteedCompensation": 483500,
       "currentSeason": {
         "season": 2026,
-        "minutes": 1747,
-        "goals": 7,
+        "minutes": 1857,
+        "goals": 8,
         "assists": 3,
-        "xGoals": 3.9616,
-        "xAssists": 3.9991,
-        "keyPasses": 30,
-        "goalsAdded": 4.9756
+        "xGoals": 4.1783,
+        "xAssists": 4.2624,
+        "keyPasses": 35,
+        "goalsAdded": 5.3216
       },
       "previousSeason": {
         "season": 2025,
@@ -9936,13 +10138,13 @@
       "guaranteedCompensation": 1055000,
       "currentSeason": {
         "season": 2026,
-        "minutes": 1843,
+        "minutes": 1893,
         "goals": 2,
         "assists": 2,
-        "xGoals": 0.854,
-        "xAssists": 2.5926,
+        "xGoals": 1.0599,
+        "xAssists": 2.5984,
         "keyPasses": 30,
-        "goalsAdded": 3.4974999999999996
+        "goalsAdded": 3.8015999999999996
       },
       "previousSeason": {
         "season": 2025,
@@ -9983,13 +10185,13 @@
       "guaranteedCompensation": 1778200,
       "currentSeason": {
         "season": 2026,
-        "minutes": 1573,
+        "minutes": 1723,
         "goals": 11,
-        "assists": 0,
-        "xGoals": 7.9047,
-        "xAssists": 3.0803,
-        "keyPasses": 25,
-        "goalsAdded": 5.222499999999999
+        "assists": 1,
+        "xGoals": 8.5164,
+        "xAssists": 3.9741,
+        "keyPasses": 27,
+        "goalsAdded": 6.0677
       },
       "previousSeason": {
         "season": 2025,
@@ -10092,7 +10294,7 @@
         "xGoals": 2.1023,
         "xAssists": 2.5915,
         "keyPasses": 12,
-        "goalsAdded": 2.6488
+        "goalsAdded": 2.6487
       },
       "previousSeason": {
         "season": 2025,
@@ -10137,13 +10339,13 @@
       "guaranteedCompensation": 2521048,
       "currentSeason": {
         "season": 2026,
-        "minutes": 2126,
-        "goals": 4,
+        "minutes": 2323,
+        "goals": 5,
         "assists": 1,
-        "xGoals": 6.089,
-        "xAssists": 2.5318,
-        "keyPasses": 22,
-        "goalsAdded": 4.7867
+        "xGoals": 7.4415,
+        "xAssists": 2.8205,
+        "keyPasses": 23,
+        "goalsAdded": 5.3142
       },
       "rosterProfile": {
         "snapshotDate": "2026-02-26",
@@ -10233,13 +10435,13 @@
       "guaranteedCompensation": 1193625,
       "currentSeason": {
         "season": 2026,
-        "minutes": 2021,
+        "minutes": 2222,
         "goals": 3,
         "assists": 1,
-        "xGoals": 3.089,
-        "xAssists": 1.0978,
-        "keyPasses": 6,
-        "goalsAdded": 3.9886999999999997
+        "xGoals": 3.3218,
+        "xAssists": 1.1243,
+        "keyPasses": 7,
+        "goalsAdded": 4.367
       },
       "previousSeason": {
         "season": 2025,
@@ -10281,7 +10483,7 @@
       "guaranteedCompensation": 795833,
       "currentSeason": {
         "season": 2026,
-        "minutes": 2322,
+        "minutes": 2530,
         "goals": 0,
         "assists": 0,
         "xGoals": 0.1754,
@@ -10300,20 +10502,20 @@
       "goalkeeperMetrics": {
         "currentSeason": {
           "season": 2026,
-          "shotsFaced": 112,
-          "goalsConceded": 31,
-          "saves": 78,
-          "xGoalsFaced": 32.8395,
-          "goalsMinusXGoalsFaced": -1.8395,
+          "shotsFaced": 124,
+          "goalsConceded": 33,
+          "saves": 88,
+          "xGoalsFaced": 37.3117,
+          "goalsMinusXGoalsFaced": -4.3117,
           "goalsAddedByAction": {
-            "claiming": 0.0294,
-            "fielding": 0.15,
-            "handling": -0.9482,
-            "passing": 0.7693,
-            "shotstopping": 1.8395,
-            "sweeping": 0.0398
+            "claiming": 0.0288,
+            "fielding": 0.1525,
+            "handling": -0.835,
+            "passing": 0.8212,
+            "shotstopping": 4.3117,
+            "sweeping": 0.0389
           },
-          "goalsAdded": 1.8798
+          "goalsAdded": 4.5181000000000004
         },
         "previousSeason": {
           "season": 2025,
@@ -10362,7 +10564,7 @@
       "guaranteedCompensation": 1942886.4,
       "currentSeason": {
         "season": 2026,
-        "minutes": 2333,
+        "minutes": 2535,
         "goals": 0,
         "assists": 0,
         "xGoals": 0,
@@ -10381,20 +10583,20 @@
       "goalkeeperMetrics": {
         "currentSeason": {
           "season": 2026,
-          "shotsFaced": 115,
-          "goalsConceded": 27,
-          "saves": 85,
-          "xGoalsFaced": 36.1258,
-          "goalsMinusXGoalsFaced": -9.1258,
+          "shotsFaced": 128,
+          "goalsConceded": 29,
+          "saves": 95,
+          "xGoalsFaced": 40.6075,
+          "goalsMinusXGoalsFaced": -11.6075,
           "goalsAddedByAction": {
-            "claiming": 0.1172,
-            "fielding": -0.4143,
-            "handling": -0.4698,
-            "passing": 1.6084,
-            "shotstopping": 9.1258,
-            "sweeping": 0.4554
+            "claiming": -0.0426,
+            "fielding": -0.4056,
+            "handling": -0.2626,
+            "passing": 1.7652,
+            "shotstopping": 11.6075,
+            "sweeping": 0.4169
           },
-          "goalsAdded": 10.422699999999999
+          "goalsAdded": 13.0788
         },
         "previousSeason": {
           "season": 2025,
@@ -10450,13 +10652,13 @@
       "guaranteedCompensation": 876000,
       "currentSeason": {
         "season": 2026,
-        "minutes": 2003,
+        "minutes": 2093,
         "goals": 1,
         "assists": 0,
-        "xGoals": 0.5209,
+        "xGoals": 0.5498,
         "xAssists": 1.1158,
         "keyPasses": 18,
-        "goalsAdded": 2.9073
+        "goalsAdded": 3.0034
       },
       "previousSeason": {
         "season": 2025,
@@ -10500,13 +10702,13 @@
       "guaranteedCompensation": 435869,
       "currentSeason": {
         "season": 2026,
-        "minutes": 2044,
+        "minutes": 2144,
         "goals": 2,
         "assists": 3,
-        "xGoals": 2.5899,
+        "xGoals": 2.6367,
         "xAssists": 2.86,
         "keyPasses": 24,
-        "goalsAdded": 4.6897
+        "goalsAdded": 4.8247
       },
       "previousSeason": {
         "season": 2025,
@@ -10542,19 +10744,19 @@
       "teamId": "kRQand1MKZ",
       "teamName": "Minnesota United FC",
       "teamAbbreviation": "MIN",
-      "positionGroup": "FWD",
-      "position": "W",
+      "positionGroup": "MID",
+      "position": "AM",
       "baseSalary": 240000,
       "guaranteedCompensation": 240000,
       "currentSeason": {
         "season": 2026,
-        "minutes": 230,
+        "minutes": 244,
         "goals": 2,
         "assists": 0,
-        "xGoals": 1.1646,
+        "xGoals": 1.2808,
         "xAssists": 0.2755,
         "keyPasses": 1,
-        "goalsAdded": 1.0693
+        "goalsAdded": 1.0675
       },
       "rosterProfile": {
         "snapshotDate": "2026-02-26",
@@ -10683,7 +10885,7 @@
       "guaranteedCompensation": 600000,
       "currentSeason": {
         "season": 2026,
-        "minutes": 2183,
+        "minutes": 2390,
         "goals": 0,
         "assists": 0,
         "xGoals": 0,
@@ -10702,20 +10904,20 @@
       "goalkeeperMetrics": {
         "currentSeason": {
           "season": 2026,
-          "shotsFaced": 143,
+          "shotsFaced": 149,
           "goalsConceded": 52,
-          "saves": 89,
-          "xGoalsFaced": 52.0337,
-          "goalsMinusXGoalsFaced": -0.0337,
+          "saves": 94,
+          "xGoalsFaced": 52.7915,
+          "goalsMinusXGoalsFaced": -0.7915,
           "goalsAddedByAction": {
-            "claiming": 0.0729,
-            "fielding": 0.0955,
-            "handling": -0.8721,
-            "passing": 0.824,
-            "shotstopping": 0.0337,
+            "claiming": 0.0727,
+            "fielding": 0.0943,
+            "handling": -0.9262,
+            "passing": 0.8812,
+            "shotstopping": 0.7915,
             "sweeping": 0.2533
           },
-          "goalsAdded": 0.40729999999999994
+          "goalsAdded": 1.1667999999999998
         },
         "previousSeason": {
           "season": 2025,
@@ -10763,13 +10965,13 @@
       "guaranteedCompensation": 674250,
       "currentSeason": {
         "season": 2026,
-        "minutes": 1365,
+        "minutes": 1562,
         "goals": 0,
         "assists": 0,
         "xGoals": 0.6492,
         "xAssists": 0.6775,
         "keyPasses": 2,
-        "goalsAdded": 1.3891
+        "goalsAdded": 1.7515
       },
       "previousSeason": {
         "season": 2025,
@@ -10853,13 +11055,13 @@
       "guaranteedCompensation": 7871000,
       "currentSeason": {
         "season": 2026,
-        "minutes": 1611,
+        "minutes": 1790,
         "goals": 4,
         "assists": 5,
-        "xGoals": 7.5533,
-        "xAssists": 4.6562,
-        "keyPasses": 34,
-        "goalsAdded": 6.515599999999999
+        "xGoals": 8.9302,
+        "xAssists": 5.0417,
+        "keyPasses": 40,
+        "goalsAdded": 7.0794
       },
       "previousSeason": {
         "season": 2025,
@@ -10906,13 +11108,13 @@
       "guaranteedCompensation": 628194,
       "currentSeason": {
         "season": 2026,
-        "minutes": 2119,
-        "goals": 11,
+        "minutes": 2243,
+        "goals": 12,
         "assists": 2,
-        "xGoals": 11.689,
+        "xGoals": 13.8754,
         "xAssists": 4.0531,
         "keyPasses": 42,
-        "goalsAdded": 6.734100000000001
+        "goalsAdded": 7.2071000000000005
       },
       "previousSeason": {
         "season": 2025,
@@ -10956,13 +11158,13 @@
       "guaranteedCompensation": 3950000,
       "currentSeason": {
         "season": 2026,
-        "minutes": 1354,
+        "minutes": 1568,
         "goals": 0,
         "assists": 0,
-        "xGoals": 0.7095,
-        "xAssists": 0.1441,
-        "keyPasses": 2,
-        "goalsAdded": 2.8941
+        "xGoals": 0.8273,
+        "xAssists": 0.2495,
+        "keyPasses": 4,
+        "goalsAdded": 3.3761
       },
       "previousSeason": {
         "season": 2025,
@@ -11008,13 +11210,13 @@
       "guaranteedCompensation": 2225500,
       "currentSeason": {
         "season": 2026,
-        "minutes": 1280,
+        "minutes": 1361,
         "goals": 2,
         "assists": 4,
-        "xGoals": 4.4336,
-        "xAssists": 3.0421,
-        "keyPasses": 18,
-        "goalsAdded": 3.7803
+        "xGoals": 4.5322,
+        "xAssists": 3.1375,
+        "keyPasses": 21,
+        "goalsAdded": 3.9683
       },
       "rosterProfile": {
         "snapshotDate": "2026-02-26",
@@ -11050,13 +11252,13 @@
       "guaranteedCompensation": 113400,
       "currentSeason": {
         "season": 2026,
-        "minutes": 2330,
+        "minutes": 2429,
         "goals": 1,
         "assists": 0,
         "xGoals": 1.5168,
-        "xAssists": 0.8007,
+        "xAssists": 0.6763,
         "keyPasses": 6,
-        "goalsAdded": 4.6383
+        "goalsAdded": 4.8805
       },
       "previousSeason": {
         "season": 2025,
@@ -11178,6 +11380,55 @@
       ]
     },
     {
+      "id": "ljqEjV8oQx",
+      "name": "Nathan Byrne",
+      "teamId": "NPqxKXZ59d",
+      "teamName": "Charlotte FC",
+      "teamAbbreviation": "CLT",
+      "positionGroup": "DEF",
+      "position": "FB",
+      "baseSalary": 475000,
+      "guaranteedCompensation": 498750,
+      "currentSeason": {
+        "season": 2026,
+        "minutes": 1920,
+        "goals": 0,
+        "assists": 0,
+        "xGoals": 0.307,
+        "xAssists": 0.3181,
+        "keyPasses": 6,
+        "goalsAdded": 2.1183
+      },
+      "previousSeason": {
+        "season": 2025,
+        "minutes": 2024,
+        "goals": 0,
+        "assists": 0,
+        "xGoals": 0,
+        "xAssists": 0.6535,
+        "keyPasses": 8,
+        "goalsAdded": 1.2394
+      },
+      "rosterProfile": {
+        "snapshotDate": "2026-02-26",
+        "listedInRosterSnapshot": true,
+        "activeAtRosterSnapshot": true,
+        "snapshotTeamId": "NPqxKXZ59d",
+        "snapshotTeamName": "Charlotte FC",
+        "rosterSlot": "Senior Roster",
+        "contractThrough": "2026",
+        "optionYears": [
+          "2027"
+        ],
+        "internationalSlot": false,
+        "unavailable": false,
+        "rosterConstructionModel": "Designated Player Model"
+      },
+      "selectionReasons": [
+        "team-outfield-selection"
+      ]
+    },
+    {
       "id": "KAqBNL8mqb",
       "name": "Nathan Harriel",
       "teamId": "9z5k7Yg5A3",
@@ -11189,13 +11440,13 @@
       "guaranteedCompensation": 421300,
       "currentSeason": {
         "season": 2026,
-        "minutes": 2337,
+        "minutes": 2546,
         "goals": 1,
         "assists": 2,
         "xGoals": 2.0228,
-        "xAssists": 0.9753,
-        "keyPasses": 6,
-        "goalsAdded": 4.1822
+        "xAssists": 1.0059,
+        "keyPasses": 7,
+        "goalsAdded": 4.430899999999999
       },
       "previousSeason": {
         "season": 2025,
@@ -11238,13 +11489,13 @@
       "guaranteedCompensation": 732665,
       "currentSeason": {
         "season": 2026,
-        "minutes": 1349,
+        "minutes": 1446,
         "goals": 1,
         "assists": 1,
         "xGoals": 0.8995,
-        "xAssists": 1.5131,
-        "keyPasses": 9,
-        "goalsAdded": 1.8881000000000001
+        "xAssists": 1.6235,
+        "keyPasses": 10,
+        "goalsAdded": 2.1744
       },
       "previousSeason": {
         "season": 2025,
@@ -11424,13 +11675,13 @@
       "guaranteedCompensation": 3650000,
       "currentSeason": {
         "season": 2026,
-        "minutes": 2147,
-        "goals": 14,
-        "assists": 2,
-        "xGoals": 8.1745,
-        "xAssists": 5.2523,
-        "keyPasses": 40,
-        "goalsAdded": 6.446299999999999
+        "minutes": 2355,
+        "goals": 15,
+        "assists": 3,
+        "xGoals": 8.3762,
+        "xAssists": 6.2983,
+        "keyPasses": 45,
+        "goalsAdded": 6.970899999999999
       },
       "previousSeason": {
         "season": 2025,
@@ -11518,13 +11769,13 @@
       "guaranteedCompensation": 492500,
       "currentSeason": {
         "season": 2026,
-        "minutes": 712,
+        "minutes": 792,
         "goals": 0,
         "assists": 0,
         "xGoals": 0.2964,
         "xAssists": 0.0595,
         "keyPasses": 2,
-        "goalsAdded": 1.1212000000000002
+        "goalsAdded": 1.2334
       },
       "previousSeason": {
         "season": 2025,
@@ -11568,13 +11819,13 @@
       "guaranteedCompensation": 755214,
       "currentSeason": {
         "season": 2026,
-        "minutes": 1373,
-        "goals": 2,
-        "assists": 5,
-        "xGoals": 3.6718,
-        "xAssists": 3.9277,
-        "keyPasses": 39,
-        "goalsAdded": 3.5103999999999997
+        "minutes": 1553,
+        "goals": 3,
+        "assists": 7,
+        "xGoals": 4.6773,
+        "xAssists": 4.6428,
+        "keyPasses": 45,
+        "goalsAdded": 3.7504
       },
       "previousSeason": {
         "season": 2025,
@@ -11668,13 +11919,13 @@
       "guaranteedCompensation": 481500,
       "currentSeason": {
         "season": 2026,
-        "minutes": 1737,
+        "minutes": 1939,
         "goals": 0,
         "assists": 1,
-        "xGoals": 1.4369,
-        "xAssists": 0.9006,
-        "keyPasses": 3,
-        "goalsAdded": 3.1792
+        "xGoals": 1.4488,
+        "xAssists": 0.9631,
+        "keyPasses": 4,
+        "goalsAdded": 3.6456999999999997
       },
       "previousSeason": {
         "season": 2025,
@@ -11714,13 +11965,13 @@
       "guaranteedCompensation": 113400,
       "currentSeason": {
         "season": 2026,
-        "minutes": 2087,
+        "minutes": 2292,
         "goals": 1,
         "assists": 3,
-        "xGoals": 1.8764,
-        "xAssists": 1.7755,
-        "keyPasses": 24,
-        "goalsAdded": 3.2221
+        "xGoals": 1.9955,
+        "xAssists": 1.7993,
+        "keyPasses": 25,
+        "goalsAdded": 3.7317
       },
       "previousSeason": {
         "season": 2025,
@@ -11763,13 +12014,13 @@
       "guaranteedCompensation": 835000,
       "currentSeason": {
         "season": 2026,
-        "minutes": 2105,
+        "minutes": 2207,
         "goals": 0,
         "assists": 1,
         "xGoals": 0.488,
         "xAssists": 1.0535,
         "keyPasses": 8,
-        "goalsAdded": 4.713699999999999
+        "goalsAdded": 4.7522
       },
       "previousSeason": {
         "season": 2025,
@@ -11809,13 +12060,13 @@
       "guaranteedCompensation": 580000,
       "currentSeason": {
         "season": 2026,
-        "minutes": 1863,
+        "minutes": 1902,
         "goals": 1,
         "assists": 0,
         "xGoals": 0.6509,
         "xAssists": 0.3884,
         "keyPasses": 4,
-        "goalsAdded": 2.1286
+        "goalsAdded": 2.0111
       },
       "previousSeason": {
         "season": 2025,
@@ -11905,13 +12156,13 @@
       "guaranteedCompensation": 781800,
       "currentSeason": {
         "season": 2026,
-        "minutes": 2014,
+        "minutes": 2160,
         "goals": 4,
         "assists": 3,
-        "xGoals": 4.9119,
+        "xGoals": 5.2964,
         "xAssists": 2.2058,
         "keyPasses": 21,
-        "goalsAdded": 4.3384
+        "goalsAdded": 4.4365000000000006
       },
       "previousSeason": {
         "season": 2025,
@@ -11956,13 +12207,13 @@
       "guaranteedCompensation": 643982,
       "currentSeason": {
         "season": 2026,
-        "minutes": 1948,
+        "minutes": 2047,
         "goals": 1,
         "assists": 1,
         "xGoals": 1.5081,
-        "xAssists": 0.3772,
-        "keyPasses": 2,
-        "goalsAdded": 2.3204000000000002
+        "xAssists": 0.4212,
+        "keyPasses": 3,
+        "goalsAdded": 2.2824999999999998
       },
       "previousSeason": {
         "season": 2025,
@@ -12006,13 +12257,13 @@
       "guaranteedCompensation": 350000,
       "currentSeason": {
         "season": 2026,
-        "minutes": 1980,
-        "goals": 5,
+        "minutes": 2143,
+        "goals": 6,
         "assists": 1,
-        "xGoals": 5.3851,
+        "xGoals": 6.1727,
         "xAssists": 4.213,
         "keyPasses": 27,
-        "goalsAdded": 5.568200000000001
+        "goalsAdded": 6.124599999999999
       },
       "previousSeason": {
         "season": 2025,
@@ -12056,13 +12307,13 @@
       "guaranteedCompensation": 450100,
       "currentSeason": {
         "season": 2026,
-        "minutes": 1542,
+        "minutes": 1668,
         "goals": 0,
         "assists": 1,
-        "xGoals": 0.2201,
-        "xAssists": 1.6423,
+        "xGoals": 0.1839,
+        "xAssists": 1.6473,
         "keyPasses": 15,
-        "goalsAdded": 2.9495
+        "goalsAdded": 3.1292999999999997
       },
       "previousSeason": {
         "season": 2025,
@@ -12153,7 +12404,7 @@
       "guaranteedCompensation": 1032083,
       "currentSeason": {
         "season": 2026,
-        "minutes": 2369,
+        "minutes": 2569,
         "goals": 0,
         "assists": 0,
         "xGoals": 0,
@@ -12172,20 +12423,20 @@
       "goalkeeperMetrics": {
         "currentSeason": {
           "season": 2026,
-          "shotsFaced": 109,
-          "goalsConceded": 39,
-          "saves": 66,
-          "xGoalsFaced": 37.274,
-          "goalsMinusXGoalsFaced": 1.726,
+          "shotsFaced": 119,
+          "goalsConceded": 42,
+          "saves": 73,
+          "xGoalsFaced": 41.4626,
+          "goalsMinusXGoalsFaced": 0.5374,
           "goalsAddedByAction": {
-            "claiming": 0.0332,
-            "fielding": -0.1627,
-            "handling": -0.077,
-            "passing": 1.0469,
-            "shotstopping": -1.726,
-            "sweeping": 0.291
+            "claiming": 0.0282,
+            "fielding": -0.1792,
+            "handling": -0.0659,
+            "passing": 1.1546,
+            "shotstopping": -0.5374,
+            "sweeping": 0.2811
           },
-          "goalsAdded": -0.5946000000000002
+          "goalsAdded": 0.6814000000000001
         },
         "previousSeason": {
           "season": 2025,
@@ -12237,13 +12488,13 @@
       "guaranteedCompensation": 616013,
       "currentSeason": {
         "season": 2026,
-        "minutes": 973,
+        "minutes": 1072,
         "goals": 1,
         "assists": 2,
         "xGoals": 0.9983,
-        "xAssists": 0.9094,
-        "keyPasses": 9,
-        "goalsAdded": 1.9344999999999999
+        "xAssists": 1.0031,
+        "keyPasses": 11,
+        "goalsAdded": 1.8295
       },
       "previousSeason": {
         "season": 2025,
@@ -12287,13 +12538,13 @@
       "guaranteedCompensation": 286280,
       "currentSeason": {
         "season": 2026,
-        "minutes": 761,
+        "minutes": 784,
         "goals": 3,
         "assists": 0,
         "xGoals": 1.5814,
         "xAssists": 0.6352,
         "keyPasses": 8,
-        "goalsAdded": 1.3712
+        "goalsAdded": 1.3711
       },
       "previousSeason": {
         "season": 2025,
@@ -12337,13 +12588,13 @@
       "guaranteedCompensation": 525000,
       "currentSeason": {
         "season": 2026,
-        "minutes": 1906,
+        "minutes": 1954,
         "goals": 5,
         "assists": 1,
-        "xGoals": 4.226,
-        "xAssists": 3.0194,
+        "xGoals": 4.267,
+        "xAssists": 2.9962,
         "keyPasses": 21,
-        "goalsAdded": 4.1883
+        "goalsAdded": 4.0933
       },
       "previousSeason": {
         "season": 2025,
@@ -12387,13 +12638,13 @@
       "guaranteedCompensation": 548774,
       "currentSeason": {
         "season": 2026,
-        "minutes": 2007,
-        "goals": 5,
+        "minutes": 2221,
+        "goals": 6,
         "assists": 4,
-        "xGoals": 1.7524,
+        "xGoals": 1.977,
         "xAssists": 2.2109,
         "keyPasses": 18,
-        "goalsAdded": 2.5256999999999996
+        "goalsAdded": 2.5869999999999997
       },
       "previousSeason": {
         "season": 2025,
@@ -12438,13 +12689,13 @@
       "guaranteedCompensation": 2228063,
       "currentSeason": {
         "season": 2026,
-        "minutes": 2094,
-        "goals": 4,
+        "minutes": 2290,
+        "goals": 6,
         "assists": 5,
-        "xGoals": 4.8183,
-        "xAssists": 5.775,
-        "keyPasses": 37,
-        "goalsAdded": 4.2428
+        "xGoals": 5.8401,
+        "xAssists": 6.1022,
+        "keyPasses": 39,
+        "goalsAdded": 4.5093
       },
       "previousSeason": {
         "season": 2025,
@@ -12582,13 +12833,13 @@
       "guaranteedCompensation": 626312,
       "currentSeason": {
         "season": 2026,
-        "minutes": 1859,
+        "minutes": 1954,
         "goals": 1,
         "assists": 4,
         "xGoals": 3.1793,
-        "xAssists": 4.6891,
-        "keyPasses": 36,
-        "goalsAdded": 3.787
+        "xAssists": 4.8733,
+        "keyPasses": 37,
+        "goalsAdded": 3.9382
       },
       "previousSeason": {
         "season": 2025,
@@ -12633,13 +12884,13 @@
       "guaranteedCompensation": 3015563,
       "currentSeason": {
         "season": 2026,
-        "minutes": 2215,
-        "goals": 11,
+        "minutes": 2423,
+        "goals": 12,
         "assists": 7,
-        "xGoals": 6.4442,
-        "xAssists": 6.4694,
-        "keyPasses": 39,
-        "goalsAdded": 4.5357
+        "xGoals": 7.2731,
+        "xAssists": 6.7334,
+        "keyPasses": 43,
+        "goalsAdded": 5.2454
       },
       "previousSeason": {
         "season": 2025,
@@ -12686,13 +12937,13 @@
       "guaranteedCompensation": 2880000,
       "currentSeason": {
         "season": 2026,
-        "minutes": 1819,
+        "minutes": 1842,
         "goals": 18,
-        "assists": 4,
-        "xGoals": 15.7629,
-        "xAssists": 2.8202,
-        "keyPasses": 20,
-        "goalsAdded": 8.7415
+        "assists": 5,
+        "xGoals": 16.2339,
+        "xAssists": 2.9233,
+        "keyPasses": 21,
+        "goalsAdded": 9.335
       },
       "previousSeason": {
         "season": 2025,
@@ -12739,13 +12990,13 @@
       "guaranteedCompensation": 115400,
       "currentSeason": {
         "season": 2026,
-        "minutes": 1602,
-        "goals": 4,
+        "minutes": 1779,
+        "goals": 5,
         "assists": 4,
-        "xGoals": 5.434,
-        "xAssists": 3.1416,
-        "keyPasses": 14,
-        "goalsAdded": 5.8835
+        "xGoals": 6.1796,
+        "xAssists": 3.388,
+        "keyPasses": 15,
+        "goalsAdded": 6.3843
       },
       "previousSeason": {
         "season": 2025,
@@ -12790,13 +13041,13 @@
       "guaranteedCompensation": 1635665,
       "currentSeason": {
         "season": 2026,
-        "minutes": 1843,
+        "minutes": 2041,
         "goals": 5,
         "assists": 8,
-        "xGoals": 8.0532,
-        "xAssists": 5.5637,
-        "keyPasses": 42,
-        "goalsAdded": 6.9645
+        "xGoals": 8.7877,
+        "xAssists": 6.4412,
+        "keyPasses": 48,
+        "goalsAdded": 8.0369
       },
       "previousSeason": {
         "season": 2025,
@@ -12878,13 +13129,13 @@
       "guaranteedCompensation": 299375,
       "currentSeason": {
         "season": 2026,
-        "minutes": 1809,
-        "goals": 11,
+        "minutes": 1839,
+        "goals": 12,
         "assists": 3,
-        "xGoals": 10.546,
-        "xAssists": 1.894,
-        "keyPasses": 8,
-        "goalsAdded": 7.755599999999999
+        "xGoals": 10.5293,
+        "xAssists": 1.9734,
+        "keyPasses": 9,
+        "goalsAdded": 7.9206
       },
       "previousSeason": {
         "season": 2025,
@@ -12928,13 +13179,13 @@
       "guaranteedCompensation": 1330000,
       "currentSeason": {
         "season": 2026,
-        "minutes": 2018,
+        "minutes": 2080,
         "goals": 13,
         "assists": 6,
-        "xGoals": 12.2964,
-        "xAssists": 6.5775,
-        "keyPasses": 26,
-        "goalsAdded": 6.547
+        "xGoals": 12.7591,
+        "xAssists": 6.5936,
+        "keyPasses": 27,
+        "goalsAdded": 6.7791
       },
       "previousSeason": {
         "season": 2025,
@@ -12981,13 +13232,13 @@
       "guaranteedCompensation": 283252,
       "currentSeason": {
         "season": 2026,
-        "minutes": 543,
+        "minutes": 642,
         "goals": 2,
         "assists": 1,
-        "xGoals": 2.0124,
-        "xAssists": 1.3074,
+        "xGoals": 2.2104,
+        "xAssists": 1.2929,
         "keyPasses": 8,
-        "goalsAdded": 1.4670999999999998
+        "goalsAdded": 1.7335
       },
       "rosterProfile": {
         "snapshotDate": "2026-02-26",
@@ -13021,13 +13272,13 @@
       "guaranteedCompensation": 568000,
       "currentSeason": {
         "season": 2026,
-        "minutes": 264,
-        "goals": 0,
-        "assists": 1,
-        "xGoals": 0.9679,
-        "xAssists": 0.9098,
-        "keyPasses": 6,
-        "goalsAdded": 1.1984
+        "minutes": 365,
+        "goals": 1,
+        "assists": 2,
+        "xGoals": 2.0635,
+        "xAssists": 1.0666,
+        "keyPasses": 8,
+        "goalsAdded": 1.9459
       },
       "previousSeason": {
         "season": 2025,
@@ -13072,7 +13323,7 @@
       "guaranteedCompensation": 703750,
       "currentSeason": {
         "season": 2026,
-        "minutes": 2138,
+        "minutes": 2343,
         "goals": 0,
         "assists": 0,
         "xGoals": 0,
@@ -13091,20 +13342,20 @@
       "goalkeeperMetrics": {
         "currentSeason": {
           "season": 2026,
-          "shotsFaced": 94,
-          "goalsConceded": 32,
-          "saves": 59,
-          "xGoalsFaced": 31.6561,
-          "goalsMinusXGoalsFaced": 0.3439,
+          "shotsFaced": 102,
+          "goalsConceded": 36,
+          "saves": 63,
+          "xGoalsFaced": 34.9014,
+          "goalsMinusXGoalsFaced": 1.0986,
           "goalsAddedByAction": {
-            "claiming": 0.1498,
-            "fielding": 0.2383,
-            "handling": -0.3451,
-            "passing": 1.2111,
-            "shotstopping": -0.3439,
-            "sweeping": 0.1439
+            "claiming": 0.1606,
+            "fielding": 0.2515,
+            "handling": -0.2843,
+            "passing": 1.3065,
+            "shotstopping": -1.0986,
+            "sweeping": 0.1343
           },
-          "goalsAdded": 1.0541
+          "goalsAdded": 0.4700000000000002
         },
         "previousSeason": {
           "season": 2025,
@@ -13155,13 +13406,13 @@
       "guaranteedCompensation": 1449600,
       "currentSeason": {
         "season": 2026,
-        "minutes": 2257,
-        "goals": 10,
+        "minutes": 2456,
+        "goals": 14,
         "assists": 2,
-        "xGoals": 14.2715,
-        "xAssists": 1.8885,
+        "xGoals": 17.3489,
+        "xAssists": 1.885,
         "keyPasses": 22,
-        "goalsAdded": 6.8652999999999995
+        "goalsAdded": 7.2993
       },
       "previousSeason": {
         "season": 2025,
@@ -13208,13 +13459,13 @@
       "guaranteedCompensation": 302083,
       "currentSeason": {
         "season": 2026,
-        "minutes": 809,
+        "minutes": 955,
         "goals": 1,
         "assists": 2,
-        "xGoals": 0.8145,
-        "xAssists": 0.972,
-        "keyPasses": 9,
-        "goalsAdded": 1.6316
+        "xGoals": 0.9685,
+        "xAssists": 1.5418,
+        "keyPasses": 10,
+        "goalsAdded": 1.4632
       },
       "rosterProfile": {
         "snapshotDate": "2026-02-26",
@@ -13249,13 +13500,13 @@
       "guaranteedCompensation": 283000,
       "currentSeason": {
         "season": 2026,
-        "minutes": 909,
+        "minutes": 1084,
         "goals": 1,
         "assists": 1,
-        "xGoals": 0.4469,
-        "xAssists": 0.5463,
-        "keyPasses": 4,
-        "goalsAdded": 1.1454999999999997
+        "xGoals": 0.4951,
+        "xAssists": 0.6151,
+        "keyPasses": 5,
+        "goalsAdded": 1.3685
       },
       "previousSeason": {
         "season": 2025,
@@ -13299,13 +13550,13 @@
       "guaranteedCompensation": 841500,
       "currentSeason": {
         "season": 2026,
-        "minutes": 1007,
+        "minutes": 1106,
         "goals": 2,
         "assists": 0,
         "xGoals": 0.3012,
         "xAssists": 0.3199,
         "keyPasses": 5,
-        "goalsAdded": 0.9568
+        "goalsAdded": 1.1179
       },
       "previousSeason": {
         "season": 2025,
@@ -13349,13 +13600,13 @@
       "guaranteedCompensation": 88025,
       "currentSeason": {
         "season": 2026,
-        "minutes": 2137,
+        "minutes": 2192,
         "goals": 2,
         "assists": 0,
-        "xGoals": 1.9145,
+        "xGoals": 1.9887,
         "xAssists": 0.1228,
         "keyPasses": 3,
-        "goalsAdded": 2.6113
+        "goalsAdded": 2.6639
       },
       "previousSeason": {
         "season": 2025,
@@ -13388,6 +13639,57 @@
       ]
     },
     {
+      "id": "KAqB9DZX5b",
+      "name": "Richie Laryea",
+      "teamId": "kRQabn8MKZ",
+      "teamName": "Toronto FC",
+      "teamAbbreviation": "TOR",
+      "positionGroup": "DEF",
+      "position": "FB",
+      "baseSalary": 875000,
+      "guaranteedCompensation": 1214438,
+      "currentSeason": {
+        "season": 2026,
+        "minutes": 2063,
+        "goals": 2,
+        "assists": 1,
+        "xGoals": 1.0883,
+        "xAssists": 2.1103,
+        "keyPasses": 14,
+        "goalsAdded": 2.4133999999999998
+      },
+      "previousSeason": {
+        "season": 2025,
+        "minutes": 1426,
+        "goals": 1,
+        "assists": 1,
+        "xGoals": 0.6577,
+        "xAssists": 0.4737,
+        "keyPasses": 2,
+        "goalsAdded": 2.6468
+      },
+      "rosterProfile": {
+        "snapshotDate": "2026-02-26",
+        "listedInRosterSnapshot": true,
+        "activeAtRosterSnapshot": true,
+        "snapshotTeamId": "kRQabn8MKZ",
+        "snapshotTeamName": "Toronto FC",
+        "rosterSlot": "Senior Roster",
+        "rosterDesignation": "TAM Player",
+        "contractThrough": "2026",
+        "optionYears": [
+          "2027"
+        ],
+        "internationalSlot": false,
+        "unavailable": false,
+        "canadianInternationalSlotExemption": false,
+        "rosterConstructionModel": "U22 Initiative Player Model"
+      },
+      "selectionReasons": [
+        "team-outfield-selection"
+      ]
+    },
+    {
       "id": "eV5DpPa5Kn",
       "name": "Robert Lewandowski",
       "teamId": "X0Oq66zq6D",
@@ -13397,13 +13699,13 @@
       "position": "ST",
       "currentSeason": {
         "season": 2026,
-        "minutes": 595,
-        "goals": 5,
+        "minutes": 793,
+        "goals": 6,
         "assists": 1,
-        "xGoals": 4.1468,
-        "xAssists": 0.2834,
-        "keyPasses": 5,
-        "goalsAdded": 2.1037
+        "xGoals": 4.8505,
+        "xAssists": 0.3967,
+        "keyPasses": 6,
+        "goalsAdded": 2.6265
       },
       "selectionReasons": [
         "current-season-five-goal-contributions"
@@ -13421,13 +13723,13 @@
       "guaranteedCompensation": 530000,
       "currentSeason": {
         "season": 2026,
-        "minutes": 1680,
+        "minutes": 1784,
         "goals": 0,
         "assists": 0,
         "xGoals": 0.5513,
-        "xAssists": 0,
-        "keyPasses": 0,
-        "goalsAdded": 1.9752999999999998
+        "xAssists": 0.1194,
+        "keyPasses": 1,
+        "goalsAdded": 2.2792
       },
       "previousSeason": {
         "season": 2025,
@@ -13467,13 +13769,13 @@
       "guaranteedCompensation": 866667,
       "currentSeason": {
         "season": 2026,
-        "minutes": 1483,
+        "minutes": 1582,
         "goals": 4,
-        "assists": 1,
-        "xGoals": 4.3726,
-        "xAssists": 1.8512,
-        "keyPasses": 19,
-        "goalsAdded": 3.0291
+        "assists": 2,
+        "xGoals": 4.6244,
+        "xAssists": 1.9744,
+        "keyPasses": 21,
+        "goalsAdded": 3.1769
       },
       "previousSeason": {
         "season": 2025,
@@ -13515,13 +13817,13 @@
       "guaranteedCompensation": 9688320,
       "currentSeason": {
         "season": 2026,
-        "minutes": 1869,
+        "minutes": 2066,
         "goals": 4,
-        "assists": 6,
-        "xGoals": 1.908,
-        "xAssists": 6.9506,
-        "keyPasses": 42,
-        "goalsAdded": 6.5847
+        "assists": 7,
+        "xGoals": 2.1441,
+        "xAssists": 7.1276,
+        "keyPasses": 46,
+        "goalsAdded": 7.1808
       },
       "previousSeason": {
         "season": 2025,
@@ -13565,7 +13867,7 @@
       "guaranteedCompensation": 2750000,
       "currentSeason": {
         "season": 2026,
-        "minutes": 2121,
+        "minutes": 2327,
         "goals": 0,
         "assists": 0,
         "xGoals": 0,
@@ -13584,20 +13886,20 @@
       "goalkeeperMetrics": {
         "currentSeason": {
           "season": 2026,
-          "shotsFaced": 83,
-          "goalsConceded": 29,
-          "saves": 54,
-          "xGoalsFaced": 28.2116,
-          "goalsMinusXGoalsFaced": 0.7884,
+          "shotsFaced": 89,
+          "goalsConceded": 33,
+          "saves": 56,
+          "xGoalsFaced": 29.5757,
+          "goalsMinusXGoalsFaced": 3.4243,
           "goalsAddedByAction": {
-            "claiming": 0.0599,
-            "fielding": -0.0103,
-            "handling": -0.2514,
-            "passing": 1.3411,
-            "shotstopping": -0.7884,
-            "sweeping": 0.0425
+            "claiming": 0.1093,
+            "fielding": -0.0685,
+            "handling": -0.2672,
+            "passing": 1.5001,
+            "shotstopping": -3.4243,
+            "sweeping": 0.0456
           },
-          "goalsAdded": 0.39339999999999986
+          "goalsAdded": -2.1049999999999995
         },
         "previousSeason": {
           "season": 2025,
@@ -13651,7 +13953,7 @@
       "guaranteedCompensation": 574000,
       "currentSeason": {
         "season": 2026,
-        "minutes": 2060,
+        "minutes": 2274,
         "goals": 0,
         "assists": 0,
         "xGoals": 0,
@@ -13670,20 +13972,20 @@
       "goalkeeperMetrics": {
         "currentSeason": {
           "season": 2026,
-          "shotsFaced": 116,
-          "goalsConceded": 42,
-          "saves": 73,
-          "xGoalsFaced": 40.8211,
-          "goalsMinusXGoalsFaced": 1.1789,
+          "shotsFaced": 126,
+          "goalsConceded": 50,
+          "saves": 75,
+          "xGoalsFaced": 45.5217,
+          "goalsMinusXGoalsFaced": 4.4783,
           "goalsAddedByAction": {
-            "claiming": -0.8297,
-            "fielding": 0.0099,
-            "handling": -0.5913,
-            "passing": 0.9141,
-            "shotstopping": -1.1789,
-            "sweeping": -0.3247
+            "claiming": -0.8279,
+            "fielding": 0.0013,
+            "handling": -0.5944,
+            "passing": 1.0334,
+            "shotstopping": -4.4783,
+            "sweeping": -0.0657
           },
-          "goalsAdded": -2.0006
+          "goalsAdded": -4.9315999999999995
         },
         "previousSeason": {
           "season": 2025,
@@ -13731,13 +14033,13 @@
       "guaranteedCompensation": 175400,
       "currentSeason": {
         "season": 2026,
-        "minutes": 2125,
-        "goals": 1,
+        "minutes": 2225,
+        "goals": 2,
         "assists": 4,
-        "xGoals": 2.1151,
+        "xGoals": 2.2651,
         "xAssists": 3.5778,
         "keyPasses": 33,
-        "goalsAdded": 4.4815
+        "goalsAdded": 4.7547999999999995
       },
       "previousSeason": {
         "season": 2025,
@@ -13781,13 +14083,13 @@
       "guaranteedCompensation": 3675000,
       "currentSeason": {
         "season": 2026,
-        "minutes": 544,
-        "goals": 2,
-        "assists": 0,
-        "xGoals": 1.7243,
-        "xAssists": 1.2743,
-        "keyPasses": 13,
-        "goalsAdded": 1.8708
+        "minutes": 722,
+        "goals": 3,
+        "assists": 1,
+        "xGoals": 3.6942,
+        "xAssists": 2.3448,
+        "keyPasses": 24,
+        "goalsAdded": 3.5829
       },
       "previousSeason": {
         "season": 2025,
@@ -13831,13 +14133,13 @@
       "guaranteedCompensation": 550000,
       "currentSeason": {
         "season": 2026,
-        "minutes": 1542,
+        "minutes": 1673,
         "goals": 1,
-        "assists": 0,
-        "xGoals": 2.0405,
-        "xAssists": 0.8485,
-        "keyPasses": 13,
-        "goalsAdded": 1.5562
+        "assists": 1,
+        "xGoals": 2.9486,
+        "xAssists": 1.0588,
+        "keyPasses": 16,
+        "goalsAdded": 2.3147
       },
       "previousSeason": {
         "season": 2025,
@@ -13877,13 +14179,13 @@
       "guaranteedCompensation": 998750,
       "currentSeason": {
         "season": 2026,
-        "minutes": 1008,
-        "goals": 3,
+        "minutes": 1140,
+        "goals": 4,
         "assists": 3,
-        "xGoals": 2.7793,
-        "xAssists": 2.5970000000000004,
-        "keyPasses": 20,
-        "goalsAdded": 2.3273
+        "xGoals": 3.8388,
+        "xAssists": 2.9188,
+        "keyPasses": 22,
+        "goalsAdded": 2.7385
       },
       "previousSeason": {
         "season": 2025,
@@ -13925,13 +14227,13 @@
       "guaranteedCompensation": 5933000,
       "currentSeason": {
         "season": 2026,
-        "minutes": 1446,
-        "goals": 13,
+        "minutes": 1644,
+        "goals": 15,
         "assists": 0,
-        "xGoals": 10.3228,
-        "xAssists": 0.6467,
-        "keyPasses": 7,
-        "goalsAdded": 3.7104999999999997
+        "xGoals": 12.0519,
+        "xAssists": 0.7474,
+        "keyPasses": 8,
+        "goalsAdded": 4.3975
       },
       "previousSeason": {
         "season": 2025,
@@ -13978,13 +14280,13 @@
       "guaranteedCompensation": 671050,
       "currentSeason": {
         "season": 2026,
-        "minutes": 1760,
+        "minutes": 1875,
         "goals": 0,
         "assists": 1,
-        "xGoals": 0.1059,
-        "xAssists": 1.4705,
-        "keyPasses": 12,
-        "goalsAdded": 2.0809
+        "xGoals": 0.1564,
+        "xAssists": 1.5433,
+        "keyPasses": 14,
+        "goalsAdded": 2.2824999999999998
       },
       "previousSeason": {
         "season": 2025,
@@ -14018,6 +14320,40 @@
       ]
     },
     {
+      "id": "4wM4JmKAqj",
+      "name": "Santiago Moreno",
+      "teamId": "mKAqBBmqbg",
+      "teamName": "FC Dallas",
+      "teamAbbreviation": "FCD",
+      "positionGroup": "MID",
+      "position": "AM",
+      "baseSalary": 803125,
+      "guaranteedCompensation": 938387,
+      "currentSeason": {
+        "season": 2026,
+        "minutes": 1054,
+        "goals": 3,
+        "assists": 2,
+        "xGoals": 3.9537,
+        "xAssists": 3.3205,
+        "keyPasses": 26,
+        "goalsAdded": 3.21
+      },
+      "previousSeason": {
+        "season": 2025,
+        "minutes": 1852,
+        "goals": 4,
+        "assists": 5,
+        "xGoals": 3.9814,
+        "xAssists": 4.1647,
+        "keyPasses": 35,
+        "goalsAdded": 5.3773
+      },
+      "selectionReasons": [
+        "current-season-five-goal-contributions"
+      ]
+    },
+    {
       "id": "9z5kGga5A3",
       "name": "Sean Johnson",
       "teamId": "EKXMeX3Q64",
@@ -14029,7 +14365,7 @@
       "guaranteedCompensation": 883475,
       "currentSeason": {
         "season": 2026,
-        "minutes": 2244,
+        "minutes": 2440,
         "goals": 0,
         "assists": 0,
         "xGoals": 0,
@@ -14048,20 +14384,20 @@
       "goalkeeperMetrics": {
         "currentSeason": {
           "season": 2026,
-          "shotsFaced": 112,
-          "goalsConceded": 36,
-          "saves": 74,
-          "xGoalsFaced": 37.9113,
-          "goalsMinusXGoalsFaced": -1.9113,
+          "shotsFaced": 119,
+          "goalsConceded": 37,
+          "saves": 80,
+          "xGoalsFaced": 39.8682,
+          "goalsMinusXGoalsFaced": -2.8682,
           "goalsAddedByAction": {
-            "claiming": 0.1802,
-            "fielding": -0.0179,
-            "handling": -0.744,
-            "passing": 0.9002,
-            "shotstopping": 1.9113,
-            "sweeping": 0.1499
+            "claiming": 0.2251,
+            "fielding": -0.0316,
+            "handling": -0.692,
+            "passing": 1.0023,
+            "shotstopping": 2.8682,
+            "sweeping": -0.0654
           },
-          "goalsAdded": 2.3797
+          "goalsAdded": 3.3066
         },
         "previousSeason": {
           "season": 2025,
@@ -14110,13 +14446,13 @@
       "guaranteedCompensation": 900500,
       "currentSeason": {
         "season": 2026,
-        "minutes": 2369,
+        "minutes": 2569,
         "goals": 0,
         "assists": 0,
-        "xGoals": 0.5299,
-        "xAssists": 0.1803,
-        "keyPasses": 4,
-        "goalsAdded": 2.9196
+        "xGoals": 0.8441,
+        "xAssists": 0.2703,
+        "keyPasses": 5,
+        "goalsAdded": 3.634
       },
       "previousSeason": {
         "season": 2025,
@@ -14204,13 +14540,13 @@
       "guaranteedCompensation": 793625,
       "currentSeason": {
         "season": 2026,
-        "minutes": 1606,
+        "minutes": 1810,
         "goals": 1,
         "assists": 0,
         "xGoals": 0.6222,
         "xAssists": 0.068,
         "keyPasses": 1,
-        "goalsAdded": 2.779
+        "goalsAdded": 2.9194999999999998
       },
       "previousSeason": {
         "season": 2025,
@@ -14250,13 +14586,13 @@
       "guaranteedCompensation": 88025,
       "currentSeason": {
         "season": 2026,
-        "minutes": 1596,
+        "minutes": 1668,
         "goals": 9,
         "assists": 3,
         "xGoals": 9.7315,
-        "xAssists": 2.2378,
-        "keyPasses": 16,
-        "goalsAdded": 6.0173
+        "xAssists": 2.3887,
+        "keyPasses": 18,
+        "goalsAdded": 5.965
       },
       "rosterProfile": {
         "snapshotDate": "2026-02-26",
@@ -14333,13 +14669,13 @@
       "guaranteedCompensation": 1065028,
       "currentSeason": {
         "season": 2026,
-        "minutes": 1155,
+        "minutes": 1165,
         "goals": 1,
         "assists": 1,
-        "xGoals": 1.6753,
-        "xAssists": 0.8739,
+        "xGoals": 1.6817,
+        "xAssists": 0.8707,
         "keyPasses": 10,
-        "goalsAdded": 1.6811
+        "goalsAdded": 1.604
       },
       "previousSeason": {
         "season": 2025,
@@ -14384,13 +14720,13 @@
       "guaranteedCompensation": 870000,
       "currentSeason": {
         "season": 2026,
-        "minutes": 2204,
+        "minutes": 2408,
         "goals": 1,
-        "assists": 1,
-        "xGoals": 0.4664,
-        "xAssists": 0.9054,
-        "keyPasses": 6,
-        "goalsAdded": 2.5642
+        "assists": 2,
+        "xGoals": 1.0362,
+        "xAssists": 1.1557,
+        "keyPasses": 7,
+        "goalsAdded": 3.5716
       },
       "previousSeason": {
         "season": 2025,
@@ -14434,13 +14770,13 @@
       "guaranteedCompensation": 444375,
       "currentSeason": {
         "season": 2026,
-        "minutes": 1959,
+        "minutes": 2071,
         "goals": 7,
         "assists": 4,
-        "xGoals": 10.5281,
-        "xAssists": 2.7117,
-        "keyPasses": 16,
-        "goalsAdded": 5.6532
+        "xGoals": 11.0195,
+        "xAssists": 2.7252,
+        "keyPasses": 17,
+        "goalsAdded": 5.7769
       },
       "previousSeason": {
         "season": 2025,
@@ -14484,13 +14820,13 @@
       "guaranteedCompensation": 11152852,
       "currentSeason": {
         "season": 2026,
-        "minutes": 1942,
+        "minutes": 2144,
         "goals": 5,
         "assists": 9,
-        "xGoals": 8.6893,
-        "xAssists": 5.0673,
-        "keyPasses": 41,
-        "goalsAdded": 8.0825
+        "xGoals": 9.7518,
+        "xAssists": 5.5591,
+        "keyPasses": 44,
+        "goalsAdded": 8.7997
       },
       "previousSeason": {
         "season": 2025,
@@ -14536,13 +14872,13 @@
       "guaranteedCompensation": 922000,
       "currentSeason": {
         "season": 2026,
-        "minutes": 1964,
+        "minutes": 2116,
         "goals": 0,
         "assists": 0,
         "xGoals": 0.5841,
-        "xAssists": 1.0185,
-        "keyPasses": 12,
-        "goalsAdded": 2.7607999999999997
+        "xAssists": 1.1627,
+        "keyPasses": 14,
+        "goalsAdded": 3.2501000000000007
       },
       "previousSeason": {
         "season": 2025,
@@ -14583,13 +14919,13 @@
       "guaranteedCompensation": 2349000,
       "currentSeason": {
         "season": 2026,
-        "minutes": 1544,
-        "goals": 12,
+        "minutes": 1720,
+        "goals": 14,
         "assists": 0,
-        "xGoals": 9.9291,
-        "xAssists": 0.6649,
-        "keyPasses": 12,
-        "goalsAdded": 4.0355
+        "xGoals": 11.1224,
+        "xAssists": 0.7253,
+        "keyPasses": 13,
+        "goalsAdded": 5.1042000000000005
       },
       "previousSeason": {
         "season": 2025,
@@ -14670,13 +15006,13 @@
       "guaranteedCompensation": 89025,
       "currentSeason": {
         "season": 2026,
-        "minutes": 1850,
+        "minutes": 2051,
         "goals": 0,
         "assists": 0,
         "xGoals": 0.0674,
         "xAssists": 1.7344,
         "keyPasses": 21,
-        "goalsAdded": 3.2737
+        "goalsAdded": 3.6299
       },
       "previousSeason": {
         "season": 2025,
@@ -14722,13 +15058,13 @@
       "guaranteedCompensation": 664000,
       "currentSeason": {
         "season": 2026,
-        "minutes": 1980,
+        "minutes": 2085,
         "goals": 1,
         "assists": 1,
         "xGoals": 0.8795,
-        "xAssists": 1.6676,
-        "keyPasses": 14,
-        "goalsAdded": 2.3884
+        "xAssists": 1.6819,
+        "keyPasses": 15,
+        "goalsAdded": 2.4637000000000002
       },
       "previousSeason": {
         "season": 2025,
@@ -14818,13 +15154,13 @@
       "guaranteedCompensation": 360000,
       "currentSeason": {
         "season": 2026,
-        "minutes": 1890,
+        "minutes": 2039,
         "goals": 3,
         "assists": 7,
-        "xGoals": 3.6599,
-        "xAssists": 2.7673,
-        "keyPasses": 28,
-        "goalsAdded": 4.3619
+        "xGoals": 3.6804,
+        "xAssists": 2.9244,
+        "keyPasses": 29,
+        "goalsAdded": 4.545
       },
       "previousSeason": {
         "season": 2025,
@@ -14867,13 +15203,13 @@
       "guaranteedCompensation": 2262000,
       "currentSeason": {
         "season": 2026,
-        "minutes": 1877,
+        "minutes": 2085,
         "goals": 0,
         "assists": 0,
         "xGoals": 0.2245,
-        "xAssists": 0.2922,
-        "keyPasses": 2,
-        "goalsAdded": 3.1057
+        "xAssists": 0.3215,
+        "keyPasses": 3,
+        "goalsAdded": 3.2902000000000005
       },
       "previousSeason": {
         "season": 2025,
@@ -14999,13 +15335,13 @@
       "guaranteedCompensation": 5152504,
       "currentSeason": {
         "season": 2026,
-        "minutes": 1621,
+        "minutes": 1648,
         "goals": 7,
-        "assists": 4,
+        "assists": 5,
         "xGoals": 5.5988,
-        "xAssists": 6.1845,
-        "keyPasses": 44,
-        "goalsAdded": 3.6534000000000004
+        "xAssists": 6.362,
+        "keyPasses": 45,
+        "goalsAdded": 3.7044
       },
       "previousSeason": {
         "season": 2025,
@@ -15089,13 +15425,13 @@
       "guaranteedCompensation": 1127750,
       "currentSeason": {
         "season": 2026,
-        "minutes": 1589,
+        "minutes": 1797,
         "goals": 0,
         "assists": 1,
         "xGoals": 0.0454,
         "xAssists": 0.3217,
         "keyPasses": 2,
-        "goalsAdded": 1.6139
+        "goalsAdded": 1.9931
       },
       "previousSeason": {
         "season": 2025,
@@ -15139,13 +15475,13 @@
       "guaranteedCompensation": 693333,
       "currentSeason": {
         "season": 2026,
-        "minutes": 2324,
+        "minutes": 2530,
         "goals": 1,
         "assists": 0,
         "xGoals": 0.6531,
         "xAssists": 0.1584,
         "keyPasses": 1,
-        "goalsAdded": 3.6887
+        "goalsAdded": 3.9168000000000003
       },
       "previousSeason": {
         "season": 2025,
@@ -15227,13 +15563,13 @@
       "guaranteedCompensation": 121733,
       "currentSeason": {
         "season": 2026,
-        "minutes": 973,
+        "minutes": 1090,
         "goals": 6,
-        "assists": 1,
-        "xGoals": 4.4449,
-        "xAssists": 0.869,
-        "keyPasses": 4,
-        "goalsAdded": 2.8728
+        "assists": 2,
+        "xGoals": 4.5205,
+        "xAssists": 1.1336,
+        "keyPasses": 6,
+        "goalsAdded": 3.1217
       },
       "previousSeason": {
         "season": 2025,
@@ -15276,13 +15612,13 @@
       "guaranteedCompensation": 391763,
       "currentSeason": {
         "season": 2026,
-        "minutes": 1476,
+        "minutes": 1618,
         "goals": 2,
         "assists": 4,
-        "xGoals": 0.9446,
-        "xAssists": 2.7539,
+        "xGoals": 1.0302,
+        "xAssists": 2.8219,
         "keyPasses": 19,
-        "goalsAdded": 1.7335
+        "goalsAdded": 2.2261
       },
       "previousSeason": {
         "season": 2025,
@@ -15378,13 +15714,13 @@
       "guaranteedCompensation": 1274375,
       "currentSeason": {
         "season": 2026,
-        "minutes": 1663,
-        "goals": 3,
+        "minutes": 1786,
+        "goals": 4,
         "assists": 3,
-        "xGoals": 4.232,
-        "xAssists": 3.8017,
-        "keyPasses": 18,
-        "goalsAdded": 3.3327999999999998
+        "xGoals": 4.7349,
+        "xAssists": 3.9357,
+        "keyPasses": 20,
+        "goalsAdded": 3.7026
       },
       "previousSeason": {
         "season": 2025,
@@ -15428,13 +15764,13 @@
       "guaranteedCompensation": 642500,
       "currentSeason": {
         "season": 2026,
-        "minutes": 1937,
+        "minutes": 2137,
         "goals": 3,
         "assists": 1,
-        "xGoals": 1.2243,
-        "xAssists": 1.6532,
-        "keyPasses": 14,
-        "goalsAdded": 1.9895999999999998
+        "xGoals": 1.5324,
+        "xAssists": 1.6863,
+        "keyPasses": 15,
+        "goalsAdded": 2.3685
       },
       "rosterProfile": {
         "snapshotDate": "2026-02-26",
@@ -15510,13 +15846,13 @@
       "guaranteedCompensation": 975000,
       "currentSeason": {
         "season": 2026,
-        "minutes": 2076,
+        "minutes": 2277,
         "goals": 1,
         "assists": 0,
-        "xGoals": 1.7853,
-        "xAssists": 0.0665,
-        "keyPasses": 2,
-        "goalsAdded": 3.4086
+        "xGoals": 2.0997,
+        "xAssists": 0.1748,
+        "keyPasses": 3,
+        "goalsAdded": 3.9157
       },
       "previousSeason": {
         "season": 2025,
@@ -15558,13 +15894,13 @@
       "guaranteedCompensation": 641600,
       "currentSeason": {
         "season": 2026,
-        "minutes": 1976,
+        "minutes": 2082,
         "goals": 4,
         "assists": 0,
-        "xGoals": 2.0721,
+        "xGoals": 2.0609,
         "xAssists": 1.589,
         "keyPasses": 17,
-        "goalsAdded": 3.6761999999999997
+        "goalsAdded": 3.7715
       },
       "previousSeason": {
         "season": 2025,
@@ -15608,13 +15944,13 @@
       "guaranteedCompensation": 311875,
       "currentSeason": {
         "season": 2026,
-        "minutes": 865,
+        "minutes": 963,
         "goals": 6,
         "assists": 1,
-        "xGoals": 5.1152,
+        "xGoals": 5.4524,
         "xAssists": 1.5767,
         "keyPasses": 10,
-        "goalsAdded": 3.3583999999999996
+        "goalsAdded": 3.5780000000000003
       },
       "previousSeason": {
         "season": 2025,
@@ -15657,13 +15993,13 @@
       "guaranteedCompensation": 146500,
       "currentSeason": {
         "season": 2026,
-        "minutes": 1919,
+        "minutes": 2116,
         "goals": 1,
         "assists": 1,
         "xGoals": 0.5956,
         "xAssists": 0.4135,
         "keyPasses": 10,
-        "goalsAdded": 1.5223
+        "goalsAdded": 1.7818999999999998
       },
       "previousSeason": {
         "season": 2025,
@@ -15708,13 +16044,13 @@
       "guaranteedCompensation": 357000,
       "currentSeason": {
         "season": 2026,
-        "minutes": 363,
+        "minutes": 424,
         "goals": 0,
         "assists": 1,
-        "xGoals": 0.0296,
+        "xGoals": 0.1384,
         "xAssists": 0.4367,
         "keyPasses": 5,
-        "goalsAdded": 0.5331
+        "goalsAdded": 0.355
       },
       "rosterProfile": {
         "snapshotDate": "2026-02-26",
@@ -15748,13 +16084,13 @@
       "guaranteedCompensation": 1708037,
       "currentSeason": {
         "season": 2026,
-        "minutes": 1700,
+        "minutes": 1903,
         "goals": 1,
         "assists": 0,
-        "xGoals": 0.9924,
-        "xAssists": 0.7605,
-        "keyPasses": 3,
-        "goalsAdded": 3.9093999999999998
+        "xGoals": 0.9686,
+        "xAssists": 1.0187,
+        "keyPasses": 5,
+        "goalsAdded": 4.2949
       },
       "previousSeason": {
         "season": 2025,
@@ -15887,13 +16223,13 @@
       "guaranteedCompensation": 555000,
       "currentSeason": {
         "season": 2026,
-        "minutes": 942,
+        "minutes": 1073,
         "goals": 4,
         "assists": 2,
-        "xGoals": 2.3766,
+        "xGoals": 2.588,
         "xAssists": 2.8417,
         "keyPasses": 25,
-        "goalsAdded": 1.8845
+        "goalsAdded": 2.0025
       },
       "previousSeason": {
         "season": 2025,
@@ -15981,13 +16317,13 @@
       "guaranteedCompensation": 602500,
       "currentSeason": {
         "season": 2026,
-        "minutes": 1604,
+        "minutes": 1769,
         "goals": 0,
         "assists": 1,
         "xGoals": 0.1502,
         "xAssists": 0.5006,
         "keyPasses": 7,
-        "goalsAdded": 1.5285
+        "goalsAdded": 1.7426
       },
       "previousSeason": {
         "season": 2025,
@@ -16062,7 +16398,6 @@
         "rosterConstructionModel": "Designated Player Model"
       },
       "selectionReasons": [
-        "team-outfield-selection",
         "designated-player"
       ]
     },
@@ -16078,7 +16413,7 @@
       "guaranteedCompensation": 841818,
       "currentSeason": {
         "season": 2026,
-        "minutes": 2108,
+        "minutes": 2309,
         "goals": 0,
         "assists": 1,
         "xGoals": 0,
@@ -16097,20 +16432,20 @@
       "goalkeeperMetrics": {
         "currentSeason": {
           "season": 2026,
-          "shotsFaced": 58,
-          "goalsConceded": 19,
-          "saves": 37,
-          "xGoalsFaced": 20.5254,
-          "goalsMinusXGoalsFaced": -1.5254,
+          "shotsFaced": 65,
+          "goalsConceded": 21,
+          "saves": 42,
+          "xGoalsFaced": 23.9049,
+          "goalsMinusXGoalsFaced": -2.9049,
           "goalsAddedByAction": {
-            "claiming": 0.035,
-            "fielding": 0.1154,
-            "handling": -0.0997,
-            "passing": 1.6434,
-            "shotstopping": 1.5254,
-            "sweeping": 0.5673
+            "claiming": 0.0135,
+            "fielding": 0.1174,
+            "handling": -0.039,
+            "passing": 1.8141,
+            "shotstopping": 2.9049,
+            "sweeping": 0.5652
           },
-          "goalsAdded": 3.7868000000000004
+          "goalsAdded": 5.3761
         },
         "previousSeason": {
           "season": 2025,
@@ -16296,13 +16631,13 @@
       "guaranteedCompensation": 453799,
       "currentSeason": {
         "season": 2026,
-        "minutes": 1814,
+        "minutes": 1965,
         "goals": 2,
         "assists": 1,
-        "xGoals": 0.8497,
-        "xAssists": 2.9313,
-        "keyPasses": 25,
-        "goalsAdded": 3.7354
+        "xGoals": 0.8712,
+        "xAssists": 3.5146,
+        "keyPasses": 29,
+        "goalsAdded": 4.0197
       },
       "previousSeason": {
         "season": 2025,
