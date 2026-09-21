@@ -13,6 +13,8 @@ export const SELECTION_REASONS = [
 ] as const;
 export type SelectionReason = typeof SELECTION_REASONS[number];
 
+export const MIN_COMPARISON_POOL_SIZE = 150;
+
 export interface ComparisonPoolPlayer extends StaticPlayer { selectionReasons: SelectionReason[]; }
 
 export interface ComparisonPoolRules {
@@ -256,7 +258,9 @@ export function validateComparisonPool(pool: ComparisonPool, dataset: PlayerData
   const errors = validateDataset(dataset).map((error) => `source player artifact: ${error}`);
   exactObject(pool, ["schemaVersion", "humanReadableLabel", "dataVersion", "sourceDataVersion", "season", "previousSeason", "generatedAt", "provenance", "selectionRules", "overrides", "audit", "players"], "pool", errors);
   if (pool.schemaVersion !== 3) errors.push("pool schemaVersion must be 3");
-  if (!Array.isArray(pool.players) || pool.players.length < 150 || pool.players.length > 325) errors.push("pool size must be between 150 and 325 players");
+  if (!Array.isArray(pool.players) || pool.players.length < MIN_COMPARISON_POOL_SIZE) {
+    errors.push(`pool size must be at least ${MIN_COMPARISON_POOL_SIZE} players`);
+  }
   if (!isSemanticVersion(pool.dataVersion)) errors.push("pool dataVersion must be a SHA-256 semantic version");
   const generated = typeof pool.generatedAt === "string" ? new Date(pool.generatedAt) : null;
   if (!generated || !Number.isFinite(generated.valueOf()) || generated.toISOString() !== pool.generatedAt) errors.push("pool generatedAt must be a canonical ISO timestamp");

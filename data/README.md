@@ -293,6 +293,14 @@ always loads the player artifact and then:
 4. Rejects missing/extra players, altered fields, rule drift, reason drift,
    source-version drift, and semantic-version drift.
 
+There is no fixed maximum pool size: the documented selection rules are a
+dynamic union, so legitimate season progression can add players. A same-season
+refresh still has a growth guardrail in the refresh-safety stage: it allows one
+net new selection per baseline team or five percent of the prior pool, whichever
+is greater, and stops for review when the increase exceeds that allowance.
+Season rollovers do not apply this same-season growth comparison because the
+new season's accumulation is expected to change the pool's shape.
+
 ## Browser, persistence, and exports
 
 The browser validates schema version 3 pool metadata and consumes artifact

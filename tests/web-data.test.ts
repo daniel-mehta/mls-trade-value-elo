@@ -11,7 +11,6 @@ describe("browser comparison-pool loading", () => {
     const raw = await readFile("public/data/comparison-pool.json", "utf8");
     const pool = validateBrowserPool(JSON.parse(raw));
     expect(pool.players.length).toBeGreaterThanOrEqual(150);
-    expect(pool.players.length).toBeLessThanOrEqual(325);
     expect(pool.audit.finalPoolSize).toBe(pool.players.length);
     expect(pool.generatedAt).toMatch(/^\d{4}-\d{2}-\d{2}T/);
   });

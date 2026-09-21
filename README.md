@@ -30,6 +30,11 @@ The comparison pool is an eligibility and involvement filter, not a trade-value 
 
 Eligible Designated Players, U22 Initiative players, and players with at least five current-season goals plus primary assists are also included. Selection is deterministic. A manual inclusion is still eligibility-bound, so it cannot add a player who fails the minute-and-roster rule.
 
+The pool has no fixed upper size because these rule-based selections form a
+dynamic union. Same-season refreshes apply a separate growth guardrail against
+abnormal expansion; legitimate season progression is allowed within that
+reviewable allowance.
+
 See [data/README.md](data/README.md) for the complete methodology and validation rules.
 
 ## Adaptive matchmaking

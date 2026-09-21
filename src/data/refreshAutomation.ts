@@ -80,6 +80,19 @@ export interface RefreshStatus {
   poolCount: number;
 }
 
+/**
+ * The pool is a dynamic union of rule-derived selections, so its size cannot
+ * have a fixed publication maximum. During a same-season refresh, allow one
+ * net new selection per baseline team, or five percent of the prior pool for
+ * larger pools, whichever is greater. Larger jumps require an explicit
+ * investigation instead of being silently published.
+ */
+export function comparisonPoolGrowthAllowance(baselinePoolCount: number, baselineTeamCount: number): number {
+  if (!Number.isInteger(baselinePoolCount) || baselinePoolCount < 0) throw new Error("Baseline pool count must be a non-negative integer");
+  if (!Number.isInteger(baselineTeamCount) || baselineTeamCount < 1) throw new Error("Baseline pool team count must be a positive integer");
+  return Math.max(baselineTeamCount, Math.ceil(baselinePoolCount * 0.05));
+}
+
 function sha256Bytes(value: string): string {
   return createHash("sha256").update(value).digest("hex");
 }
@@ -263,6 +276,14 @@ export function assertRefreshSafety(
     throw new Error(`Stable ASA player-ID continuity check failed: retained ${retained} of ${continuityBase} comparable IDs`);
   }
   const sameSeason = baseline.currentSeason === dataset.season && baseline.previousSeason === dataset.previousSeason;
+  if (sameSeason) {
+    const baselineTeamCount = new Set(baseline.pool.map((player) => player.teamId)).size;
+    const allowance = comparisonPoolGrowthAllowance(baseline.poolCount, baselineTeamCount);
+    const growth = pool.players.length - baseline.poolCount;
+    if (growth > allowance) {
+      throw new Error(`Comparison-pool growth check failed: ${baseline.poolCount} -> ${pool.players.length} players (+${growth}); same-season allowance is +${allowance} (one net selection per baseline team or 5% of the prior pool).`);
+    }
+  }
   if (sameSeason) {
     for (const prior of baseline.provenance.sources.filter((source) => !source.sourceId.startsWith("asa-salaries-") && source.rowCount > 0)) {
       const current = dataset.sources.find((source) => source.sourceId === prior.sourceId);

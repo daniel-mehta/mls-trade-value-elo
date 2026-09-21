@@ -13,8 +13,9 @@ import { playerDataset, staticPlayer } from "./data-fixtures.js";
 const none = { schemaVersion: 1 as const, include: [], exclude: [] };
 const p = (id: string, changes: Partial<StaticPlayer> = {}) => staticPlayer(id, changes);
 
-function publicationDataset() {
-  return playerDataset(Array.from({ length: 30 }, (_, teamIndex) =>
+function publicationDataset(extraPerTeam = 0) {
+  return playerDataset([
+    ...Array.from({ length: 30 }, (_, teamIndex) =>
     Array.from({ length: 6 }, (_, playerIndex) => p(`${teamIndex}-${playerIndex}`, {
       teamId: `t${teamIndex}`,
       teamName: `Team ${teamIndex}`,
@@ -22,7 +23,17 @@ function publicationDataset() {
       positionGroup: playerIndex === 5 ? "GK" : "MID",
       currentSeason: { season: 2026, minutes: 100 - playerIndex },
     })),
-  ).flat());
+    ).flat(),
+    ...Array.from({ length: 30 }, (_, teamIndex) =>
+      Array.from({ length: extraPerTeam }, (_, extraIndex) => p(`extra-${teamIndex}-${extraIndex}`, {
+        teamId: `t${teamIndex}`,
+        teamName: `Team ${teamIndex}`,
+        teamAbbreviation: `T${teamIndex}`,
+        positionGroup: "FWD",
+        currentSeason: { season: 2026, minutes: 1, goals: 3, assists: 2 },
+      })),
+    ).flat(),
+  ]);
 }
 
 describe("comparison-pool rules", () => {
@@ -89,6 +100,13 @@ describe("source-to-pool semantic validation", () => {
   it("accepts the rule-derived publication fixture", () => {
     const dataset = publicationDataset();
     expect(validateComparisonPool(selectComparisonPool(dataset, none), dataset, none)).toEqual([]);
+  });
+
+  it("accepts legitimate rule-derived growth above the retired fixed maximum", () => {
+    const dataset = publicationDataset(5);
+    const pool = selectComparisonPool(dataset, none);
+    expect(pool.players).toHaveLength(330);
+    expect(validateComparisonPool(pool, dataset, none)).toEqual([]);
   });
 
   it.each([

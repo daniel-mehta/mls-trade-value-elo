@@ -8,6 +8,7 @@ import {
   assertUnchangedDefaultBranch,
   buildRefreshStatus,
   captureRefreshBaseline,
+  comparisonPoolGrowthAllowance,
   formatRefreshSummary,
   publicationIdentityErrors,
   refreshStatusErrors,
@@ -119,6 +120,15 @@ describe("refresh change analysis", () => {
 });
 
 describe("refresh safety decisions", () => {
+  it("allows modest same-season pool growth and rejects abnormal expansion", () => {
+    expect(comparisonPoolGrowthAllowance(324, 30)).toBe(30);
+    const prior = baselineArtifacts();
+    const modest = artifact(["a", "b", "c", "d"]);
+    expect(() => assertRefreshSafety(prior.baseline, modest.dataset, modest.pool)).not.toThrow();
+    const excessive = artifact(["a", "b", "c", "d", "e"]);
+    expect(() => assertRefreshSafety(prior.baseline, excessive.dataset, excessive.pool)).toThrow(/Comparison-pool growth check failed/);
+  });
+
   it("accepts timestamp-only rebuild differences and rejects substantive nondeterminism", () => {
     const first = artifact();
     const secondDataset = structuredClone(first.dataset);
