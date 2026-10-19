@@ -1,11 +1,11 @@
 {
   "schemaVersion": 1,
-  "lastSuccessfulRefresh": "2026-10-12T06:10:00.000Z",
+  "lastSuccessfulRefresh": "2026-10-19T04:54:17.000Z",
   "currentSeason": 2026,
   "previousSeason": 2025,
   "substantiveDataChanged": true,
-  "playerVersion": "sha256:6de3ada6e75fe406def585ab16cbdaa1250dfc9c0690bd37ae2c96301cc3dd14",
-  "poolVersion": "sha256:23b6a2adf783d460d3b080857617038a928f55585802659a198d58f059909595",
-  "playerCount": 1130,
-  "poolCount": 345
+  "playerVersion": "sha256:5202ed2dee5fe327b9d06c964dc7309d2fccca1d0ad0f58e698cf7b550910ae4",
+  "poolVersion": "sha256:467a08086eff392f817a78f38ddd3f94f664ddab7c492b61a393b4864e05d1a7",
+  "playerCount": 1131,
+  "poolCount": 349
 }
